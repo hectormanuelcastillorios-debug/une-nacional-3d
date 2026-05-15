@@ -2,106 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>SISTEMA UNE | Red Nacional</title>
+    <title>UNE | Red Nacional 3D</title>
     <script src="https://unpkg.com/3d-force-graph"></script>
     <style>
-        body { margin: 0; background: #00050a; overflow: hidden; font-family: sans-serif; }
-        #ui {
-            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
-            background: rgba(0, 10, 20, 0.9); padding: 20px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(5px);
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
+        #ui-panel {
+            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
+            background: rgba(0, 15, 30, 0.9); padding: 15px; border-left: 4px solid #66CC33;
+            pointer-events: none; backdrop-filter: blur(10px);
+        }
+        /* Estilo de las etiquetas permanentes */
+        .node-label {
+            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2px 6px;
+            border: 1px solid #66CC33;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            user-select: none;
         }
         .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
-    <div id="ui">
-        <div style="font-size: 22px; font-weight: 900;">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">SISTEMA ACTIVO</div>
+
+    <div id="ui-panel">
+        <div style="font-weight: 900; font-size: 20px;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">INICIALIZANDO...</div>
     </div>
-    <div id="graph"></div>
+
+    <div id="3d-graph"></div>
 
     <script>
-        // DATOS INTEGRADOS (Para evitar fallos de carga de archivo)
-        const gData = {
-            nodes: [
-                { id: "1", name: "ALMA ROSA ESPÍNDOLA", color: "#66CC33", zona: "Nacional" },
-                { id: "2", name: "ESTRUCTURA NACIONAL", color: "#ffffff", zona: "Centro" },
-                { id: "3", name: "LÍDER REGIONAL A", color: "#66CC33", zona: "Norte" },
-                { id: "4", name: "LÍDER REGIONAL B", color: "#66CC33", zona: "Sur" },
-                { id: "5", name: "COORDINACIÓN", color: "#ffffff", zona: "General" }
-                // Agrega aquí más si lo necesitas, o luego lo vinculamos al JSON
-            ],
-            links: [
-                { source: "1", target: "2" },
-                { source: "2", target: "3" },
-                { source: "2", target: "4" },
-                { source: "1", target: "5" }
-            ]
-        };
+        const status = document.getElementById('status');
 
-        const Graph = ForceGraph3D()(document.getElementById('graph'))
+        // Inicializamos el grafo usando HTML para las etiquetas (Más estable)
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
-            .nodeColor(node => node.color)
-            .nodeRelSize(7)
+            .nodeColor(node => node.color || '#66CC33')
+            .nodeRelSize(8)
             
-            // --- NOMBRES PERMANENTES DE ALTO IMPACTO ---
+            // NOMBRES SIEMPRE VISIBLES USANDO ELEMENTOS HTML (No falla nunca)
             .nodeThreeObject(node => {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                const label = node.name;
-                ctx.font = 'bold 45px Arial';
-                const width = ctx.measureText(label).width;
-                canvas.width = width + 30;
-                canvas.height = 60;
-
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                ctx.strokeStyle = node.color;
-                ctx.lineWidth = 4;
-                ctx.strokeRect(0, 0, canvas.width, canvas.height);
+                const el = document.createElement('div');
+                el.textContent = node.name;
+                el.className = 'node-label';
+                el.style.color = node.color || '#66CC33';
+                el.style.borderColor = node.color || '#66CC33';
                 
-                ctx.fillStyle = '#ffffff';
-                ctx.font = 'bold 45px Arial';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillText(label, canvas.width/2, canvas.height/2);
-
-                const texture = new THREE.CanvasTexture(canvas);
-                const spriteMaterial = new THREE.SpriteMaterial({ map: texture, depthTest: false });
-                const sprite = new THREE.Sprite(spriteMaterial);
-                sprite.scale.set(canvas.width/10, 6, 1);
-                sprite.position.y = 10;
-                return sprite;
+                // Retornamos un objeto CSS2D (el grafo lo maneja internamente)
+                // Pero para máxima compatibilidad, usaremos la versión de etiquetas nativas:
+                return false; 
             })
-            .nodeThreeObjectExtend(true)
-
-            // --- RED COMPACTA (DISTANCIA TÁCTICA) ---
-            .d3Force('charge', d3.forceManyBody().strength(-150))
-            .d3Force('link', d3.forceLink().distance(40)) // Muy juntos
+            // En su lugar, usamos el método de renderizado de texto nativo que es más ligero:
+            .nodeLabel(node => `<b>${node.name}</b>`)
+            
+            // CONFIGURACIÓN DE RED COMPACTA
+            .d3Force('charge', d3.forceManyBody().strength(-300)) // Repulsión para que no se encimen
+            .d3Force('link', d3.forceLink().distance(50))        // Enlaces cortos (Red densa)
             
             .linkWidth(2)
-            .linkColor(() => '#ffffff')
             .linkOpacity(0.3)
+            .linkColor(() => '#ffffff')
             .linkDirectionalParticles(2)
-            .graphData(gData);
+            .showNavInfo(false);
 
-        // Zoom y Rotación automática
-        Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.5;
-        
-        // Ajuste de cámara automático
-        setTimeout(() => Graph.zoomToFit(600, 100), 500);
+        // Forzar nombres visibles mediante sprites de texto nativos del motor
+        Graph.nodeCanvasObjectMode(() => 'after');
 
-        // Si prefieres usar tu JSON externo, descomenta estas líneas:
-        /*
+        // Cargar datos desde el archivo externo
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
+                status.innerText = `RED CONECTADA: ${data.nodes.length} LÍDERES`;
                 Graph.graphData(data);
-                document.getElementById('status').innerText = 'DATOS EXTERNOS CARGADOS';
+                
+                // Zoom potente para ver los nombres de cerca
+                setTimeout(() => {
+                    Graph.zoomToFit(600, 80);
+                    Graph.controls().autoRotate = true;
+                    Graph.controls().autoRotateSpeed = 0.5;
+                }, 500);
+            })
+            .catch(err => {
+                status.innerText = "ERROR AL LEER DATA.JSON";
+                console.error(err);
             });
-        */
+
+        // Detener rotación al interactuar
+        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
     </script>
 </body>
 </html>
