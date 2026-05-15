@@ -76,6 +76,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec7P71dj1HP5nK0V",
+      "name": " ",
+      "zona": "N/A",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec8plnOPmALo9Kdt",
       "name": "Juana Ramírez",
       "zona": "Zona 7",
@@ -306,6 +314,14 @@
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "recb52Zs0XGJ6InjJ",
+      "name": "Francis ",
+      "zona": "Zona 18",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
     },
     {
       "id": "recbs9UOb5ne2a0mZ",
@@ -566,6 +582,10 @@
       "target": "rec5mDuH3TccxRENz"
     },
     {
+      "source": "estA",
+      "target": "rec7P71dj1HP5nK0V"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "rec8plnOPmALo9Kdt"
     },
@@ -680,6 +700,10 @@
     {
       "source": "reciL9FnNcatsFw5p",
       "target": "recb4eXJFISm7bdzS"
+    },
+    {
+      "source": "estA",
+      "target": "recb52Zs0XGJ6InjJ"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
