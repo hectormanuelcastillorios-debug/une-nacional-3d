@@ -3,130 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Sistema de Inteligencia 3D</title>
+    <title>UNE | Red Nacional 3D</title>
     
-    <script src="//unpkg.com/3d-force-graph"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
         
         #ui-panel {
-            position: absolute; top: 25px; left: 25px; z-index: 1000; color: white;
+            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
             background: rgba(0, 15, 30, 0.9); padding: 20px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(10px); box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+            pointer-events: none; border-radius: 0 8px 8px 0;
         }
 
-        .stats { font-size: 11px; color: #66CC33; margin-top: 8px; font-family: monospace; text-transform: uppercase; }
-        
-        /* Hint de controles */
-        .controls-hint {
-            position: absolute; bottom: 20px; width: 100%; text-align: center;
-            color: rgba(255,255,255,0.4); font-size: 10px; letter-spacing: 1px; pointer-events: none;
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
+
+        /* Estilo para los nombres al pasar el mouse */
+        .scene-tooltip {
+            background: rgba(0, 0, 0, 0.9) !important;
+            border: 1px solid #66CC33 !important;
+            color: #fff !important;
+            border-radius: 4px !important;
+            padding: 10px !important;
+            font-size: 14px !important;
         }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-size: 12px; letter-spacing: 2px; opacity: 0.8;">RED ESTRATÉGICA</div>
-        <div style="font-size: 22px; font-weight: 900;">ESTRUCTURA UNE</div>
-        <div id="stats" class="stats">Sincronizando base de datos...</div>
+        <div style="font-size: 22px; font-weight: bold;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">INICIALIZANDO SISTEMA...</div>
     </div>
 
     <div id="3d-graph"></div>
-    <div class="controls-hint">SCROLL: ZOOM • ARRASTRAR: ROTAR • CLICK: ENFOCAR LÍDER</div>
 
     <script>
-        // Inicialización segura del Grafo
-        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-            .backgroundColor('#00050a')
-            .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(7)
-            .linkWidth(1.5)
-            .linkOpacity(0.2)
-            .linkColor(() => '#ffffff')
-            .linkDirectionalParticles(3)
-            .linkDirectionalParticleSpeed(0.005)
-            
-            // --- SOLUCIÓN DEFINITIVA PARA NOMBRES (Canvas Sprite) ---
-            .nodeThreeObject(node => {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                const label = node.name;
-                ctx.font = '24px Sans-Serif';
-                const textWidth = ctx.measureText(label).width;
-                
-                canvas.width = textWidth + 10;
-                canvas.height = 30;
-                
-                // Fondo de la etiqueta
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                
-                // Texto
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillStyle = '#ffffff';
-                ctx.fillText(label, canvas.width / 2, canvas.height / 2);
+        // Esperamos a que la página cargue totalmente
+        window.onload = function() {
+            const statusElem = document.getElementById('status');
 
-                const texture = new THREE.CanvasTexture(canvas);
-                const material = new THREE.SpriteMaterial({ map: texture });
-                const sprite = new THREE.Sprite(material);
-                sprite.scale.set(12 * (canvas.width / canvas.height), 12, 1);
-                sprite.position.y = 12; // Eleva el nombre sobre la esfera
-                return sprite;
-            })
-            .nodeThreeObjectExtend(true)
+            // 1. Inicializar el Grafo con configuración base estable
+            const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+                .backgroundColor('#00050a')
+                .nodeColor(node => node.color || '#66CC33')
+                .nodeRelSize(7)
+                // NOMBRES: Aparecen en un cuadro profesional al tocar o pasar el mouse
+                .nodeLabel(node => `
+                    <div style="padding: 5px;">
+                        <b style="color: #66CC33; font-size: 16px;">${node.name}</b><br/>
+                        <span style="opacity: 0.8;">Zona: ${node.zona || 'Nacional'}</span>
+                    </div>
+                `)
+                .linkWidth(1.5)
+                .linkColor(() => '#ffffff')
+                .linkOpacity(0.2)
+                .linkDirectionalParticles(3)
+                .linkDirectionalParticleSpeed(0.005)
+                .showNavInfo(false);
 
-            // --- CONFIGURACIÓN DE SEPARACIÓN Y ZOOM ---
-            .showNavInfo(false);
+            // 2. CONFIGURAR SEPARACIÓN (Evita que se amontonen)
+            Graph.d3Force('charge').strength(-1000); // Repulsión fuerte
+            Graph.d3Force('link').distance(150);    // Enlaces largos
 
-        // Ajustar fuerzas de separación (D3 interno)
-        Graph.d3Force('charge').strength(-800); // Repulsión fuerte
-        Graph.d3Force('link').distance(180);   // Enlaces largos
+            // 3. CARGAR DATOS
+            fetch('./data.json')
+                .then(res => {
+                    if (!res.ok) throw new Error("No se encontró data.json");
+                    return res.json();
+                })
+                .then(data => {
+                    statusElem.innerText = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
+                    Graph.graphData(data);
+                    
+                    // Ajuste de cámara para ver todo el mapa
+                    setTimeout(() => Graph.zoomToFit(1000, 200), 500);
+                })
+                .catch(err => {
+                    statusElem.innerText = "ERROR: VERIFICA EL ARCHIVO DATA.JSON";
+                    statusElem.style.color = "#ff4444";
+                    console.error(err);
+                });
 
-        // Habilitar controles manuales
-        Graph.controls().enableZoom = true;
-        Graph.controls().enableRotate = true;
+            // 4. CONTROL DE ROTACIÓN Y ZOOM
+            // La rotación es nativa del motor para no bloquear el mouse
+            Graph.controls().autoRotate = true;
+            Graph.controls().autoRotateSpeed = 0.6;
 
-        // Carga de datos desde GitHub/n8n
-        fetch('./data.json')
-            .then(res => {
-                if (!res.ok) throw new Error("Error cargando data.json");
-                return res.json();
-            })
-            .then(data => {
-                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | ESTADO: ACTIVO`;
-                Graph.graphData(data);
-                
-                // Ajuste de cámara inicial
-                setTimeout(() => { Graph.zoomToFit(1000, 300); }, 500);
-            })
-            .catch(err => {
-                console.error(err);
-                document.getElementById('stats').innerText = "ERROR: VERIFICA EL REPOSITORIO";
-                document.getElementById('stats').style.color = "#ff4444";
+            // Si el usuario hace click o usa el mouse, la rotación se detiene para darle el control
+            document.addEventListener('mousedown', () => {
+                Graph.controls().autoRotate = false;
             });
-
-        // --- ROTACIÓN AUTOMÁTICA INTELIGENTE ---
-        Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.5;
-
-        // Si el usuario toca el mapa, la rotación se detiene para permitir control total
-        window.addEventListener('mousedown', () => {
-            Graph.controls().autoRotate = false;
-        });
-
-        // Zoom suave al hacer click en un nodo
-        Graph.onNodeClick(node => {
-            const distance = 300;
-            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-            Graph.cameraPosition(
-                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
-                node,
-                2000
-            );
-        });
+        };
     </script>
 </body>
 </html>
