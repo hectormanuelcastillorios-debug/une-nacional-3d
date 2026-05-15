@@ -3,80 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Red Neuronal Nacional</title>
+    <title>UNE | Estructura Nacional 3D</title>
     
     <script src="//unpkg.com/3d-force-graph"></script>
     
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
         #ui-panel {
             position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
-            background: rgba(0, 10, 20, 0.8); padding: 15px; border-left: 4px solid #66CC33;
-            pointer-events: none;
+            background: rgba(0, 15, 30, 0.85); padding: 20px; border-left: 4px solid #66CC33;
+            pointer-events: none; backdrop-filter: blur(5px);
         }
-        .subtitle { font-size: 18px; font-weight: bold; }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; }
+        .subtitle { font-size: 20px; font-weight: bold; letter-spacing: 1px; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
         <div class="subtitle">ESTRUCTURA NACIONAL UNE</div>
-        <div id="stats" class="stats">Sincronizando red...</div>
+        <div id="stats" class="stats">INICIALIZANDO SISTEMA...</div>
     </div>
 
     <div id="3d-graph"></div>
 
     <script>
-        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+        const elem = document.getElementById('3d-graph');
+
+        const Graph = ForceGraph3D()(elem)
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
+            .nodeLabel(node => `<b>${node.name}</b><br>Zona: ${node.zona || 'N/A'}`)
             .nodeRelSize(7)
             .linkWidth(1.5)
-            .linkOpacity(0.2)
             .linkColor(() => '#ffffff')
+            .linkOpacity(0.2)
             .linkDirectionalParticles(2)
             .linkDirectionalParticleSpeed(0.005)
             
-            // --- FIX DE NOMBRES: Usamos el método más ligero y nativo ---
-            .nodeLabel(node => `Líder: ${node.name}`) 
-            
-            // --- DISTANCIA ENTRE NODOS: Forzamos la repulsión ---
-            .d3Force('charge', d3.forceManyBody().strength(-1000)) // Repulsión muy fuerte
-            .d3Force('link', d3.forceLink().distance(150)) // Enlaces más largos
-            
-            // Zoom automático inicial
-            .showNavInfo(false);
+            // --- FIX DE SEPARACIÓN: Esto empuja los nodos lejos unos de otros ---
+            .forceEngine('d3')
+            .d3VelocityDecay(0.3); // Ayuda a que se estabilicen más rápido
 
-        // Forzar Zoom con scroll
+        // Ajuste manual de fuerzas para evitar el "apelotonamiento"
+        Graph.d3Force('charge').strength(-500); 
+        Graph.d3Force('link').distance(150);
+
+        // Habilitar Zoom
         Graph.controls().enableZoom = true;
 
-        // Carga de datos con manejo de errores
+        // CARGA DE DATOS
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('stats').innerHTML = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
+                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length} | ESTADO: ONLINE`;
                 Graph.graphData(data);
                 
-                // Esperar un segundo y ajustar cámara
-                setTimeout(() => { Graph.zoomToFit(1000, 200); }, 500);
+                // Forzar que los nombres aparezcan como etiquetas HTML encima
+                // (Este es el método más ligero para no romper el mapa)
+                Graph.nodeThreeObjectExtend(true);
             })
             .catch(err => {
                 console.error(err);
-                document.getElementById('stats').innerText = "ERROR AL CARGAR DATOS";
+                document.getElementById('stats').innerText = "ERROR: VERIFICA DATA.JSON";
             });
 
-        // Rotación suave que no bloquea la interacción
+        // Rotación Automática Suave
         let angle = 0;
-        const distance = 1600;
+        const distance = 1400;
         setInterval(() => {
-            // Si el usuario no está tocando el mapa, rotar
             Graph.cameraPosition({
                 x: distance * Math.sin(angle),
                 z: distance * Math.cos(angle)
             });
             angle += Math.PI / 15000;
-        }, 15);
+        }, 10);
     </script>
 </body>
 </html>
