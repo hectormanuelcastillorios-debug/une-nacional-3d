@@ -3,134 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Red de Inteligencia Nacional</title>
+    <title>UNE | Red Neuronal de Liderazgo</title>
     
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/3d-force-graph"></script>
+    <script src="https://unpkg.com/three@0.150.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
         
         #ui-panel {
             position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
-            background: rgba(0, 15, 30, 0.9); padding: 18px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(10px);
+            background: rgba(0, 15, 30, 0.9); padding: 20px; border-left: 4px solid #66CC33;
+            pointer-events: none; backdrop-filter: blur(8px); border-radius: 0 8px 8px 0;
         }
 
-        .stats { font-size: 10px; color: #66CC33; margin-top: 5px; letter-spacing: 1px; font-family: monospace; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; letter-spacing: 1px; }
         
-        .hint {
-            position: absolute; bottom: 15px; width: 100%; text-align: center;
-            color: rgba(255,255,255,0.3); font-size: 9px; letter-spacing: 2px; pointer-events: none;
-        }
+        #3d-graph { width: 100vw; height: 100vh; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-size: 10px; opacity: 0.6; letter-spacing: 3px;">CENTRO DE MANDO</div>
-        <div style="font-size: 20px; font-weight: 900;">ESTRUCTURA UNE</div>
-        <div id="stats" class="stats">INICIALIZANDO CAPAS...</div>
+        <div style="font-size: 22px; font-weight: 900; letter-spacing: 1px;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">INICIALIZANDO CAPAS TÁCTICAS...</div>
     </div>
 
     <div id="3d-graph"></div>
-    <div class="hint">CLICK PARA ENFOCAR • DOBLE CLICK PARA ROTACIÓN AUTOMÁTICA</div>
 
     <script>
-        // Función maestra para crear etiquetas de texto 3D sin librerías externas
-        function createTextLabel(text, color) {
+        // Función para crear la etiqueta de texto (Canvas nativo)
+        function createLabel(text, color) {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
-            const fontSize = 22;
-            ctx.font = `bold ${fontSize}px Arial`;
+            const fontSize = 28;
+            ctx.font = `Bold ${fontSize}px Arial`;
             const textWidth = ctx.measureText(text).width;
 
-            canvas.width = textWidth + 20;
-            canvas.height = fontSize + 15;
+            canvas.width = textWidth + 24;
+            canvas.height = fontSize + 20;
 
-            // Fondo de la etiqueta
-            ctx.fillStyle = 'rgba(0, 5, 10, 0.8)';
+            // Fondo negro semitransparente
+            ctx.fillStyle = 'rgba(0, 5, 15, 0.85)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Borde
+            // Borde neón
             ctx.strokeStyle = color;
-            ctx.lineWidth = 2;
+            ctx.lineWidth = 3;
             ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-            // Texto
+            // Texto blanco
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = '#ffffff';
             ctx.fillText(text, canvas.width / 2, canvas.height / 2);
 
             const texture = new THREE.CanvasTexture(canvas);
-            const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
-            const sprite = new THREE.Sprite(spriteMaterial);
+            const material = new THREE.SpriteMaterial({ map: texture, depthTest: false });
+            const sprite = new THREE.Sprite(material);
             
-            // Tamaño de la etiqueta en el espacio 3D
-            sprite.scale.set(canvas.width / 8, canvas.height / 8, 1);
+            // Ajuste de escala de la etiqueta
+            sprite.scale.set(canvas.width / 10, canvas.height / 10, 1);
             return sprite;
         }
 
-        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-            .backgroundColor('#00050a')
-            .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(6)
-            
-            // --- IMPACTO VISUAL: NOMBRES SIEMPRE VISIBLES ---
-            .nodeThreeObject(node => {
-                const group = new THREE.Group();
+        // Inicialización una vez cargado el DOM
+        window.addEventListener('load', () => {
+            const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+                .backgroundColor('#00050a')
+                .showNavInfo(false)
                 
-                // 1. La Esfera del Líder
-                const sphereGeom = new THREE.SphereGeometry(5);
-                const sphereMat = new THREE.MeshLambertMaterial({ color: node.color || '#66CC33' });
-                const sphere = new THREE.Mesh(sphereGeom, sphereMat);
-                group.add(sphere);
+                // --- CONFIGURACIÓN DE NODOS ---
+                .nodeThreeObject(node => {
+                    const group = new THREE.Group();
+                    
+                    // 1. Esfera (El nodo)
+                    const sphere = new THREE.Mesh(
+                        new THREE.SphereGeometry(6),
+                        new THREE.MeshLambertMaterial({ color: node.color || '#66CC33' })
+                    );
+                    group.add(sphere);
 
-                // 2. La Etiqueta de Nombre
-                const labelColor = (node.color === '#ffffff') ? '#ffffff' : '#66CC33';
-                const label = createTextLabel(node.name, labelColor);
-                label.position.set(0, 10, 0); // La pone justo arriba
-                group.add(label);
+                    // 2. Etiqueta (El nombre siempre visible)
+                    const colorLabel = (node.color === '#ffffff') ? '#ffffff' : '#66CC33';
+                    const label = createLabel(node.name, colorLabel);
+                    label.position.set(0, 12, 0); // Lo coloca justo arriba
+                    group.add(label);
 
-                return group;
-            })
-            
-            .linkWidth(2)
-            .linkOpacity(0.3)
-            .linkColor(() => '#ffffff')
-            .linkDirectionalParticles(3)
-            .linkDirectionalParticleSpeed(0.006)
-            
-            // --- AJUSTE DE DISTANCIA: RED COMPACTA ---
-            .d3Force('charge', d3.forceManyBody().strength(-150)) // Menos repulsión
-            .d3Force('link', d3.forceLink().distance(70))       // Distancia corta (80 aprox)
-            
-            .showNavInfo(false);
-
-        // Controles de cámara
-        Graph.controls().enableZoom = true;
-        Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.4;
-
-        // Detener rotación al interactuar
-        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
-        window.addEventListener('dblclick', () => { Graph.controls().autoRotate = true; });
-
-        // Carga de datos
-        fetch('./data.json')
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById('stats').innerText = `RED ACTIVA: ${data.nodes.length} LÍDERES SINCRONIZADOS`;
-                Graph.graphData(data);
+                    return group;
+                })
                 
-                // Zoom inicial para que se vea la red compacta de golpe
-                setTimeout(() => { Graph.zoomToFit(800, 100); }, 500);
-            })
-            .catch(err => {
-                document.getElementById('stats').innerText = "ERROR DE CONEXIÓN";
-                console.error(err);
-            });
+                // --- CONFIGURACIÓN DE ENLACES ---
+                .linkWidth(2)
+                .linkColor(() => '#ffffff')
+                .linkOpacity(0.2)
+                .linkDirectionalParticles(3)
+                .linkDirectionalParticleSpeed(0.007)
+
+                // --- AJUSTE DE DISTANCIA (COMPACTO Y DENSO) ---
+                .d3Force('charge', d3.forceManyBody().strength(-200)) // Menos repulsión para que estén cerca
+                .d3Force('link', d3.forceLink().distance(60));      // Distancia de cables reducida
+
+            // Carga de datos
+            fetch('./data.json')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('status').innerText = `SISTEMA ONLINE: ${data.nodes.length} LÍDERES`;
+                    Graph.graphData(data);
+                    
+                    // Zoom automático inicial
+                    setTimeout(() => Graph.zoomToFit(800, 150), 600);
+                })
+                .catch(err => {
+                    document.getElementById('status').innerText = "ERROR: ARCHIVO DATA.JSON NO ENCONTRADO";
+                    console.error(err);
+                });
+
+            // Controles de Rotación y Zoom
+            Graph.controls().autoRotate = true;
+            Graph.controls().autoRotateSpeed = 0.5;
+
+            // Detener rotación al interactuar para permitir zoom manual
+            window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
+        });
     </script>
 </body>
 </html>
