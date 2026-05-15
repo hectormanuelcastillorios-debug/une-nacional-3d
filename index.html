@@ -3,132 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA UNE | Inteligencia Táctica</title>
+    <title>UNE | Red de Inteligencia 3D</title>
     
     <script src="https://unpkg.com/3d-force-graph"></script>
 
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
         #ui-panel {
             position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
             background: rgba(0, 10, 20, 0.9); padding: 20px; border-left: 5px solid #66CC33;
             pointer-events: none; backdrop-filter: blur(10px); border-radius: 0 10px 10px 0;
-            box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
         }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; text-transform: uppercase; }
-        #3d-graph { width: 100vw; height: 100vh; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
+        canvas { cursor: move; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-size: 10px; opacity: 0.7; letter-spacing: 3px;">ESTADO MAYOR</div>
-        <div style="font-size: 24px; font-weight: 900;">RED ESTRATÉGICA UNE</div>
-        <div id="status" class="stats">Sincronizando nodos...</div>
+        <div style="font-size: 22px; font-weight: 900;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">ESPERANDO SISTEMA...</div>
     </div>
 
     <div id="3d-graph"></div>
 
     <script>
-        // --- MOTOR DE ETIQUETAS PERMANENTES ---
-        // Esta función dibuja el nombre en un lienzo y lo convierte en un objeto 3D
-        function createLabel(node) {
+        // Función para crear la placa de nombre (Canvas)
+        function createTextLabel(name, color) {
             const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            const text = node.name;
-            const fontSize = 40;
-            
-            context.font = `Bold ${fontSize}px Arial`;
-            const textWidth = context.measureText(text).width;
-            
-            canvas.width = textWidth + 40;
-            canvas.height = fontSize + 40;
+            const ctx = canvas.getContext('2d');
+            ctx.font = 'Bold 40px Arial';
+            const width = ctx.measureText(name).width + 40;
+            canvas.width = width;
+            canvas.height = 80;
 
-            // Fondo de la etiqueta (Caja táctica)
-            context.fillStyle = 'rgba(0, 10, 20, 0.8)';
-            context.fillRect(0, 0, canvas.width, canvas.height);
-            
-            // Borde de color según el tipo de líder
-            context.strokeStyle = node.color || '#66CC33';
-            context.lineWidth = 6;
-            context.strokeRect(0, 0, canvas.width, canvas.height);
+            // Fondo de la placa
+            ctx.fillStyle = 'rgba(0, 5, 10, 0.8)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 6;
+            ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-            // Texto blanco en alta resolución
-            context.textAlign = 'center';
-            context.textBaseline = 'middle';
-            context.fillStyle = '#ffffff';
-            context.fillText(text, canvas.width / 2, canvas.height / 2);
+            // Texto
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'Bold 40px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(name, canvas.width / 2, canvas.height / 2);
 
-            // Convertir a textura 3D
             const texture = new THREE.CanvasTexture(canvas);
             const spriteMaterial = new THREE.SpriteMaterial({ map: texture, depthTest: false });
             const sprite = new THREE.Sprite(spriteMaterial);
-            
-            // Escalar para que se vea bien en el mapa
-            sprite.scale.set(canvas.width / 15, canvas.height / 15, 1);
-            sprite.position.y = 12; // Flota sobre la esfera
-            
+            sprite.scale.set(width / 15, 5, 1);
+            sprite.position.y = 8;
             return sprite;
         }
 
-        // --- INICIALIZACIÓN DEL MAPA ---
-        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-            .backgroundColor('#00050a')
-            .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(7)
+        // --- CÁPSULA DE SEGURIDAD: Solo arranca cuando TODO está cargado ---
+        window.addEventListener('load', function() {
+            const status = document.getElementById('status');
             
-            // CONFIGURACIÓN DE IMPACTO: Esfera + Nombre
-            .nodeThreeObject(node => {
-                const group = new THREE.Group();
+            const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+                .backgroundColor('#00050a')
+                .nodeColor(node => node.color || '#66CC33')
+                .nodeRelSize(7)
+                .nodeThreeObject(node => {
+                    const group = new THREE.Group();
+                    // Esfera
+                    const sphere = new THREE.Mesh(
+                        new THREE.SphereGeometry(4),
+                        new THREE.MeshLambertMaterial({ color: node.color || '#66CC33' })
+                    );
+                    group.add(sphere);
+                    // Nombre permanente
+                    group.add(createTextLabel(node.name, node.color || '#66CC33'));
+                    return group;
+                })
+                .linkWidth(1.5)
+                .linkColor(() => '#ffffff')
+                .linkOpacity(0.2)
+                .linkDirectionalParticles(2)
                 
-                // La esfera
-                const sphere = new THREE.Mesh(
-                    new THREE.SphereGeometry(5),
-                    new THREE.MeshLambertMaterial({ color: node.color || '#66CC33', transparent: true, opacity: 0.9 })
-                );
-                group.add(sphere);
-
-                // El nombre (Siempre visible)
-                const label = createLabel(node);
-                group.add(label);
-
-                return group;
-            })
-            
-            .linkWidth(2)
-            .linkOpacity(0.3)
-            .linkColor(() => '#ffffff')
-            .linkDirectionalParticles(2)
-            .linkDirectionalParticleSpeed(0.005)
-            
-            // --- RED COMPACTA (PEDIDO DEL USUARIO) ---
-            .d3Force('charge', d3.forceManyBody().strength(-100)) // Menos repulsión = más juntos
-            .d3Force('link', d3.forceLink().distance(35))       // Enlaces muy cortos para densidad
-            
-            .showNavInfo(false);
-
-        // --- CONTROLES Y CARGA ---
-        Graph.controls().enableZoom = true;
-        Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.5;
-
-        // Carga de datos
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById('status').innerText = `LÍDERES IDENTIFICADOS: ${data.nodes.length} | ESTADO: ONLINE`;
-                Graph.graphData(data);
+                // --- COMPACTACIÓN SOLICITADA ---
+                .d3Force('charge', d3.forceManyBody().strength(-120))
+                .d3Force('link', d3.forceLink().distance(40))
                 
-                // Zoom inicial potente
-                setTimeout(() => Graph.zoomToFit(600, 50), 800);
-            })
-            .catch(err => {
-                document.getElementById('status').innerText = "ERROR EN BASE DE DATOS (DATA.JSON)";
-                console.error(err);
-            });
+                .showNavInfo(false);
 
-        // Detener rotación al tocar para permitir zoom libre
-        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
+            // Carga de datos
+            fetch('./data.json')
+                .then(res => res.json())
+                .then(data => {
+                    status.innerText = `RED ACTIVA: ${data.nodes.length} NODOS`;
+                    Graph.graphData(data);
+                    
+                    // Zoom y controles finales
+                    setTimeout(() => {
+                        Graph.zoomToFit(600, 100);
+                        Graph.controls().autoRotate = true;
+                        Graph.controls().autoRotateSpeed = 0.5;
+                    }, 500);
+                })
+                .catch(err => {
+                    status.innerText = "ERROR CARGANDO DATA.JSON";
+                    console.error(err);
+                });
+
+            // Permitir zoom manual
+            window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
+        });
     </script>
 </body>
 </html>
