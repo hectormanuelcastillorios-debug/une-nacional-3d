@@ -3,129 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Red Neuronal de Liderazgo</title>
+    <title>UNE | Red de Inteligencia</title>
     
-    <script src="https://unpkg.com/three@0.150.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
-    
-    <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
-        
-        #ui-panel {
-            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
-            background: rgba(0, 15, 30, 0.9); padding: 20px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(8px); border-radius: 0 8px 8px 0;
-        }
+    <script src="https://unpkg.com/3d-force-graph"></script>
 
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; letter-spacing: 1px; }
-        
-        #3d-graph { width: 100vw; height: 100vh; }
+    <style>
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
+        #ui-panel {
+            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
+            background: rgba(0, 15, 30, 0.9); padding: 15px; border-left: 4px solid #66CC33;
+            pointer-events: none; border-radius: 0 5px 5px 0;
+        }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-size: 22px; font-weight: 900; letter-spacing: 1px;">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">INICIALIZANDO CAPAS TÁCTICAS...</div>
+        <div style="font-weight: 800; font-size: 18px; letter-spacing: 1px;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">INICIALIZANDO...</div>
     </div>
 
     <div id="3d-graph"></div>
 
     <script>
-        // Función para crear la etiqueta de texto (Canvas nativo)
-        function createLabel(text, color) {
+        // Función ultra-simple para generar etiquetas de texto
+        function makeTextSprite(message, color) {
             const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const fontSize = 28;
-            ctx.font = `Bold ${fontSize}px Arial`;
-            const textWidth = ctx.measureText(text).width;
-
-            canvas.width = textWidth + 24;
-            canvas.height = fontSize + 20;
-
-            // Fondo negro semitransparente
-            ctx.fillStyle = 'rgba(0, 5, 15, 0.85)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            const size = 120; // Resolución del texto
+            canvas.width = 512;
+            canvas.height = 128;
+            const context = canvas.getContext('2d');
             
-            // Borde neón
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 3;
-            ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-            // Texto blanco
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillStyle = '#ffffff';
-            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
-
+            context.fillStyle = 'rgba(0,0,0,0.7)';
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.strokeStyle = color;
+            context.lineWidth = 10;
+            context.strokeRect(0, 0, canvas.width, canvas.height);
+            
+            context.font = `bold 80px Arial`;
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.fillStyle = '#ffffff';
+            context.fillText(message, canvas.width / 2, canvas.height / 2);
+            
             const texture = new THREE.CanvasTexture(canvas);
-            const material = new THREE.SpriteMaterial({ map: texture, depthTest: false });
-            const sprite = new THREE.Sprite(material);
-            
-            // Ajuste de escala de la etiqueta
-            sprite.scale.set(canvas.width / 10, canvas.height / 10, 1);
+            const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
+            const sprite = new THREE.Sprite(spriteMaterial);
+            sprite.scale.set(30, 8, 1); // Tamaño del nombre en el espacio
             return sprite;
         }
 
-        // Inicialización una vez cargado el DOM
-        window.addEventListener('load', () => {
-            const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-                .backgroundColor('#00050a')
-                .showNavInfo(false)
+        // Inicialización directa
+        const elem = document.getElementById('3d-graph');
+        const Graph = ForceGraph3D()(elem)
+            .backgroundColor('#00050a')
+            .nodeColor(node => node.color || '#66CC33')
+            .nodeRelSize(7)
+            .linkWidth(2)
+            .linkOpacity(0.3)
+            .linkColor(() => '#ffffff')
+            .linkDirectionalParticles(2)
+            
+            // --- IMPACTO: NOMBRES SIEMPRE VISIBLES ---
+            .nodeThreeObject(node => {
+                const color = node.color || '#66CC33';
+                const sprite = makeTextSprite(node.name, color);
+                sprite.position.y = 12; // Posición arriba de la esfera
+                return sprite;
+            })
+            .nodeThreeObjectExtend(true)
+
+            // --- RED COMPACTA (Distancia reducida a la mitad) ---
+            .d3Force('charge').strength(-150)
+            .d3Force('link').distance(40) // Muy cerca para máximo impacto visual
+            
+            .showNavInfo(false);
+
+        // Controles de Cámara
+        Graph.controls().enableZoom = true;
+        Graph.controls().autoRotate = true;
+        Graph.controls().autoRotateSpeed = 0.5;
+
+        // Detener rotación al tocar
+        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
+
+        // Carga de Datos
+        fetch('./data.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('status').innerText = `LÍDERES: ${data.nodes.length} | ESTADO: ONLINE`;
+                Graph.graphData(data);
                 
-                // --- CONFIGURACIÓN DE NODOS ---
-                .nodeThreeObject(node => {
-                    const group = new THREE.Group();
-                    
-                    // 1. Esfera (El nodo)
-                    const sphere = new THREE.Mesh(
-                        new THREE.SphereGeometry(6),
-                        new THREE.MeshLambertMaterial({ color: node.color || '#66CC33' })
-                    );
-                    group.add(sphere);
-
-                    // 2. Etiqueta (El nombre siempre visible)
-                    const colorLabel = (node.color === '#ffffff') ? '#ffffff' : '#66CC33';
-                    const label = createLabel(node.name, colorLabel);
-                    label.position.set(0, 12, 0); // Lo coloca justo arriba
-                    group.add(label);
-
-                    return group;
-                })
-                
-                // --- CONFIGURACIÓN DE ENLACES ---
-                .linkWidth(2)
-                .linkColor(() => '#ffffff')
-                .linkOpacity(0.2)
-                .linkDirectionalParticles(3)
-                .linkDirectionalParticleSpeed(0.007)
-
-                // --- AJUSTE DE DISTANCIA (COMPACTO Y DENSO) ---
-                .d3Force('charge', d3.forceManyBody().strength(-200)) // Menos repulsión para que estén cerca
-                .d3Force('link', d3.forceLink().distance(60));      // Distancia de cables reducida
-
-            // Carga de datos
-            fetch('./data.json')
-                .then(res => res.json())
-                .then(data => {
-                    document.getElementById('status').innerText = `SISTEMA ONLINE: ${data.nodes.length} LÍDERES`;
-                    Graph.graphData(data);
-                    
-                    // Zoom automático inicial
-                    setTimeout(() => Graph.zoomToFit(800, 150), 600);
-                })
-                .catch(err => {
-                    document.getElementById('status').innerText = "ERROR: ARCHIVO DATA.JSON NO ENCONTRADO";
-                    console.error(err);
-                });
-
-            // Controles de Rotación y Zoom
-            Graph.controls().autoRotate = true;
-            Graph.controls().autoRotateSpeed = 0.5;
-
-            // Detener rotación al interactuar para permitir zoom manual
-            window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
-        });
+                // Zoom inicial ajustado a la red compacta
+                setTimeout(() => Graph.zoomToFit(600, 100), 500);
+            })
+            .catch(err => {
+                document.getElementById('status').innerText = "ERROR CARGANDO DATOS";
+                console.error(err);
+            });
     </script>
 </body>
 </html>
