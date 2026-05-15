@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNE - Inteligencia Nacional 3D</title>
+  <script src="//unpkg.com/3d-force-graph"></script>
+  <style>
+    body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
+    #ui-overlay {
+      position: absolute; top: 20px; left: 20px; color: #66CC33;
+      background: rgba(0, 0, 0, 0.7); padding: 15px; border-left: 4px solid #66CC33;
+      pointer-events: none; text-transform: uppercase; letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui-overlay">
+    <div style="font-size: 10px; opacity: 0.7;">Sistema de Control</div>
+    <div style="font-size: 18px; font-weight: bold;">Estructura Nacional</div>
+  </div>
+  <div id="3d-graph"></div>
+
+  <script>
+    // Aquí conectaremos los datos que ya perfeccionamos en el Nodo D
+    const graphData = { nodes: [], links: [] }; // n8n inyectará esto
+
+    const Graph = ForceGraph3D()
+      (document.getElementById('3d-graph'))
+        .graphData(graphData)
+        .backgroundColor('#00050a')
+        .nodeLabel('name')
+        .nodeColor(node => node.color)
+        .nodeRelSize(7)
+        .linkWidth(1.5)
+        .linkOpacity(0.3)
+        .linkDirectionalParticles(3) // Partículas de luz viajando
+        .linkDirectionalParticleSpeed(0.005)
+        .forceEngine('d3');
+
+    // Efecto de rotación automática para que se vea costoso
+    const distance = 1000;
+    let angle = 0;
+    setInterval(() => {
+      Graph.cameraPosition({
+        x: distance * Math.sin(angle),
+        z: distance * Math.cos(angle)
+      });
+      angle += Math.PI / 10000;
+    }, 10);
+  </script>
+</body>
+</html>
