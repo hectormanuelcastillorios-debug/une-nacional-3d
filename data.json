@@ -32,9 +32,7 @@
       "name": "Auru Guzmán",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -42,8 +40,6 @@
       "name": "Rosa Argueta",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -52,9 +48,7 @@
       "name": "Reyna Tuna",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -62,9 +56,7 @@
       "name": "Clotilde Santos",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -72,9 +64,7 @@
       "name": "Ericka Liseth García",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -82,9 +72,7 @@
       "name": "Isabel Natareno",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -92,9 +80,7 @@
       "name": "Juana Ramírez",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -102,9 +88,7 @@
       "name": "Alicia ",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -112,8 +96,6 @@
       "name": "Elizabeth Marroquin",
       "zona": "Zona 13",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -122,9 +104,7 @@
       "name": "Mayra Torres",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -132,9 +112,7 @@
       "name": "Marta Ramírez",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -142,9 +120,7 @@
       "name": "Mayerly Torres",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -152,9 +128,7 @@
       "name": "Esdras Malsonado",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -162,8 +136,6 @@
       "name": "Lisset Tuna",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -172,9 +144,7 @@
       "name": "Victor Enríquez",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -182,8 +152,6 @@
       "name": "Berta Oliva",
       "zona": "Zona 17",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -192,9 +160,7 @@
       "name": "Evelyn Guerra",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -202,9 +168,7 @@
       "name": "Flor Pérez",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -212,9 +176,7 @@
       "name": "Dora ",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -222,9 +184,7 @@
       "name": "Dalia Veliz",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -232,9 +192,7 @@
       "name": "Heydy ",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -242,9 +200,7 @@
       "name": "Jessica Ovalle",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -252,9 +208,7 @@
       "name": "Gloria Aguilar",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -262,9 +216,7 @@
       "name": "Clemencia López",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -272,9 +224,7 @@
       "name": "Hilda Ramírez",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -282,9 +232,7 @@
       "name": "Miriam Franco",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -292,9 +240,7 @@
       "name": "Verónica Dávila",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -302,9 +248,7 @@
       "name": "Victor Cruz",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -312,8 +256,6 @@
       "name": "Rosario Sandoval",
       "zona": "Zona 12",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -322,8 +264,6 @@
       "name": "Rosario Recinos",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -332,9 +272,7 @@
       "name": "Alba Cruz",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -342,8 +280,6 @@
       "name": "Paola Rodriguez",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -352,9 +288,7 @@
       "name": "Juana Matías",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -362,9 +296,7 @@
       "name": "Mónica Ordoñez",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -372,9 +304,7 @@
       "name": "PINCHE ARTURO MORALES",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. A",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -382,9 +312,7 @@
       "name": "Evelyn Galindo",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -392,9 +320,7 @@
       "name": "Olga Barrientos",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -402,9 +328,7 @@
       "name": "Claudia Hernández",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -412,8 +336,6 @@
       "name": "Pablo Mora",
       "zona": "Zona 1",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -422,9 +344,7 @@
       "name": "Brenda Juarez",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -432,9 +352,7 @@
       "name": "Dora Martínez",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -442,9 +360,7 @@
       "name": "Lourdes García",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -452,8 +368,6 @@
       "name": "Cristian García",
       "zona": "Zona 19",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -462,8 +376,6 @@
       "name": "Teresita 1 De Leon",
       "zona": "Zona 14",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. A",
       "val": 20,
       "color": "#66CC33"
     },
@@ -472,9 +384,7 @@
       "name": "Eugenia Santizo",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -482,19 +392,15 @@
       "name": "Arely Reyes",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
       "id": "recjvJRdf7UqonY66",
-      "name": "MAU Yizuz",
+      "name": "YIZUZ Yizuz",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 3",
-      "estructura": "EST. A",
-      "val": 10,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -502,9 +408,7 @@
       "name": "Judith Gutierrez",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -512,8 +416,6 @@
       "name": "Rodolfo Higueros",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -522,8 +424,6 @@
       "name": "Dolores Gonzáles",
       "zona": "Zona 6",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     },
@@ -532,9 +432,7 @@
       "name": "Carolina Maldonado",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -542,9 +440,7 @@
       "name": "Ilda Gonzáles",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -552,9 +448,7 @@
       "name": "Olga López",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -562,9 +456,7 @@
       "name": "Miguel Calderón",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -572,9 +464,7 @@
       "name": "Norma López",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -582,9 +472,7 @@
       "name": "Rene Arias",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -592,9 +480,7 @@
       "name": "Gloria Vivar",
       "zona": "Zona 5",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -602,9 +488,7 @@
       "name": "Jesús Vasquez",
       "zona": "Zona 3",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -612,9 +496,7 @@
       "name": "Ada Linda Hernández",
       "zona": "Zona 21",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -622,9 +504,7 @@
       "name": "Mindy Interiano",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -632,9 +512,7 @@
       "name": "Olga Onacaj",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -642,9 +520,7 @@
       "name": "Hellen Carrera",
       "zona": "Zona 7",
       "barrio": "N/A",
-      "nivel": "NIVEL 2",
-      "estructura": "EST. B",
-      "val": 15,
+      "val": 12,
       "color": "#31623B"
     },
     {
@@ -652,8 +528,6 @@
       "name": "Wendy Saenz",
       "zona": "Zona 18",
       "barrio": "N/A",
-      "nivel": "NIVEL 1",
-      "estructura": "EST. B",
       "val": 20,
       "color": "#66CC33"
     }
