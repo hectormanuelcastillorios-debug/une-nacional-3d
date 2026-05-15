@@ -54,24 +54,89 @@
             font-size: 11px;
             font-family: monospace;
         }
+
+        /* INFO PANEL */
+
+        #infoPanel {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 320px;
+            min-height: 120px;
+
+            background: rgba(0, 12, 24, 0.92);
+            border: 1px solid rgba(102, 204, 51, 0.5);
+
+            border-radius: 14px;
+            padding: 20px;
+
+            color: white;
+
+            z-index: 200;
+
+            backdrop-filter: blur(14px);
+
+            box-shadow:
+                0 0 30px rgba(102, 204, 51, 0.15),
+                inset 0 0 25px rgba(102, 204, 51, 0.05);
+
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        #infoPanel.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .info-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 14px;
+        }
+
+        .info-line {
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .info-label {
+            color: #66CC33;
+            font-weight: 700;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- LEFT PANEL -->
     <div id="ui">
         <div class="title">ESTRUCTURA UNE</div>
         <div id="status" class="stats">INICIALIZANDO SISTEMA...</div>
     </div>
 
+    <!-- RIGHT PANEL -->
+    <div id="infoPanel">
+        <div class="info-title">SELECCIONA UN NODO</div>
+        <div class="info-line">
+            Haz click sobre cualquier líder para ver información.
+        </div>
+    </div>
+
+    <!-- GRAPH -->
     <div id="graph"></div>
 
     <script>
 
         const elem = document.getElementById('graph');
         const statusElem = document.getElementById('status');
+        const infoPanel = document.getElementById('infoPanel');
 
         // =========================
-        // CREATE GRAPH
+        // GRAPH
         // =========================
 
         const Graph = ForceGraph3D()(elem)
@@ -81,26 +146,26 @@
             // NODE COLOR
             .nodeColor(node => node.color || '#66CC33')
 
-            // NODE SIZE
-            .nodeRelSize(6)
+            // SMALLER NODES
+            .nodeRelSize(5)
 
-            // CUSTOM 3D NODE + LABEL
+            // CUSTOM NODE + LABEL
             .nodeThreeObject(node => {
 
                 const group = new THREE.Group();
 
                 // =========================
-                // GLOWING SPHERE NODE
+                // GLOW NODE
                 // =========================
 
-                const geometry = new THREE.SphereGeometry(4, 32, 32);
+                const geometry = new THREE.SphereGeometry(3.5, 24, 24);
 
                 const material = new THREE.MeshStandardMaterial({
                     color: node.color || '#66CC33',
                     emissive: node.color || '#66CC33',
-                    emissiveIntensity: 1.2,
-                    metalness: 0.2,
-                    roughness: 0.3
+                    emissiveIntensity: 1.3,
+                    metalness: 0.15,
+                    roughness: 0.35
                 });
 
                 const sphere = new THREE.Mesh(geometry, material);
@@ -108,54 +173,40 @@
                 group.add(sphere);
 
                 // =========================
-                // LABEL CANVAS
+                // NAME LABEL ONLY
                 // =========================
 
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
 
                 const name = node.name || 'LÍDER';
-                const barrio = node.barrio || '';
 
-                // Initial font for measurements
-                ctx.font = 'Bold 38px Arial';
+                ctx.font = 'Bold 34px Arial';
 
-                const textWidth = Math.max(
-                    ctx.measureText(name).width,
-                    ctx.measureText(barrio).width
-                );
+                const textWidth = ctx.measureText(name).width;
 
-                canvas.width = textWidth + 80;
-                canvas.height = 120;
+                canvas.width = textWidth + 60;
+                canvas.height = 70;
 
-                // IMPORTANT:
-                // RESET FONT AFTER RESIZE
-                ctx.font = 'Bold 38px Arial';
+                // RESET AFTER RESIZE
+                ctx.font = 'Bold 34px Arial';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
 
-                // Background panel
-                ctx.fillStyle = 'rgba(0, 10, 20, 0.82)';
+                // Transparent futuristic background
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.45)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                // Border
+                // Border glow
                 ctx.strokeStyle = node.color || '#66CC33';
-                ctx.lineWidth = 4;
+                ctx.lineWidth = 3;
                 ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-                // Main Name
-                ctx.fillStyle = '#FFFFFF';
-                ctx.fillText(name, canvas.width / 2, 42);
+                // Name
+                ctx.fillStyle = '#ffffff';
+                ctx.fillText(name, canvas.width / 2, 36);
 
-                // Secondary text
-                ctx.font = '24px Arial';
-                ctx.fillStyle = '#66CC33';
-                ctx.fillText(barrio, canvas.width / 2, 88);
-
-                // =========================
-                // SPRITE
-                // =========================
-
+                // TEXTURE
                 const texture = new THREE.CanvasTexture(canvas);
 
                 texture.minFilter = THREE.LinearFilter;
@@ -168,11 +219,11 @@
 
                 const sprite = new THREE.Sprite(spriteMaterial);
 
-                // Better scaling
-                sprite.scale.set(canvas.width / 22, canvas.height / 22, 1);
+                // SMALLER LABELS
+                sprite.scale.set(canvas.width / 26, canvas.height / 26, 1);
 
-                // Float above node
-                sprite.position.set(0, 14, 0);
+                // FLOAT ABOVE NODE
+                sprite.position.set(0, 10, 0);
 
                 group.add(sprite);
 
@@ -180,17 +231,52 @@
             })
 
             // LINKS
-            .linkWidth(1.5)
+            .linkWidth(1.4)
             .linkColor(() => '#ffffff')
-            .linkOpacity(0.18)
+            .linkOpacity(0.14)
 
             // PARTICLES
             .linkDirectionalParticles(2)
-            .linkDirectionalParticleWidth(2)
-            .linkDirectionalParticleSpeed(0.004)
+            .linkDirectionalParticleWidth(1.8)
+            .linkDirectionalParticleSpeed(0.0035)
 
             // CLEAN UI
-            .showNavInfo(false);
+            .showNavInfo(false)
+
+            // CLICK EVENT
+            .onNodeClick(node => {
+
+                infoPanel.classList.add('active');
+
+                infoPanel.innerHTML = `
+                    <div class="info-title">${node.name || 'SIN NOMBRE'}</div>
+
+                    <div class="info-line">
+                        <span class="info-label">ZONA:</span>
+                        ${node.zona || 'NO DEFINIDA'}
+                    </div>
+
+                    <div class="info-line">
+                        <span class="info-label">BARRIO:</span>
+                        ${node.barrio || 'NO DEFINIDO'}
+                    </div>
+                `;
+
+                // CAMERA FOCUS EFFECT
+                const distance = 70;
+
+                const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+
+                Graph.cameraPosition(
+                    {
+                        x: node.x * distRatio,
+                        y: node.y * distRatio,
+                        z: node.z * distRatio
+                    },
+                    node,
+                    1200
+                );
+            });
 
         // =========================
         // LIGHTING
@@ -206,21 +292,21 @@
         scene.add(directionalLight);
 
         // =========================
-        // FORCES
+        // MUCH MORE COMPACT GRAPH
         // =========================
 
         Graph.d3Force('charge')
-            .strength(-260);
+            .strength(-110);
 
         Graph.d3Force('link')
-            .distance(110);
+            .distance(45);
 
         // =========================
-        // CAMERA ROTATION
+        // ROTATION
         // =========================
 
         Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.35;
+        Graph.controls().autoRotateSpeed = 0.28;
 
         window.addEventListener('mousedown', () => {
             Graph.controls().autoRotate = false;
@@ -245,10 +331,9 @@
 
                 Graph.graphData(data);
 
-                // Smooth camera fit
                 setTimeout(() => {
-                    Graph.zoomToFit(1200, 80);
-                }, 1200);
+                    Graph.zoomToFit(1200, 50);
+                }, 1000);
             })
 
             .catch(err => {
