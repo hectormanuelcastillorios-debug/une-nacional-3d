@@ -2,116 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Red de Inteligencia 3D</title>
-    
+    <title>UNE | Red Estratégica</title>
     <script src="https://unpkg.com/3d-force-graph"></script>
-
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
-        #ui-panel {
-            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
-            background: rgba(0, 10, 20, 0.9); padding: 20px; border-left: 5px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(10px); border-radius: 0 10px 10px 0;
+        body { margin: 0; background: #00050a; overflow: hidden; font-family: sans-serif; }
+        #ui {
+            position: absolute; top: 20px; left: 20px; z-index: 10; color: white;
+            background: rgba(0, 10, 20, 0.9); padding: 15px; border-left: 4px solid #66CC33;
+            pointer-events: none;
         }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
-        canvas { cursor: move; }
     </style>
 </head>
 <body>
-
-    <div id="ui-panel">
-        <div style="font-size: 22px; font-weight: 900;">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">ESPERANDO SISTEMA...</div>
+    <div id="ui">
+        <div style="font-size: 20px; font-weight: 900;">ESTRUCTURA UNE</div>
+        <div id="status" style="font-size: 11px; color: #66CC33;">CONECTANDO...</div>
     </div>
-
-    <div id="3d-graph"></div>
+    <div id="graph"></div>
 
     <script>
-        // Función para crear la placa de nombre (Canvas)
-        function createTextLabel(name, color) {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            ctx.font = 'Bold 40px Arial';
-            const width = ctx.measureText(name).width + 40;
-            canvas.width = width;
-            canvas.height = 80;
-
-            // Fondo de la placa
-            ctx.fillStyle = 'rgba(0, 5, 10, 0.8)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 6;
-            ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-            // Texto
-            ctx.fillStyle = '#ffffff';
-            ctx.font = 'Bold 40px Arial';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText(name, canvas.width / 2, canvas.height / 2);
-
-            const texture = new THREE.CanvasTexture(canvas);
-            const spriteMaterial = new THREE.SpriteMaterial({ map: texture, depthTest: false });
-            const sprite = new THREE.Sprite(spriteMaterial);
-            sprite.scale.set(width / 15, 5, 1);
-            sprite.position.y = 8;
-            return sprite;
-        }
-
-        // --- CÁPSULA DE SEGURIDAD: Solo arranca cuando TODO está cargado ---
-        window.addEventListener('load', function() {
-            const status = document.getElementById('status');
+        // Iniciar inmediatamente
+        const Graph = ForceGraph3D()(document.getElementById('graph'))
+            .backgroundColor('#00050a')
+            .nodeColor(node => node.color || '#66CC33')
+            .nodeRelSize(7)
             
-            const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-                .backgroundColor('#00050a')
-                .nodeColor(node => node.color || '#66CC33')
-                .nodeRelSize(7)
-                .nodeThreeObject(node => {
-                    const group = new THREE.Group();
-                    // Esfera
-                    const sphere = new THREE.Mesh(
-                        new THREE.SphereGeometry(4),
-                        new THREE.MeshLambertMaterial({ color: node.color || '#66CC33' })
-                    );
-                    group.add(sphere);
-                    // Nombre permanente
-                    group.add(createTextLabel(node.name, node.color || '#66CC33'));
-                    return group;
-                })
-                .linkWidth(1.5)
-                .linkColor(() => '#ffffff')
-                .linkOpacity(0.2)
-                .linkDirectionalParticles(2)
-                
-                // --- COMPACTACIÓN SOLICITADA ---
-                .d3Force('charge', d3.forceManyBody().strength(-120))
-                .d3Force('link', d3.forceLink().distance(40))
-                
-                .showNavInfo(false);
+            // --- NOMBRES SIEMPRE VISIBLES (MÉTODO SPRITE DIRECTO) ---
+            .nodeThreeObject(node => {
+                // Creamos un canvas para el nombre
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const label = node.name;
+                ctx.font = 'bold 40px Arial';
+                const width = ctx.measureText(label).width;
+                canvas.width = width + 20;
+                canvas.height = 50;
 
-            // Carga de datos
-            fetch('./data.json')
-                .then(res => res.json())
-                .then(data => {
-                    status.innerText = `RED ACTIVA: ${data.nodes.length} NODOS`;
-                    Graph.graphData(data);
-                    
-                    // Zoom y controles finales
-                    setTimeout(() => {
-                        Graph.zoomToFit(600, 100);
-                        Graph.controls().autoRotate = true;
-                        Graph.controls().autoRotateSpeed = 0.5;
-                    }, 500);
-                })
-                .catch(err => {
-                    status.innerText = "ERROR CARGANDO DATA.JSON";
-                    console.error(err);
-                });
+                // Fondo y texto
+                ctx.fillStyle = 'rgba(0,0,0,0.8)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 40px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(label, canvas.width/2, canvas.height/2);
 
-            // Permitir zoom manual
-            window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
-        });
+                // Crear el Sprite
+                const texture = new THREE.CanvasTexture(canvas);
+                const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
+                const sprite = new THREE.Sprite(spriteMaterial);
+                sprite.scale.set(canvas.width/10, 5, 1);
+                sprite.position.y = 10; // Distancia sobre la esfera
+                return sprite;
+            })
+            .nodeThreeObjectExtend(true) // Mantiene la esfera y pone el nombre encima
+            
+            // --- RED COMPACTA (DISTANCIA REDUCIDA) ---
+            .d3Force('charge', d3.forceManyBody().strength(-150)) // Menos repulsión
+            .d3Force('link', d3.forceLink().distance(45))       // Enlaces cortos = Red compacta
+            
+            .linkWidth(1.5)
+            .linkOpacity(0.2)
+            .linkColor(() => '#ffffff')
+            .linkDirectionalParticles(2)
+            .showNavInfo(false);
+
+        // Controles de cámara
+        Graph.controls().autoRotate = true;
+        Graph.controls().autoRotateSpeed = 0.5;
+
+        // Cargar datos
+        fetch('./data.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('status').innerText = `LÍDERES: ${data.nodes.length} | ONLINE`;
+                Graph.graphData(data);
+                
+                // Zoom para ver la red compacta de cerca
+                setTimeout(() => Graph.zoomToFit(800, 100), 500);
+            })
+            .catch(err => {
+                document.getElementById('status').innerText = "ERROR CARGANDO DATA.JSON";
+            });
+
+        // Detener rotación al interactuar
+        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
     </script>
 </body>
 </html>
