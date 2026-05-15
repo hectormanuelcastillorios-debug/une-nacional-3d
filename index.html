@@ -3,124 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Control Estratégico Nacional</title>
+    <title>UNE | Red Neuronal Nacional</title>
     
-    <script src="//unpkg.com/three"></script>
     <script src="//unpkg.com/3d-force-graph"></script>
     
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
         #ui-panel {
-            position: absolute; top: 25px; left: 25px; z-index: 1000; color: white;
-            background: rgba(0, 15, 30, 0.85); padding: 20px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(10px);
+            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
+            background: rgba(0, 10, 20, 0.8); padding: 15px; border-left: 4px solid #66CC33;
+            pointer-events: none;
         }
-        .title { font-size: 14px; color: #66CC33; text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
-        .subtitle { font-size: 22px; font-weight: 800; margin-top: 5px; text-shadow: 0 0 10px rgba(102, 204, 51, 0.4); }
-        .stats { font-size: 12px; color: #a0aec0; margin-top: 15px; }
+        .subtitle { font-size: 18px; font-weight: bold; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div class="title">Inteligencia Nacional</div>
-        <div class="subtitle">ESTRUCTURA UNE</div>
-        <div id="stats" class="stats">Sincronizando...</div>
+        <div class="subtitle">ESTRUCTURA NACIONAL UNE</div>
+        <div id="stats" class="stats">Sincronizando red...</div>
     </div>
 
     <div id="3d-graph"></div>
 
     <script>
-        // Función auxiliar para crear lienzos de texto de alta resolución
-        function createHiresCanvasText(text, color, height, bgColor = 'rgba(0,0,0,0.7)') {
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            const fontSize = 70; // Alta resolución interna
-            context.font = `bold ${fontSize}px sans-serif`;
-
-            // Medir el texto para dimensionar el lienzo
-            const textMetrics = context.measureText(text);
-            canvas.width = textMetrics.width + 40; // Margen
-            canvas.height = fontSize + 30; // Margen
-
-            // Fondo
-            context.fillStyle = bgColor;
-            context.fillRect(0, 0, canvas.width, canvas.height);
-            context.strokeStyle = color;
-            context.lineWidth = 4;
-            context.strokeRect(2, 2, canvas.width - 4, canvas.height - 4);
-
-            // Texto
-            context.font = `bold ${fontSize}px sans-serif`;
-            context.fillStyle = '#ffffff';
-            context.textAlign = 'center';
-            context.textBaseline = 'middle';
-            context.fillText(text, canvas.width / 2, canvas.height / 2);
-
-            // Crear el sprite de Three.js
-            const texture = new THREE.CanvasTexture(canvas);
-            const material = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
-            const sprite = new THREE.Sprite(material);
-            sprite.scale.set(canvas.width / 15, canvas.height / 15, 1); // Escalar al tamaño 3D
-            sprite.position.y = 12; // Posicionar SOBRE la esfera
-            return sprite;
-        }
-
         const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(8) // Esferas un poco más grandes para presencia
-            
-            // --- FIX 1: ETIQUETAS HD VISIBLES SOBRE CADA ESFERA ---
-            .nodeThreeObject(node => {
-                const labelColor = (node.color === '#ffffff') ? '#ffffff' : '#66CC33';
-                return createHiresCanvasText(node.name, labelColor, 80);
-            })
-            .nodeThreeObjectExtend(true) // Esto mantiene la esfera Y pone el texto HD
-            
-            .linkWidth(2)
+            .nodeRelSize(7)
+            .linkWidth(1.5)
             .linkOpacity(0.2)
             .linkColor(() => '#ffffff')
-            .linkDirectionalParticles(3)
+            .linkDirectionalParticles(2)
             .linkDirectionalParticleSpeed(0.005)
-            .linkDirectionalParticleWidth(2);
+            
+            // --- FIX DE NOMBRES: Usamos el método más ligero y nativo ---
+            .nodeLabel(node => `Líder: ${node.name}`) 
+            
+            // --- DISTANCIA ENTRE NODOS: Forzamos la repulsión ---
+            .d3Force('charge', d3.forceManyBody().strength(-1000)) // Repulsión muy fuerte
+            .d3Force('link', d3.forceLink().distance(150)) // Enlaces más largos
+            
+            // Zoom automático inicial
+            .showNavInfo(false);
 
-        // --- FIX 2: AUMENTAR LA DISTANCIA ENTRE ESFERAS ---
-        // 'charge' es la fuerza de repulsión. Más negativa = más separadas.
-        Graph.d3Force('charge').strength(-400); 
+        // Forzar Zoom con scroll
+        Graph.controls().enableZoom = true;
 
-        // Carga de datos
+        // Carga de datos con manejo de errores
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('stats').innerHTML = `LÍDERES IDENTIFICADOS: ${data.nodes.length}<br/>CONEXIONES ACTIVAS: ${data.links.length}`;
+                document.getElementById('stats').innerHTML = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
                 Graph.graphData(data);
                 
-                // Forzar zoom para ver todo el mapa de inmediato
-                Graph.zoomToFit(1500);
+                // Esperar un segundo y ajustar cámara
+                setTimeout(() => { Graph.zoomToFit(1000, 200); }, 500);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('stats').innerText = "ERROR AL CARGAR DATOS";
             });
 
-        // Configurar controles explícitos
-        const controls = Graph.controls();
-        controls.enableZoom = true;
-        controls.zoomSpeed = 2; // Rápida respuesta de zoom
-
-        // Rotación automática suave que respeta la interacción
-        let isUserInteracting = false;
-        controls.addEventListener('start', () => isUserInteracting = true);
-        controls.addEventListener('end', () => isUserInteracting = false);
-
+        // Rotación suave que no bloquea la interacción
         let angle = 0;
-        const distance = 1600; // Un poco más lejos para ver la red expandida
+        const distance = 1600;
         setInterval(() => {
-            if (!isUserInteracting) {
-                Graph.cameraPosition({
-                    x: distance * Math.sin(angle),
-                    z: distance * Math.cos(angle)
-                });
-                angle += Math.PI / 18000;
-            }
-        }, 10);
+            // Si el usuario no está tocando el mapa, rotar
+            Graph.cameraPosition({
+                x: distance * Math.sin(angle),
+                z: distance * Math.cos(angle)
+            });
+            angle += Math.PI / 15000;
+        }, 15);
     </script>
 </body>
 </html>
