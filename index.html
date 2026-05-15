@@ -3,105 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Red de Inteligencia</title>
+    <title>SISTEMA UNE | Inteligencia Táctica</title>
     
     <script src="https://unpkg.com/3d-force-graph"></script>
 
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', Tahoma, sans-serif; }
         #ui-panel {
-            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
-            background: rgba(0, 15, 30, 0.9); padding: 15px; border-left: 4px solid #66CC33;
-            pointer-events: none; border-radius: 0 5px 5px 0;
+            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
+            background: rgba(0, 10, 20, 0.9); padding: 20px; border-left: 5px solid #66CC33;
+            pointer-events: none; backdrop-filter: blur(10px); border-radius: 0 10px 10px 0;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
         }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; text-transform: uppercase; }
+        #3d-graph { width: 100vw; height: 100vh; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-weight: 800; font-size: 18px; letter-spacing: 1px;">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">INICIALIZANDO...</div>
+        <div style="font-size: 10px; opacity: 0.7; letter-spacing: 3px;">ESTADO MAYOR</div>
+        <div style="font-size: 24px; font-weight: 900;">RED ESTRATÉGICA UNE</div>
+        <div id="status" class="stats">Sincronizando nodos...</div>
     </div>
 
     <div id="3d-graph"></div>
 
     <script>
-        // Función ultra-simple para generar etiquetas de texto
-        function makeTextSprite(message, color) {
+        // --- MOTOR DE ETIQUETAS PERMANENTES ---
+        // Esta función dibuja el nombre en un lienzo y lo convierte en un objeto 3D
+        function createLabel(node) {
             const canvas = document.createElement('canvas');
-            const size = 120; // Resolución del texto
-            canvas.width = 512;
-            canvas.height = 128;
             const context = canvas.getContext('2d');
+            const text = node.name;
+            const fontSize = 40;
             
-            context.fillStyle = 'rgba(0,0,0,0.7)';
+            context.font = `Bold ${fontSize}px Arial`;
+            const textWidth = context.measureText(text).width;
+            
+            canvas.width = textWidth + 40;
+            canvas.height = fontSize + 40;
+
+            // Fondo de la etiqueta (Caja táctica)
+            context.fillStyle = 'rgba(0, 10, 20, 0.8)';
             context.fillRect(0, 0, canvas.width, canvas.height);
-            context.strokeStyle = color;
-            context.lineWidth = 10;
-            context.strokeRect(0, 0, canvas.width, canvas.height);
             
-            context.font = `bold 80px Arial`;
+            // Borde de color según el tipo de líder
+            context.strokeStyle = node.color || '#66CC33';
+            context.lineWidth = 6;
+            context.strokeRect(0, 0, canvas.width, canvas.height);
+
+            // Texto blanco en alta resolución
             context.textAlign = 'center';
             context.textBaseline = 'middle';
             context.fillStyle = '#ffffff';
-            context.fillText(message, canvas.width / 2, canvas.height / 2);
-            
+            context.fillText(text, canvas.width / 2, canvas.height / 2);
+
+            // Convertir a textura 3D
             const texture = new THREE.CanvasTexture(canvas);
-            const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
+            const spriteMaterial = new THREE.SpriteMaterial({ map: texture, depthTest: false });
             const sprite = new THREE.Sprite(spriteMaterial);
-            sprite.scale.set(30, 8, 1); // Tamaño del nombre en el espacio
+            
+            // Escalar para que se vea bien en el mapa
+            sprite.scale.set(canvas.width / 15, canvas.height / 15, 1);
+            sprite.position.y = 12; // Flota sobre la esfera
+            
             return sprite;
         }
 
-        // Inicialización directa
-        const elem = document.getElementById('3d-graph');
-        const Graph = ForceGraph3D()(elem)
+        // --- INICIALIZACIÓN DEL MAPA ---
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
             .nodeRelSize(7)
+            
+            // CONFIGURACIÓN DE IMPACTO: Esfera + Nombre
+            .nodeThreeObject(node => {
+                const group = new THREE.Group();
+                
+                // La esfera
+                const sphere = new THREE.Mesh(
+                    new THREE.SphereGeometry(5),
+                    new THREE.MeshLambertMaterial({ color: node.color || '#66CC33', transparent: true, opacity: 0.9 })
+                );
+                group.add(sphere);
+
+                // El nombre (Siempre visible)
+                const label = createLabel(node);
+                group.add(label);
+
+                return group;
+            })
+            
             .linkWidth(2)
             .linkOpacity(0.3)
             .linkColor(() => '#ffffff')
             .linkDirectionalParticles(2)
+            .linkDirectionalParticleSpeed(0.005)
             
-            // --- IMPACTO: NOMBRES SIEMPRE VISIBLES ---
-            .nodeThreeObject(node => {
-                const color = node.color || '#66CC33';
-                const sprite = makeTextSprite(node.name, color);
-                sprite.position.y = 12; // Posición arriba de la esfera
-                return sprite;
-            })
-            .nodeThreeObjectExtend(true)
-
-            // --- RED COMPACTA (Distancia reducida a la mitad) ---
-            .d3Force('charge').strength(-150)
-            .d3Force('link').distance(40) // Muy cerca para máximo impacto visual
+            // --- RED COMPACTA (PEDIDO DEL USUARIO) ---
+            .d3Force('charge', d3.forceManyBody().strength(-100)) // Menos repulsión = más juntos
+            .d3Force('link', d3.forceLink().distance(35))       // Enlaces muy cortos para densidad
             
             .showNavInfo(false);
 
-        // Controles de Cámara
+        // --- CONTROLES Y CARGA ---
         Graph.controls().enableZoom = true;
         Graph.controls().autoRotate = true;
         Graph.controls().autoRotateSpeed = 0.5;
 
-        // Detener rotación al tocar
-        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
-
-        // Carga de Datos
-        fetch('./data.json')
+        // Carga de datos
+        fetch('data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('status').innerText = `LÍDERES: ${data.nodes.length} | ESTADO: ONLINE`;
+                document.getElementById('status').innerText = `LÍDERES IDENTIFICADOS: ${data.nodes.length} | ESTADO: ONLINE`;
                 Graph.graphData(data);
                 
-                // Zoom inicial ajustado a la red compacta
-                setTimeout(() => Graph.zoomToFit(600, 100), 500);
+                // Zoom inicial potente
+                setTimeout(() => Graph.zoomToFit(600, 50), 800);
             })
             .catch(err => {
-                document.getElementById('status').innerText = "ERROR CARGANDO DATOS";
+                document.getElementById('status').innerText = "ERROR EN BASE DE DATOS (DATA.JSON)";
                 console.error(err);
             });
+
+        // Detener rotación al tocar para permitir zoom libre
+        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
     </script>
 </body>
 </html>
