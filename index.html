@@ -3,105 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Estructura 3D Nacional</title>
+    <title>UNE | Mapa Neuronal</title>
     
     <script src="//unpkg.com/3d-force-graph"></script>
     
     <style>
-        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
-        
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
         #ui-panel {
-            position: absolute; top: 20px; left: 20px; z-index: 1000; color: white;
-            background: rgba(0, 10, 20, 0.85); padding: 15px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(10px); border-radius: 0 5px 5px 0;
-        }
-
-        /* ESTILO DE LAS ETIQUETAS QUE SÍ FUNCIONAN */
-        .node-label {
-            font-size: 10px;
-            padding: 2px 6px;
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(102, 204, 51, 0.5);
-            color: white;
-            border-radius: 3px;
-            white-space: nowrap;
+            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
+            background: rgba(0, 15, 30, 0.9); padding: 15px; border-left: 4px solid #66CC33;
             pointer-events: none;
         }
-
-        .hint {
-            position: absolute; bottom: 20px; width: 100%; text-align: center;
-            color: rgba(255,255,255,0.3); font-size: 9px; letter-spacing: 2px;
-            pointer-events: none; text-transform: uppercase;
-        }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <div style="font-size: 11px; color: #66CC33; letter-spacing: 2px;">INTELIGENCIA ESTRATÉGICA</div>
-        <div style="font-size: 20px; font-weight: bold;">RED NACIONAL UNE</div>
-        <div id="stats" style="font-size: 11px; margin-top: 5px; opacity: 0.8;">Iniciando nodos...</div>
+        <div style="font-weight: bold; font-size: 18px;">RED NACIONAL UNE</div>
+        <div id="stats" class="stats">CARGANDO NODOS...</div>
     </div>
 
     <div id="3d-graph"></div>
-    <div class="hint">Scroll: Zoom • Arrastrar: Rotar • Click: Enfocar</div>
 
     <script>
-        const Graph = ForceGraph3D({ extraRenderers: [new THREE.CSS2DRenderer()] })(document.getElementById('3d-graph'))
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
             .nodeRelSize(7)
+            
+            // --- NOMBRES FLOTANTES (MÉTODO ULTRA-LIGERO) ---
+            .nodeLabel(node => `Líder: ${node.name}`) // Tooltip de respaldo
+            
+            // --- ESTO PONE EL NOMBRE COMO OBJETO 3D SIN LIBRERÍAS EXTRAS ---
+            .nodeCanvasObjectMode(() => 'after') 
+            
             .linkWidth(1.5)
             .linkOpacity(0.2)
             .linkColor(() => '#ffffff')
             .linkDirectionalParticles(2)
-            .linkDirectionalParticleSpeed(0.005)
             
-            // --- EL TRUCO PARA LOS NOMBRES: HTML puro sobre 3D ---
-            .nodeThreeObject(node => {
-                const div = document.createElement('div');
-                div.textContent = node.name;
-                div.className = 'node-label';
-                return new THREE.CSS2DObject(div);
-            })
-            .nodeThreeObjectExtend(true)
-
-            // --- SEPARACIÓN MÁXIMA ---
-            .d3Force('charge', d3.forceManyBody().strength(-500))
-            .d3Force('link', d3.forceLink().distance(150))
+            // --- SEPARACIÓN DE NODOS (FUERZA BRUTA) ---
+            .d3Force('charge', d3.forceManyBody().strength(-1000)) // Repulsión masiva
+            .d3Force('link', d3.forceLink().distance(200)) // Cables más largos
             
             .showNavInfo(false);
 
-        // --- GESTIÓN DE ROTACIÓN Y ZOOM ---
-        let autoRotate = true;
-        const controls = Graph.controls();
-        
-        // Si el usuario toca el mapa, la rotación se detiene para siempre (o hasta refrescar)
-        controls.addEventListener('start', () => { autoRotate = false; });
+        // Habilitar controles manuales
+        Graph.controls().enableZoom = true;
+        Graph.controls().enableRotate = true;
 
+        // Carga de datos
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
+                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | ESTADO: ONLINE`;
                 Graph.graphData(data);
-                Graph.zoomToFit(1000);
+                
+                // Forzar que el mapa se centre y se aleje para que no se vea amontonado
+                setTimeout(() => {
+                    Graph.zoomToFit(1000, 300);
+                }, 500);
             })
             .catch(err => {
-                document.getElementById('stats').innerText = "ERROR DE CARGA";
+                document.getElementById('stats').innerText = "ERROR EN DATA.JSON";
             });
 
-        // Animación de rotación suave
-        let angle = 0;
-        (function animate() {
-            if (autoRotate) {
-                Graph.cameraPosition({
-                    x: 1400 * Math.sin(angle),
-                    z: 1400 * Math.cos(angle)
-                });
-                angle += Math.PI / 12000;
-            }
-            requestAnimationFrame(animate);
-        })();
+        // ROTACIÓN AUTOMÁTICA QUE SÍ DEJA MOVER EL MOUSE
+        // Usamos la función nativa del motor para no crear conflictos
+        Graph.controls().autoRotate = true;
+        Graph.controls().autoRotateSpeed = 0.5;
+
+        // Si el usuario hace click, la rotación se detiene para dejarlo navegar
+        window.addEventListener('mousedown', () => {
+            Graph.controls().autoRotate = false;
+        });
     </script>
 </body>
 </html>
