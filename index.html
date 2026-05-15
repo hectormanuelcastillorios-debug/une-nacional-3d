@@ -2,91 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>UNE | Red Estratégica</title>
+    <title>SISTEMA UNE | Red Nacional</title>
     <script src="https://unpkg.com/3d-force-graph"></script>
     <style>
         body { margin: 0; background: #00050a; overflow: hidden; font-family: sans-serif; }
         #ui {
-            position: absolute; top: 20px; left: 20px; z-index: 10; color: white;
-            background: rgba(0, 10, 20, 0.9); padding: 15px; border-left: 4px solid #66CC33;
-            pointer-events: none;
+            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
+            background: rgba(0, 10, 20, 0.9); padding: 20px; border-left: 4px solid #66CC33;
+            pointer-events: none; backdrop-filter: blur(5px);
         }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
     <div id="ui">
-        <div style="font-size: 20px; font-weight: 900;">ESTRUCTURA UNE</div>
-        <div id="status" style="font-size: 11px; color: #66CC33;">CONECTANDO...</div>
+        <div style="font-size: 22px; font-weight: 900;">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">SISTEMA ACTIVO</div>
     </div>
     <div id="graph"></div>
 
     <script>
-        // Iniciar inmediatamente
+        // DATOS INTEGRADOS (Para evitar fallos de carga de archivo)
+        const gData = {
+            nodes: [
+                { id: "1", name: "ALMA ROSA ESPÍNDOLA", color: "#66CC33", zona: "Nacional" },
+                { id: "2", name: "ESTRUCTURA NACIONAL", color: "#ffffff", zona: "Centro" },
+                { id: "3", name: "LÍDER REGIONAL A", color: "#66CC33", zona: "Norte" },
+                { id: "4", name: "LÍDER REGIONAL B", color: "#66CC33", zona: "Sur" },
+                { id: "5", name: "COORDINACIÓN", color: "#ffffff", zona: "General" }
+                // Agrega aquí más si lo necesitas, o luego lo vinculamos al JSON
+            ],
+            links: [
+                { source: "1", target: "2" },
+                { source: "2", target: "3" },
+                { source: "2", target: "4" },
+                { source: "1", target: "5" }
+            ]
+        };
+
         const Graph = ForceGraph3D()(document.getElementById('graph'))
             .backgroundColor('#00050a')
-            .nodeColor(node => node.color || '#66CC33')
+            .nodeColor(node => node.color)
             .nodeRelSize(7)
             
-            // --- NOMBRES SIEMPRE VISIBLES (MÉTODO SPRITE DIRECTO) ---
+            // --- NOMBRES PERMANENTES DE ALTO IMPACTO ---
             .nodeThreeObject(node => {
-                // Creamos un canvas para el nombre
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
                 const label = node.name;
-                ctx.font = 'bold 40px Arial';
+                ctx.font = 'bold 45px Arial';
                 const width = ctx.measureText(label).width;
-                canvas.width = width + 20;
-                canvas.height = 50;
+                canvas.width = width + 30;
+                canvas.height = 60;
 
-                // Fondo y texto
-                ctx.fillStyle = 'rgba(0,0,0,0.8)';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.strokeStyle = node.color;
+                ctx.lineWidth = 4;
+                ctx.strokeRect(0, 0, canvas.width, canvas.height);
+                
                 ctx.fillStyle = '#ffffff';
-                ctx.font = 'bold 40px Arial';
+                ctx.font = 'bold 45px Arial';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 ctx.fillText(label, canvas.width/2, canvas.height/2);
 
-                // Crear el Sprite
                 const texture = new THREE.CanvasTexture(canvas);
-                const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
+                const spriteMaterial = new THREE.SpriteMaterial({ map: texture, depthTest: false });
                 const sprite = new THREE.Sprite(spriteMaterial);
-                sprite.scale.set(canvas.width/10, 5, 1);
-                sprite.position.y = 10; // Distancia sobre la esfera
+                sprite.scale.set(canvas.width/10, 6, 1);
+                sprite.position.y = 10;
                 return sprite;
             })
-            .nodeThreeObjectExtend(true) // Mantiene la esfera y pone el nombre encima
-            
-            // --- RED COMPACTA (DISTANCIA REDUCIDA) ---
-            .d3Force('charge', d3.forceManyBody().strength(-150)) // Menos repulsión
-            .d3Force('link', d3.forceLink().distance(45))       // Enlaces cortos = Red compacta
-            
-            .linkWidth(1.5)
-            .linkOpacity(0.2)
-            .linkColor(() => '#ffffff')
-            .linkDirectionalParticles(2)
-            .showNavInfo(false);
+            .nodeThreeObjectExtend(true)
 
-        // Controles de cámara
+            // --- RED COMPACTA (DISTANCIA TÁCTICA) ---
+            .d3Force('charge', d3.forceManyBody().strength(-150))
+            .d3Force('link', d3.forceLink().distance(40)) // Muy juntos
+            
+            .linkWidth(2)
+            .linkColor(() => '#ffffff')
+            .linkOpacity(0.3)
+            .linkDirectionalParticles(2)
+            .graphData(gData);
+
+        // Zoom y Rotación automática
         Graph.controls().autoRotate = true;
         Graph.controls().autoRotateSpeed = 0.5;
+        
+        // Ajuste de cámara automático
+        setTimeout(() => Graph.zoomToFit(600, 100), 500);
 
-        // Cargar datos
+        // Si prefieres usar tu JSON externo, descomenta estas líneas:
+        /*
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('status').innerText = `LÍDERES: ${data.nodes.length} | ONLINE`;
                 Graph.graphData(data);
-                
-                // Zoom para ver la red compacta de cerca
-                setTimeout(() => Graph.zoomToFit(800, 100), 500);
-            })
-            .catch(err => {
-                document.getElementById('status').innerText = "ERROR CARGANDO DATA.JSON";
+                document.getElementById('status').innerText = 'DATOS EXTERNOS CARGADOS';
             });
-
-        // Detener rotación al interactuar
-        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
+        */
     </script>
 </body>
 </html>
