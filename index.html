@@ -3,80 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Estructura Nacional 3D</title>
+    <title>UNE | Mapa Estratégico Nacional</title>
     
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
     <script src="//unpkg.com/3d-force-graph"></script>
     
     <style>
         body { margin: 0; background-color: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
         #ui-panel {
             position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
-            background: rgba(0, 15, 30, 0.85); padding: 20px; border-left: 4px solid #66CC33;
+            background: rgba(0, 15, 30, 0.8); padding: 15px; border-left: 4px solid #66CC33;
             pointer-events: none; backdrop-filter: blur(5px);
         }
-        .subtitle { font-size: 20px; font-weight: bold; letter-spacing: 1px; }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
+        .subtitle { font-size: 18px; font-weight: bold; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; }
+        .hint { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255,255,255,0.4); font-size: 10px; pointer-events: none; text-transform: uppercase; }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
         <div class="subtitle">ESTRUCTURA NACIONAL UNE</div>
-        <div id="stats" class="stats">INICIALIZANDO SISTEMA...</div>
+        <div id="stats" class="stats">Sincronizando...</div>
     </div>
 
     <div id="3d-graph"></div>
+    <div class="hint">Scroll para Zoom • Arrastrar para Rotar • Doble Click para Auto-Rotación</div>
 
     <script>
-        const elem = document.getElementById('3d-graph');
-
-        const Graph = ForceGraph3D()(elem)
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
-            .nodeLabel(node => `<b>${node.name}</b><br>Zona: ${node.zona || 'N/A'}`)
             .nodeRelSize(7)
+            // --- NOMBRES FLOTANTES SIEMPRE VISIBLES ---
+            .nodeThreeObject(node => {
+                const sprite = new SpriteText(node.name);
+                sprite.color = '#ffffff';
+                sprite.textHeight = 6;
+                sprite.padding = 2;
+                sprite.backgroundColor = 'rgba(0,0,0,0.5)';
+                sprite.borderRadius = 2;
+                return sprite;
+            })
+            .nodeThreeObjectExtend(true)
             .linkWidth(1.5)
-            .linkColor(() => '#ffffff')
             .linkOpacity(0.2)
+            .linkColor(() => '#ffffff')
             .linkDirectionalParticles(2)
-            .linkDirectionalParticleSpeed(0.005)
-            
-            // --- FIX DE SEPARACIÓN: Esto empuja los nodos lejos unos de otros ---
-            .forceEngine('d3')
-            .d3VelocityDecay(0.3); // Ayuda a que se estabilicen más rápido
+            .linkDirectionalParticleSpeed(0.005);
 
-        // Ajuste manual de fuerzas para evitar el "apelotonamiento"
-        Graph.d3Force('charge').strength(-500); 
-        Graph.d3Force('link').distance(150);
+        // --- SEPARACIÓN DE NODOS ---
+        Graph.d3Force('charge').strength(-600);
+        Graph.d3Force('link').distance(180);
 
-        // Habilitar Zoom
-        Graph.controls().enableZoom = true;
+        // --- CONTROL DE INTERACCIÓN ---
+        let isRotating = true;
+        const controls = Graph.controls();
+        
+        // Si el usuario interactúa, detenemos la rotación automática
+        controls.addEventListener('start', () => { isRotating = false; });
 
-        // CARGA DE DATOS
+        // Al hacer doble click, reiniciamos la rotación
+        window.addEventListener('dblclick', () => { isRotating = true; });
+
+        // Carga de datos
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length} | ESTADO: ONLINE`;
+                document.getElementById('stats').innerText = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
                 Graph.graphData(data);
-                
-                // Forzar que los nombres aparezcan como etiquetas HTML encima
-                // (Este es el método más ligero para no romper el mapa)
-                Graph.nodeThreeObjectExtend(true);
-            })
-            .catch(err => {
-                console.error(err);
-                document.getElementById('stats').innerText = "ERROR: VERIFICA DATA.JSON";
+                Graph.zoomToFit(1000);
             });
 
-        // Rotación Automática Suave
+        // Lógica de rotación que NO bloquea el mouse
         let angle = 0;
-        const distance = 1400;
+        const distance = 1500;
         setInterval(() => {
-            Graph.cameraPosition({
-                x: distance * Math.sin(angle),
-                z: distance * Math.cos(angle)
-            });
-            angle += Math.PI / 15000;
+            if (isRotating) {
+                Graph.cameraPosition({
+                    x: distance * Math.sin(angle),
+                    z: distance * Math.cos(angle)
+                });
+                angle += Math.PI / 15000;
+            }
         }, 10);
     </script>
 </body>
