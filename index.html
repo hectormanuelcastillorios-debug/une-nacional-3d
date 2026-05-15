@@ -3,178 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNE | Inteligencia Táctica Nacional 3D</title>
+    <title>UNE | Control Nacional</title>
     
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
     <script src="//unpkg.com/3d-force-graph"></script>
     
     <style>
-        body { 
-            margin: 0; 
-            background-color: #00050a; 
-            overflow: hidden; 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        /* Panel de Control Estético */
+        body { margin: 0; background-color: #00050a; overflow: hidden; font-family: sans-serif; }
         #ui-panel {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            z-index: 100;
-            color: white;
-            background: rgba(0, 15, 30, 0.8);
-            padding: 20px;
-            border-left: 4px solid #66CC33;
-            backdrop-filter: blur(12px);
-            pointer-events: none; /* Permite hacer clic a través del panel al mapa */
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-            border-radius: 0 4px 4px 0;
+            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
+            background: rgba(0, 10, 20, 0.8); padding: 15px; border-left: 4px solid #66CC33;
+            pointer-events: none; border-radius: 0 5px 5px 0;
         }
-
-        h1 {
-            margin: 0;
-            font-size: 12px;
-            letter-spacing: 3px;
-            color: #66CC33;
-            text-transform: uppercase;
-            opacity: 0.9;
-        }
-
-        .subtitle {
-            font-size: 22px;
-            font-weight: 800;
-            margin-top: 5px;
-            color: #ffffff;
-            text-shadow: 0 0 10px rgba(102, 204, 51, 0.5);
-        }
-
-        .stats {
-            margin-top: 15px;
-            font-size: 11px;
-            line-height: 1.6;
-            color: #a0aec0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Instrucciones de navegación */
-        .controls-hint {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            color: rgba(255,255,255,0.4);
-            font-size: 10px;
-            text-align: right;
-            pointer-events: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .subtitle { font-size: 18px; font-weight: bold; color: #ffffff; letter-spacing: 1px; }
+        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; text-transform: uppercase; }
+        /* Estilo de la etiqueta que sale al pasar el mouse */
+        .scene-tooltip {
+            color: #66CC33 !important;
+            background: rgba(0, 0, 0, 0.9) !important;
+            border: 1px solid #66CC33 !important;
+            border-radius: 4px !important;
+            padding: 8px !important;
+            font-family: monospace !important;
         }
     </style>
 </head>
 <body>
 
     <div id="ui-panel">
-        <h1>Centro de Comando de Estructuras</h1>
-        <div class="subtitle">RED NACIONAL UNE</div>
-        <div id="stats" class="stats">Sincronizando con base de datos encriptada...</div>
+        <div class="subtitle">ESTRUCTURA NACIONAL UNE</div>
+        <div id="stats" class="stats">Sincronizando...</div>
     </div>
 
     <div id="3d-graph"></div>
-
-    <div class="controls-hint">
-        Scroll para Zoom • Click Izquierdo para Rotar • Click en Nodo para Enfoque
-    </div>
 
     <script>
         const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#00050a')
             .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(6)
-            
-            // --- FIX 2: ETIQUETAS PERMANENTES VISIBLES ---
-            .nodeThreeObject(node => {
-                const sprite = new SpriteText(node.name);
-                sprite.color = '#ffffff';
-                sprite.textHeight = 7; // Altura del texto
-                sprite.padding = 3;
-                sprite.backgroundColor = 'rgba(0, 0, 0, 0.6)'; // Fondo para legibilidad
-                sprite.borderRadius = 2;
-                return sprite;
-            })
-            .nodeThreeObjectExtend(true) // Muestra la esfera Y el texto
-            
-            .linkWidth(1.2)
+            .nodeRelSize(7)
+            // --- SOLUCIÓN A LOS NOMBRES (TOOLTIP) ---
+            .nodeLabel(node => `
+                <div style="text-align: center;">
+                    <b style="font-size: 14px;">${node.name}</b><br/>
+                    <span style="color: #fff; opacity: 0.8;">ZONA: ${node.zona || 'N/A'}</span>
+                </div>
+            `)
+            .linkWidth(1.5)
             .linkOpacity(0.2)
             .linkColor(() => '#ffffff')
             .linkDirectionalParticles(2)
             .linkDirectionalParticleSpeed(0.005)
-            .linkDirectionalParticleWidth(1.5)
-            .showNavInfo(false);
+            .showNavInfo(true); // Esto mostrará los controles abajo a la izquierda
 
-        // --- CARGA DINÁMICA DE DATOS DESDE GITHUB ---
+        // --- FORZAR ZOOM Y CONTROLES ---
+        const controls = Graph.controls();
+        controls.enableZoom = true;
+        controls.autoRotate = false; // Desactivamos rotación automática interna para no bloquear zoom
+
+        // Carga de datos
         fetch('./data.json')
             .then(res => res.json())
             .then(data => {
-                // Actualizar panel de estadísticas
-                document.getElementById('stats').innerHTML = `
-                    ESTADO: EN LÍNEA<br/>
-                    LÍDERES IDENTIFICADOS: ${data.nodes.length}<br/>
-                    NODOS DE CONEXIÓN: ${data.links.length}
-                `;
-                
+                document.getElementById('stats').innerHTML = `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
                 Graph.graphData(data);
-                
-                // Ajuste inicial de cámara
-                Graph.zoomToFit(1000);
             })
             .catch(err => {
-                console.error("Error al leer data.json:", err);
-                document.getElementById('stats').innerHTML = "ERROR DE SINCRONIZACIÓN";
+                console.error("Error:", err);
+                document.getElementById('stats').innerText = "ERROR DE DATOS";
             });
 
-        // --- FIX 1: CONTROL DE ZOOM Y ROTACIÓN INTELIGENTE ---
-        const controls = Graph.controls();
-        controls.enableZoom = true;
-        
-        let isUserInteracting = false;
-
-        // Detectar si el usuario está manipulando el mapa
-        controls.addEventListener('start', () => {
-            isUserInteracting = true;
-        });
-
-        // Rotación automática suave (solo si el usuario no está tocando el mapa)
+        // --- ROTACIÓN AUTOMÁTICA EXTERNA (NO BLOQUEANTE) ---
         let angle = 0;
         const distance = 1400;
+        let activeRotation = true;
+
+        // Si el usuario usa la rueda del mouse, detenemos la rotación para que pueda navegar
+        window.addEventListener('wheel', () => { activeRotation = false; });
+        window.addEventListener('mousedown', () => { activeRotation = false; });
+        
+        // Para retomar la rotación, doble click
+        window.addEventListener('dblclick', () => { activeRotation = true; });
+
         setInterval(() => {
-            if (!isUserInteracting) {
+            if (activeRotation) {
                 Graph.cameraPosition({
                     x: distance * Math.sin(angle),
                     z: distance * Math.cos(angle)
                 });
-                angle += Math.PI / 12000; // Velocidad de crucero lenta y elegante
+                angle += Math.PI / 15000;
             }
         }, 10);
-
-        // Interacción: Vuelo de cámara al hacer clic en un líder
-        Graph.onNodeClick(node => {
-            isUserInteracting = true; // Detener rotación al enfocar
-            const distance = 350;
-            const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
-
-            Graph.cameraPosition(
-                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
-                node, 
-                2500 
-            );
-        });
-
-        // Botón derecho o doble click para retomar la rotación automática
-        window.addEventListener('dblclick', () => {
-            isUserInteracting = false;
-        });
     </script>
 </body>
 </html>
