@@ -1,112 +1,265 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>SISTEMA UNE | Inteligencia 3D</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNE | Inteligencia 3D</title>
+
+    <!-- THREE.js -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- 3D Force Graph -->
     <script src="https://unpkg.com/3d-force-graph@1.73.2/dist/3d-force-graph.min.js"></script>
+
     <style>
-        body { margin: 0; background: #00050a; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
-        #ui {
-            position: absolute; top: 20px; left: 20px; z-index: 100; color: white;
-            background: rgba(0, 15, 30, 0.9); padding: 15px; border-left: 4px solid #66CC33;
-            pointer-events: none; backdrop-filter: blur(8px);
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #00111f 0%, #00050a 100%);
+            font-family: 'Segoe UI', sans-serif;
         }
-        .stats { font-size: 11px; color: #66CC33; margin-top: 5px; font-family: monospace; }
+
+        #graph {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #ui {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            color: white;
+            background: rgba(0, 15, 30, 0.85);
+            padding: 18px;
+            border-left: 4px solid #66CC33;
+            border-radius: 0 10px 10px 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(102, 204, 51, 0.2);
+            pointer-events: none;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .stats {
+            margin-top: 6px;
+            color: #66CC33;
+            font-size: 11px;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
+
     <div id="ui">
-        <div style="font-weight: 900; font-size: 18px;">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">SISTEMA INICIADO</div>
+        <div class="title">ESTRUCTURA UNE</div>
+        <div id="status" class="stats">INICIALIZANDO SISTEMA...</div>
     </div>
+
     <div id="graph"></div>
 
     <script>
+
         const elem = document.getElementById('graph');
+        const statusElem = document.getElementById('status');
+
+        // =========================
+        // CREATE GRAPH
+        // =========================
 
         const Graph = ForceGraph3D()(elem)
+
             .backgroundColor('#00050a')
+
+            // NODE COLOR
             .nodeColor(node => node.color || '#66CC33')
-            .nodeRelSize(7)
-            
-            // --- DOCUMENTACIÓN OFICIAL: ETIQUETAS PERMANENTES SIN ERRORES ---
+
+            // NODE SIZE
+            .nodeRelSize(6)
+
+            // CUSTOM 3D NODE + LABEL
             .nodeThreeObject(node => {
+
+                const group = new THREE.Group();
+
+                // =========================
+                // GLOWING SPHERE NODE
+                // =========================
+
+                const geometry = new THREE.SphereGeometry(4, 32, 32);
+
+                const material = new THREE.MeshStandardMaterial({
+                    color: node.color || '#66CC33',
+                    emissive: node.color || '#66CC33',
+                    emissiveIntensity: 1.2,
+                    metalness: 0.2,
+                    roughness: 0.3
+                });
+
+                const sphere = new THREE.Mesh(geometry, material);
+
+                group.add(sphere);
+
+                // =========================
+                // LABEL CANVAS
+                // =========================
+
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
-                
-                // Texto a mostrar
-                const name = node.name || "Líder";
-                const barrio = node.barrio || ""; 
-                
-                // Configuración de resolución
-                ctx.font = 'bold 36px Arial';
-                const width = Math.max(ctx.measureText(name).width, ctx.measureText(barrio).width) + 40;
-                canvas.width = width;
-                canvas.height = 100;
 
-                // Estilo de la placa
-                ctx.fillStyle = 'rgba(0, 5, 15, 0.8)';
+                const name = node.name || 'LÍDER';
+                const barrio = node.barrio || '';
+
+                // Initial font for measurements
+                ctx.font = 'Bold 38px Arial';
+
+                const textWidth = Math.max(
+                    ctx.measureText(name).width,
+                    ctx.measureText(barrio).width
+                );
+
+                canvas.width = textWidth + 80;
+                canvas.height = 120;
+
+                // IMPORTANT:
+                // RESET FONT AFTER RESIZE
+                ctx.font = 'Bold 38px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                // Background panel
+                ctx.fillStyle = 'rgba(0, 10, 20, 0.82)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Border
                 ctx.strokeStyle = node.color || '#66CC33';
                 ctx.lineWidth = 4;
                 ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-                // Dibujar Nombre
-                ctx.fillStyle = '#ffffff';
-                ctx.font = 'bold 36px Arial';
-                ctx.textAlign = 'center';
-                ctx.fillText(name, canvas.width / 2, 45);
+                // Main Name
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillText(name, canvas.width / 2, 42);
 
-                // Dibujar Barrio
-                ctx.fillStyle = '#66CC33';
+                // Secondary text
                 ctx.font = '24px Arial';
-                ctx.fillText(barrio, canvas.width / 2, 85);
+                ctx.fillStyle = '#66CC33';
+                ctx.fillText(barrio, canvas.width / 2, 88);
+
+                // =========================
+                // SPRITE
+                // =========================
 
                 const texture = new THREE.CanvasTexture(canvas);
-                const spriteMaterial = new THREE.SpriteMaterial({ map: texture });
-                const sprite = new THREE.Sprite(spriteMaterial);
-                
-                // Escala relativa al mundo 3D
-                sprite.scale.set(width / 12, 8, 1);
-                sprite.position.y = 12; // Flota sobre el nodo
-                return sprite;
-            })
-            .nodeThreeObjectExtend(true)
 
-            // --- FUERZAS SEGÚN DOCUMENTACIÓN D3-FORCE ---
-            .d3Force('charge', d3.forceManyBody().strength(-150)) // Repulsión controlada
-            .d3Force('link', d3.forceLink().distance(40))       // Distancia compacta
-            
+                texture.minFilter = THREE.LinearFilter;
+
+                const spriteMaterial = new THREE.SpriteMaterial({
+                    map: texture,
+                    transparent: true,
+                    depthWrite: false
+                });
+
+                const sprite = new THREE.Sprite(spriteMaterial);
+
+                // Better scaling
+                sprite.scale.set(canvas.width / 22, canvas.height / 22, 1);
+
+                // Float above node
+                sprite.position.set(0, 14, 0);
+
+                group.add(sprite);
+
+                return group;
+            })
+
+            // LINKS
             .linkWidth(1.5)
-            .linkOpacity(0.2)
             .linkColor(() => '#ffffff')
+            .linkOpacity(0.18)
+
+            // PARTICLES
             .linkDirectionalParticles(2)
+            .linkDirectionalParticleWidth(2)
+            .linkDirectionalParticleSpeed(0.004)
+
+            // CLEAN UI
             .showNavInfo(false);
 
-        // Rotación automática nativa
-        Graph.controls().autoRotate = true;
-        Graph.controls().autoRotateSpeed = 0.5;
+        // =========================
+        // LIGHTING
+        // =========================
 
-        // CARGA ASÍNCRONA SEGURA
+        const scene = Graph.scene();
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.1);
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
+        directionalLight.position.set(100, 100, 100);
+        scene.add(directionalLight);
+
+        // =========================
+        // FORCES
+        // =========================
+
+        Graph.d3Force('charge')
+            .strength(-260);
+
+        Graph.d3Force('link')
+            .distance(110);
+
+        // =========================
+        // CAMERA ROTATION
+        // =========================
+
+        Graph.controls().autoRotate = true;
+        Graph.controls().autoRotateSpeed = 0.35;
+
+        window.addEventListener('mousedown', () => {
+            Graph.controls().autoRotate = false;
+        });
+
+        // =========================
+        // LOAD DATA
+        // =========================
+
         fetch('./data.json')
             .then(res => {
-                if (!res.ok) throw new Error("Error de red");
+                if (!res.ok) {
+                    throw new Error('No se encontró data.json');
+                }
                 return res.json();
             })
+
             .then(data => {
-                document.getElementById('status').innerText = `LÍDERES: ${data.nodes.length} | BARRIOS: ACTIVOS`;
+
+                statusElem.innerText =
+                    `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
+
                 Graph.graphData(data);
-                
-                // Zoom dinámico una vez cargado
-                setTimeout(() => Graph.zoomToFit(800, 100), 500);
+
+                // Smooth camera fit
+                setTimeout(() => {
+                    Graph.zoomToFit(1200, 80);
+                }, 1200);
             })
+
             .catch(err => {
-                document.getElementById('status').innerText = "ERROR CARGANDO DATOS JSON";
-                console.error("Error crítico:", err);
+
+                console.error(err);
+
+                statusElem.innerText = 'ERROR CARGANDO DATA.JSON';
+                statusElem.style.color = '#ff4444';
             });
 
-        // Evento para devolver control al usuario
-        window.addEventListener('mousedown', () => { Graph.controls().autoRotate = false; });
     </script>
+
 </body>
 </html>
