@@ -500,6 +500,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recVuc8kOQm83lBIY",
+      "name": "Ruth Noemí  Morales ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recX2g4jlZr1itMTC",
       "name": "Victor Cruz",
       "zona": "Zona 5",
@@ -1128,6 +1136,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTz9GwnOKhzssFL"
+    },
+    {
+      "source": "estA",
+      "target": "recVuc8kOQm83lBIY"
     },
     {
       "source": "reclplFAH4ePzLQiS",
