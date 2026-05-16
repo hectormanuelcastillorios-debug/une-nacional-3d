@@ -780,6 +780,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recSu4uR8ieGU9420",
+      "name": "Jessica Evelyn  Ovalle ",
+      "zona": "Zona 7",
+      "barrio": "Amparo 1",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recTFzra0HCoV6wmN",
       "name": "Miriam Franco",
       "zona": "Zona 7",
@@ -1080,6 +1088,14 @@
       "name": "Lourdes García",
       "zona": "Zona 7",
       "barrio": "Asení Mina",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recg959BYsjPiT9fn",
+      "name": "Brinda lucrecia Davila lopez ",
+      "zona": "Zona 7",
+      "barrio": "Betania ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1934,6 +1950,10 @@
       "target": "recSjGvvkVG6Habho"
     },
     {
+      "source": "estB",
+      "target": "recSu4uR8ieGU9420"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTFzra0HCoV6wmN"
     },
@@ -2084,6 +2104,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recfvboxMdiXfXIwm"
+    },
+    {
+      "source": "estB",
+      "target": "recg959BYsjPiT9fn"
     },
     {
       "source": "rec7P71dj1HP5nK0V",
