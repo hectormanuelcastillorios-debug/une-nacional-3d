@@ -500,6 +500,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recEq3VK0mZUEmpR5",
+      "name": "Marcos  Cifuentes",
+      "zona": "Zona 18",
+      "barrio": "Fatima",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recEqjsWY8m2kZyGx",
       "name": "Blanca Yamileth Maldonado López ",
       "zona": "Zona 21",
@@ -2720,6 +2728,10 @@
     {
       "source": "estB",
       "target": "recEhWDSUffAS7DnE"
+    },
+    {
+      "source": "estA",
+      "target": "recEq3VK0mZUEmpR5"
     },
     {
       "source": "estB",
