@@ -54,7 +54,7 @@
     {
       "id": "rec4rfdd346R2lK4V",
       "name": "Alicia Z",
-      "zona": "N/A",
+      "zona": "Zona 7",
       "barrio": "N/A",
       "val": 20,
       "color": "#66CC33"
@@ -413,11 +413,515 @@
     },
     {
       "id": "recmH8783l8gceZPq",
-      "name": " ",
-      "zona": "N/A",
+      "name": "Test Dos",
+      "zona": "Zona 12",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recmmhrn6ntn2o7kX",
+      "name": "Dolores Gonzáles",
+      "zona": "Zona 6",
+      "barrio": "Santa Fe",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recoWmvUbTr5YSq9B",
+      "name": "Carolina Maldonado",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recojpYJPJ8SSBhnm",
+      "name": "Ilda Gonzáles",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recqkKkgBo8HtAXXQ",
+      "name": "Olga López",
+      "zona": "Zona 5",
+      "barrio": "La Chacara",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recterCaR6EetIrBY",
+      "name": "Miguel Calderón",
+      "zona": "Zona 5",
+      "barrio": "San José el Esfuerzo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recugCAbJwhFQq4D1",
+      "name": "Norma López",
+      "zona": "Zona 3",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "recuks1iMaGNAgSqt",
+      "name": "Rene Arias",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recvjw5bo0W8lEh8k",
+      "name": "Gloria Vivar",
+      "zona": "Zona 5",
+      "barrio": "Barrio Nuevo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recwZyv9uCrbuB6gL",
+      "name": "Jesús Vasquez",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recwlH76zPTxlczpz",
+      "name": "Ada Linda Hernández",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recxRfVZtEXecOuih",
+      "name": "Mindy Interiano",
+      "zona": "Zona 7",
+      "barrio": "La Ranchería",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recyo4ZTamHj2W135",
+      "name": "Olga Onacaj",
+      "zona": "Zona 7",
+      "barrio": "La Ranchería",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recz0yzzUq6sICZb8",
+      "name": "Hellen Carrera",
+      "zona": "Zona 7",
+      "barrio": "Asent Sinaí",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recz76DFY78xLHRko",
+      "name": "Wendy Saenz",
+      "zona": "Zona 18",
+      "barrio": "Paraiso II / Sector Llano Largo",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "rec3FKDswGpX2R58d",
+      "name": "Auru Guzmán",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec3OCJ9nypSf6767",
+      "name": "Rosa Argueta",
+      "zona": "Zona 3",
+      "barrio": "Asentamiento Bella Esperanza",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "rec3TLwjfCYKdZQrE",
+      "name": "Reyna Tuna",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec4rfdd346R2lK4V",
+      "name": "Alicia Z",
+      "zona": "Zona 7",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "rec4rhtJdxkLpxsER",
+      "name": "Clotilde Santos",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec5hSgfGRknw7Mly",
+      "name": "Ericka Liseth García",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec5mDuH3TccxRENz",
+      "name": "Isabel Natareno",
+      "zona": "Zona 7",
+      "barrio": "Sector 3 Verberena",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec7P71dj1HP5nK0V",
+      "name": "Rosaura ",
+      "zona": "Zona 7",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "rec8plnOPmALo9Kdt",
+      "name": "Juana Ramírez",
+      "zona": "Zona 7",
+      "barrio": "Joya I",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec8yo0Pm22nPQjV4",
+      "name": "Alicia ",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec9cuxH2vCLVPBCB",
+      "name": "Elizabeth Marroquin",
+      "zona": "Zona 13",
+      "barrio": "Plaza de Toros / Santa Fe",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recBhbOFKOh0IfJWI",
+      "name": "Mayra Torres",
+      "zona": "Zona 5",
+      "barrio": "Lomas del",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recBoz3Q3bIm7KGC8",
+      "name": "Marta Ramírez",
+      "zona": "Zona 7",
+      "barrio": "La Chatarra",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recBvu5EOIL5wqh9t",
+      "name": "Mayerly Torres",
+      "zona": "Zona 5",
+      "barrio": "Eden",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recCDCvsEsZVPPIfT",
+      "name": "Esdras Malsonado",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recF1Rj8h8biJfInv",
+      "name": "Lisset Tuna",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recGFoJts4YSuJzPr",
+      "name": "Victor Enríquez",
+      "zona": "Zona 5",
+      "barrio": "Arrivillaga",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recK0sqVa2IG2SFrF",
+      "name": "Berta Oliva",
+      "zona": "Zona 17",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recK5xQ8HDTF5SRiy",
+      "name": "Evelyn Guerra",
+      "zona": "Zona 5",
+      "barrio": "Covias",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recLm5edTm9ciX9AR",
+      "name": "Flor Pérez",
+      "zona": "Zona 7",
+      "barrio": "Eucaliptos",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recMhlLAtYaGxhnh9",
+      "name": "Dora ",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recOOW3MGpkyLJimq",
+      "name": "Dalia Veliz",
+      "zona": "Zona 7",
+      "barrio": "Anexo Joya",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recQF837DJmzhDjt8",
+      "name": "Heydy ",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recQuyZ7gTYQS23Hm",
+      "name": "Jessica Ovalle",
+      "zona": "Zona 7",
+      "barrio": "Amparo 1",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recRL8sW2dPez5rLF",
+      "name": "Gloria Aguilar",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSgHpq8KJGMxOkw",
+      "name": "Clemencia López",
+      "zona": "Zona 5",
+      "barrio": "Anexo, San José el Esfuerzo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSjGvvkVG6Habho",
+      "name": "Hilda Ramírez",
+      "zona": "Zona 7",
+      "barrio": "24 de Diciembre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recTFzra0HCoV6wmN",
+      "name": "Miriam Franco",
+      "zona": "Zona 7",
+      "barrio": "Quinta Samayoa",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recTz9GwnOKhzssFL",
+      "name": "Verónica Dávila",
+      "zona": "Zona 7",
+      "barrio": "Sakertí",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recX2g4jlZr1itMTC",
+      "name": "Victor Cruz",
+      "zona": "Zona 5",
+      "barrio": "Buena Vista",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recXDAYG285NyhImG",
+      "name": "Blanca Paz",
+      "zona": "Zona 12",
+      "barrio": "La Reformita",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recXtew0ZO02Jz9bN",
+      "name": "Rosario Recinos",
+      "zona": "Zona 7",
+      "barrio": "Amparo I y II",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recYaIrIDXf9jyml8",
+      "name": "Alba Cruz",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recZWA5TJk7xQEFcI",
+      "name": "Juana Matías",
+      "zona": "Zona 7",
+      "barrio": "21 de Noviembre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recaaP4DiQVa9Nyoe",
+      "name": "Mónica Ordoñez",
+      "zona": "Zona 7",
+      "barrio": "Granizo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recb52Zs0XGJ6InjJ",
+      "name": "Francis ",
+      "zona": "Zona 18",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recbs9UOb5ne2a0mZ",
+      "name": "Evelyn Galindo",
+      "zona": "Zona 7",
+      "barrio": "La Joya 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reccWxFStLTTq72kU",
+      "name": "Olga Barrientos",
+      "zona": "Zona 7",
+      "barrio": "Sector Emmanuel",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reccZDhW8RpJ0NCs8",
+      "name": "Claudia Hernández",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "receGIzWYBTjnKOXX",
+      "name": "Pablo Mora",
+      "zona": "Zona 1",
+      "barrio": "Sector Línea Ferrea / Sector Barranquilla",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "receaRInoNWsZxMxV",
+      "name": "Brenda Juarez",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recebvYOW4Lij9CYO",
+      "name": "Dora Martínez",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recfvboxMdiXfXIwm",
+      "name": "Lourdes García",
+      "zona": "Zona 7",
+      "barrio": "Asení Mina",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recgHZ8Cs1urOgnqx",
+      "name": "Cristian García",
+      "zona": "Zona 19",
+      "barrio": "Colinas de Minerva",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recilm3b55RJuUnN9",
+      "name": "Eugenia Santizo",
+      "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recjuaViimdSGEvvs",
+      "name": "Arely Reyes",
+      "zona": "Zona 7",
+      "barrio": "Amparo Adentro",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reck9fqekGLhYBTwg",
+      "name": "Judith Gutierrez",
+      "zona": "Zona 5",
+      "barrio": "La fuente",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reclplFAH4ePzLQiS",
+      "name": "Rodolfo Higueros",
+      "zona": "Zona 5",
+      "barrio": "La Palmita / La Limonada",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
+      "id": "recmH8783l8gceZPq",
+      "name": "Test Dos",
+      "zona": "Zona 12",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
     },
     {
       "id": "recmmhrn6ntn2o7kX",
