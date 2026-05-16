@@ -1132,6 +1132,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recrQ54LFCbcpzw8e",
+      "name": "Francisco Antonio  Juárez Zaldaña",
+      "zona": "Zona 18",
+      "barrio": "Son Rafael 3",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recsYCsIc80fqMfmC",
       "name": "Anita  Quicibic",
       "zona": "Zona 3",
@@ -1192,6 +1200,14 @@
       "name": "Gloria Vivar",
       "zona": "Zona 5",
       "barrio": "Barrio Nuevo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recwREyncwfMdKFk8",
+      "name": "Evelyn merida ",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1838,6 +1854,10 @@
       "target": "recqkKkgBo8HtAXXQ"
     },
     {
+      "source": "estA",
+      "target": "recrQ54LFCbcpzw8e"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "recsYCsIc80fqMfmC"
     },
@@ -1868,6 +1888,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recvjw5bo0W8lEh8k"
+    },
+    {
+      "source": "estA",
+      "target": "recwREyncwfMdKFk8"
     },
     {
       "source": "rec3OCJ9nypSf6767",
