@@ -396,6 +396,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recPxnP04nHH4NANE",
+      "name": "Angelina  Solórzano ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recQF837DJmzhDjt8",
       "name": "Heydy ",
       "zona": "Zona 21",
@@ -1100,6 +1108,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recPZxW9NXPzLXDfc"
+    },
+    {
+      "source": "estA",
+      "target": "recPxnP04nHH4NANE"
     },
     {
       "source": "recF1Rj8h8biJfInv",
