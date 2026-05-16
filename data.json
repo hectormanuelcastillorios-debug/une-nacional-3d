@@ -140,6 +140,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec6Dyei3LrqIYLVk",
+      "name": "Maylie Quiñonez",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec6V4S36OlSvU7fl",
       "name": "Gloria  Gonzales ",
       "zona": "Zona 7",
@@ -1412,6 +1420,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "rec5mDuH3TccxRENz"
+    },
+    {
+      "source": "estA",
+      "target": "rec6Dyei3LrqIYLVk"
     },
     {
       "source": "rec4rfdd346R2lK4V",
