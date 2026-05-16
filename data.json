@@ -340,6 +340,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recMlcxOS0EsLxoU1",
+      "name": "Abigail  Duran",
+      "zona": "Zona 18",
+      "barrio": "El paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recNpGEKJ0Vaftr7q",
       "name": "Marlene  Quintanal García ",
       "zona": "Zona 7",
@@ -432,6 +440,14 @@
       "name": "Deomara Diaz",
       "zona": "Zona 7",
       "barrio": "Bethania",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSBtL7TKvRXGzxu",
+      "name": "Fernando  Solórzano ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1058,6 +1074,10 @@
       "target": "recMhlLAtYaGxhnh9"
     },
     {
+      "source": "estA",
+      "target": "recMlcxOS0EsLxoU1"
+    },
+    {
       "source": "rec4rfdd346R2lK4V",
       "target": "recNpGEKJ0Vaftr7q"
     },
@@ -1104,6 +1124,10 @@
     {
       "source": "estA",
       "target": "recS2jnzKeD9eTIWE"
+    },
+    {
+      "source": "estA",
+      "target": "recSBtL7TKvRXGzxu"
     },
     {
       "source": "estB",
