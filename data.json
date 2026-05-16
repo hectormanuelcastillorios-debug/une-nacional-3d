@@ -284,6 +284,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recExHyzCdCvmXt7E",
+      "name": "Cristina  Barrios vasquez ",
+      "zona": "Zona 7",
+      "barrio": "Colonia bandi 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recF1Rj8h8biJfInv",
       "name": "Lisset Tuna",
       "zona": "Zona 21",
@@ -900,6 +908,14 @@
       "color": "#31623B"
     },
     {
+      "id": "receqvtHrdNjfvXJh",
+      "name": "Roxana  Ruiz ",
+      "zona": "Zona 7",
+      "barrio": "Granizo ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recftqnXSIUriw1Xl",
       "name": "Ana Cristina  Barrios ",
       "zona": "Zona 7",
@@ -1391,6 +1407,10 @@
     },
     {
       "source": "estB",
+      "target": "recExHyzCdCvmXt7E"
+    },
+    {
+      "source": "estB",
       "target": "recF1Rj8h8biJfInv"
     },
     {
@@ -1696,6 +1716,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recebvYOW4Lij9CYO"
+    },
+    {
+      "source": "estA",
+      "target": "receqvtHrdNjfvXJh"
     },
     {
       "source": "estB",
