@@ -220,6 +220,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec5vHG9rEtbpOTdq",
+      "name": "Rasalbina Castro",
+      "zona": "Zona 18",
+      "barrio": "Lomas de santa paz sector 4",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec6BWnGOLesmhTBL",
       "name": "Valentina  Bentacur ",
       "zona": "Zona 5",
@@ -2564,6 +2572,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "rec5mDuH3TccxRENz"
+    },
+    {
+      "source": "estB",
+      "target": "rec5vHG9rEtbpOTdq"
     },
     {
       "source": "estB",
