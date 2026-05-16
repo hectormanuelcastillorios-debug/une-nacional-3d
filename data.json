@@ -372,6 +372,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recPSIxrKcoqJBM99",
+      "name": "Berta  Ajanel",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recPZxW9NXPzLXDfc",
       "name": "Velvet Castellanos ",
       "zona": "Zona 7",
@@ -384,6 +392,14 @@
       "name": "Heydy ",
       "zona": "Zona 21",
       "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recQK3Vb6WDMymnGi",
+      "name": "Irrne Ruiz",
+      "zona": "Zona 7",
+      "barrio": "Granizo 3",
       "val": 12,
       "color": "#31623B"
     },
@@ -1050,12 +1066,20 @@
       "target": "recPBphJnf5TEOpoG"
     },
     {
+      "source": "estA",
+      "target": "recPSIxrKcoqJBM99"
+    },
+    {
       "source": "rec4rfdd346R2lK4V",
       "target": "recPZxW9NXPzLXDfc"
     },
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recQF837DJmzhDjt8"
+    },
+    {
+      "source": "estB",
+      "target": "recQK3Vb6WDMymnGi"
     },
     {
       "source": "estA",
