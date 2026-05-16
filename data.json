@@ -1764,6 +1764,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reckdPJnloZ8kanZr",
+      "name": "Gerber Chacon",
+      "zona": "Zona 5",
+      "barrio": "Limoncito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reckfjw3ScMfWHu9Q",
       "name": "Alicia  Pacay poou",
       "zona": "Zona 5",
@@ -2148,6 +2156,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recvtwoze1P7JaxEy",
+      "name": "Martha margarita  Giro natareno",
+      "zona": "Zona 5",
+      "barrio": "Colonia sarabia",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recw68Z80MKxtR5HP",
       "name": "Marta Alicia  García perez",
       "zona": "Zona 18",
@@ -2312,14 +2328,6 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recvtwoze1P7JaxEy",
-      "name": "Martha margarita  Giro natareno",
-      "zona": "Zona 5",
-      "barrio": "Colonia sarabia",
       "val": 12,
       "color": "#31623B"
     }
@@ -3203,6 +3211,10 @@
     },
     {
       "source": "estB",
+      "target": "reckdPJnloZ8kanZr"
+    },
+    {
+      "source": "estB",
       "target": "reckfjw3ScMfWHu9Q"
     },
     {
@@ -3394,6 +3406,10 @@
       "target": "recvjw5bo0W8lEh8k"
     },
     {
+      "source": "estB",
+      "target": "recvtwoze1P7JaxEy"
+    },
+    {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recw68Z80MKxtR5HP"
     },
@@ -3476,10 +3492,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estB",
-      "target": "recvtwoze1P7JaxEy"
     }
   ]
 }
