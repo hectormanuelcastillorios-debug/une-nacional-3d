@@ -1324,6 +1324,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recglMsNXiAhg6ADs",
+      "name": "Lobia  Machado",
+      "zona": "Zona 24",
+      "barrio": "Canalitos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recgo28qwHyJ3yKsD",
       "name": "Gloria Argentina  Esquites Avila",
       "zona": "Zona 18",
@@ -2508,6 +2516,10 @@
     {
       "source": "estA",
       "target": "recgdd5quuYlJuQIA"
+    },
+    {
+      "source": "estA",
+      "target": "recglMsNXiAhg6ADs"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
