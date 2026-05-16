@@ -36,6 +36,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec3KsFgu5lxp6Og0",
+      "name": "Anthony Fernando  Chacón Pérez ",
+      "zona": "Zona 17",
+      "barrio": "Salud pública ",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "rec3OCJ9nypSf6767",
       "name": "Rosa Argueta",
       "zona": "Zona 3",
@@ -218,14 +226,6 @@
       "barrio": "Amparo 1",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "recQwfrP4sHtazDX8",
-      "name": "PRUEBA  CINCO",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 20,
-      "color": "#66CC33"
     },
     {
       "id": "recRL8sW2dPez5rLF",
@@ -546,6 +546,10 @@
       "target": "rec3FKDswGpX2R58d"
     },
     {
+      "source": "estA",
+      "target": "rec3KsFgu5lxp6Og0"
+    },
+    {
       "source": "estB",
       "target": "rec3OCJ9nypSf6767"
     },
@@ -636,10 +640,6 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recQuyZ7gTYQS23Hm"
-    },
-    {
-      "source": "estA",
-      "target": "recQwfrP4sHtazDX8"
     },
     {
       "source": "rec3OCJ9nypSf6767",
