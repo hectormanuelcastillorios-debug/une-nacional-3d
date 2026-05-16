@@ -1596,6 +1596,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rectmjlNP5bx0skRx",
+      "name": "Ana  Colindres ",
+      "zona": "Zona 24",
+      "barrio": "Cantón ",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recuTHHKgJSTrKZMP",
       "name": "Josefa Ortiz ordoñes",
       "zona": "Zona 7",
@@ -2548,6 +2556,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recterCaR6EetIrBY"
+    },
+    {
+      "source": "estA",
+      "target": "rectmjlNP5bx0skRx"
     },
     {
       "source": "rec7P71dj1HP5nK0V",
