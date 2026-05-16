@@ -340,6 +340,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recFmK4EQrDghLhrb",
+      "name": "Nancy  Hernandez ",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGFoJts4YSuJzPr",
       "name": "Victor Enríquez",
       "zona": "Zona 5",
@@ -1332,6 +1340,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recw68Z80MKxtR5HP",
+      "name": "Marta Alicia  García perez",
+      "zona": "Zona 18",
+      "barrio": "Colonia San Jorge ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recwREyncwfMdKFk8",
       "name": "Evelyn merida ",
       "zona": "Zona 18",
@@ -1424,14 +1440,6 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recFmK4EQrDghLhrb",
-      "name": "Nancy  Hernandez ",
-      "zona": "Zona 18",
-      "barrio": "Altos de Sinai",
       "val": 12,
       "color": "#31623B"
     }
@@ -1600,6 +1608,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recF9uAbyPls2O8f6"
+    },
+    {
+      "source": "estB",
+      "target": "recFmK4EQrDghLhrb"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -2099,6 +2111,10 @@
     },
     {
       "source": "estA",
+      "target": "recw68Z80MKxtR5HP"
+    },
+    {
+      "source": "estA",
       "target": "recwREyncwfMdKFk8"
     },
     {
@@ -2144,10 +2160,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estB",
-      "target": "recFmK4EQrDghLhrb"
     }
   ]
 }
