@@ -244,10 +244,26 @@
       "color": "#31623B"
     },
     {
+      "id": "recDQrzdzJq7xsDwM",
+      "name": "Dora Martines",
+      "zona": "Zona 18",
+      "barrio": "Maraiso dos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recDiOLaGpOnryw5u",
       "name": "Edermira Ochoa",
       "zona": "Zona 18",
       "barrio": "Aventamiento chapa g",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recEhWDSUffAS7DnE",
+      "name": "Izabel Gutierrez",
+      "zona": "Zona 17",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -258,6 +274,14 @@
       "barrio": "Los Olivos",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "recF4SGjzjbTZMTNR",
+      "name": "Encarnancio  Caal ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recF9uAbyPls2O8f6",
@@ -416,6 +440,14 @@
       "name": "AidéLina  Lopez",
       "zona": "Zona 7",
       "barrio": "Betahnia ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recPG78GrLmUrUQSl",
+      "name": "María Paula  Chamo de Escobar ",
+      "zona": "Zona 5",
+      "barrio": "5ta Samayoa ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1202,15 +1234,27 @@
       "target": "recCDCvsEsZVPPIfT"
     },
     {
+      "source": "estB",
+      "target": "recDQrzdzJq7xsDwM"
+    },
+    {
       "source": "estA",
       "target": "recDiOLaGpOnryw5u"
+    },
+    {
+      "source": "estB",
+      "target": "recEhWDSUffAS7DnE"
     },
     {
       "source": "estB",
       "target": "recF1Rj8h8biJfInv"
     },
     {
-      "source": "estA",
+      "source": "estB",
+      "target": "recF4SGjzjbTZMTNR"
+    },
+    {
+      "source": "rec4rfdd346R2lK4V",
       "target": "recF9uAbyPls2O8f6"
     },
     {
@@ -1291,6 +1335,10 @@
     },
     {
       "source": "estA",
+      "target": "recPG78GrLmUrUQSl"
+    },
+    {
+      "source": "rec4rfdd346R2lK4V",
       "target": "recPSIxrKcoqJBM99"
     },
     {
@@ -1378,7 +1426,7 @@
       "target": "recUhTTUq5v4aBCBW"
     },
     {
-      "source": "estA",
+      "source": "rec4rfdd346R2lK4V",
       "target": "recVuc8kOQm83lBIY"
     },
     {
@@ -1534,7 +1582,7 @@
       "target": "recmqKYfywbVbK0kC"
     },
     {
-      "source": "estA",
+      "source": "rec4rfdd346R2lK4V",
       "target": "recoMZMq3zFqjbbOn"
     },
     {
