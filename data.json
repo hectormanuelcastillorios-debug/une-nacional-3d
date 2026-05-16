@@ -1156,6 +1156,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "receREmXOJ4IKwWuz",
+      "name": "María Guadalupe  Sanchez alvarez ",
+      "zona": "Zona 24",
+      "barrio": "Cantón central ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "receYawRXBDMl6EUN",
       "name": "Colina Palacio",
       "zona": "Zona 18",
@@ -2296,6 +2304,10 @@
     {
       "source": "estB",
       "target": "receGIzWYBTjnKOXX"
+    },
+    {
+      "source": "estA",
+      "target": "receREmXOJ4IKwWuz"
     },
     {
       "source": "estA",
