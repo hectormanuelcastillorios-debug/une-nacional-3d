@@ -284,6 +284,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec85dlzZCgu9TBwu",
+      "name": "Gilda  Gonzales ",
+      "zona": "Zona 21",
+      "barrio": "Nuevo Amanecer ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec86TnioIH0mBXKA",
       "name": "Clemencia  Pineda",
       "zona": "Zona 7",
@@ -2484,6 +2492,10 @@
     {
       "source": "recSfcVq8TMzNZwHH",
       "target": "rec7ce9nRM6Luqg22"
+    },
+    {
+      "source": "estA",
+      "target": "rec85dlzZCgu9TBwu"
     },
     {
       "source": "estA",
