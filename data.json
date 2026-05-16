@@ -724,6 +724,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recKTr5xEgwIbXo7n",
+      "name": "Epifania Roblero",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recKvn07elgfqh6oj",
       "name": "Amalia  Santos",
       "zona": "Zona 7",
@@ -2656,6 +2664,10 @@
     {
       "source": "estA",
       "target": "recKDSMccJJy9zAon"
+    },
+    {
+      "source": "estB",
+      "target": "recKTr5xEgwIbXo7n"
     },
     {
       "source": "estA",
