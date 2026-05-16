@@ -260,6 +260,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recSIa1sqLuypCBgF",
+      "name": "Silvia  Estrada ",
+      "zona": "Zona 3",
+      "barrio": "Colonia el insienso ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recSS4vfinHTDWrXD",
       "name": "Magda Plato",
       "zona": "Zona 7",
@@ -696,6 +704,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recRL8sW2dPez5rLF"
+    },
+    {
+      "source": "estA",
+      "target": "recSIa1sqLuypCBgF"
     },
     {
       "source": "estA",
