@@ -1268,6 +1268,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rechzrokva0HLpZSJ",
+      "name": "Consuelo  Orozco ",
+      "zona": "Zona 24",
+      "barrio": "Cantón ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reciD4qtqwG1sp5C8",
       "name": "Ingrid  Godoy",
       "zona": "Zona 18",
@@ -2368,6 +2376,10 @@
     {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recgo28qwHyJ3yKsD"
+    },
+    {
+      "source": "estA",
+      "target": "rechzrokva0HLpZSJ"
     },
     {
       "source": "estA",
