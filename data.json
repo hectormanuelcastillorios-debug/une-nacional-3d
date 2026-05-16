@@ -724,6 +724,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "reciD4qtqwG1sp5C8",
+      "name": "Ingrid  Godoy",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recilm3b55RJuUnN9",
       "name": "Eugenia Santizo",
       "zona": "Zona 3",
@@ -952,6 +960,14 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recY6lDYJZTTXSdz2",
+      "name": "Cesar  Hernandez cute ",
+      "zona": "Zona 18",
+      "barrio": "Colonia limon",
       "val": 12,
       "color": "#31623B"
     }
@@ -1314,6 +1330,10 @@
       "target": "recgHZ8Cs1urOgnqx"
     },
     {
+      "source": "estA",
+      "target": "reciD4qtqwG1sp5C8"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "recilm3b55RJuUnN9"
     },
@@ -1428,6 +1448,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "recY6lDYJZTTXSdz2"
     }
   ]
 }
