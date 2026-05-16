@@ -2364,6 +2364,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recx52J2kwT10YMEg",
+      "name": "Gabriela  Palencia",
+      "zona": "Zona 17",
+      "barrio": "Sabana Arriba",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recxRfVZtEXecOuih",
       "name": "Mindy Interiano",
       "zona": "Zona 7",
@@ -3628,6 +3636,10 @@
     {
       "source": "estB",
       "target": "recx3wuPascIYrRb8"
+    },
+    {
+      "source": "estB",
+      "target": "recx52J2kwT10YMEg"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
