@@ -100,6 +100,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec74v2OIgrU7IRIV",
+      "name": "Gloria Janeth  Vivar Domínguez ",
+      "zona": "Zona 5",
+      "barrio": "Barrio nuevo ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec7P71dj1HP5nK0V",
       "name": "Rosaura ",
       "zona": "Zona 7",
@@ -208,6 +216,14 @@
       "name": "Norma  López ",
       "zona": "Zona 3",
       "barrio": "Chica",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recJUZ4esAeDXenli",
+      "name": "Ana Cristina  Barrio ",
+      "zona": "Zona 7",
+      "barrio": "Primavera anexo amparo dos ",
       "val": 12,
       "color": "#31623B"
     },
@@ -698,6 +714,10 @@
       "target": "rec6V4S36OlSvU7fl"
     },
     {
+      "source": "estB",
+      "target": "rec74v2OIgrU7IRIV"
+    },
+    {
       "source": "estA",
       "target": "rec7P71dj1HP5nK0V"
     },
@@ -752,6 +772,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recHKl6b4IggdvMfn"
+    },
+    {
+      "source": "estB",
+      "target": "recJUZ4esAeDXenli"
     },
     {
       "source": "estB",
