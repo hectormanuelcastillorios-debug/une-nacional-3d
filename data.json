@@ -1596,6 +1596,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recctHNik8VdmuCoV",
+      "name": "Lourdes Gramajo",
+      "zona": "Zona 18",
+      "barrio": "Paraiso",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reccv5zOFXXnM5lUF",
       "name": "Sonia  Abeldaño ",
       "zona": "Zona 18",
@@ -3276,6 +3284,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "reccZDhW8RpJ0NCs8"
+    },
+    {
+      "source": "estA",
+      "target": "recctHNik8VdmuCoV"
     },
     {
       "source": "estA",
