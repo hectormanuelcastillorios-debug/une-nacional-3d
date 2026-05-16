@@ -228,6 +228,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec5xeKW6a6M6UMPz",
+      "name": "Angela margarita  Boche flores ",
+      "zona": "Zona 18",
+      "barrio": "Colonia el rinconcito ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec6BWnGOLesmhTBL",
       "name": "Valentina  Bentacur ",
       "zona": "Zona 5",
@@ -2640,6 +2648,10 @@
     {
       "source": "estB",
       "target": "rec5vHG9rEtbpOTdq"
+    },
+    {
+      "source": "estA",
+      "target": "rec5xeKW6a6M6UMPz"
     },
     {
       "source": "estB",
