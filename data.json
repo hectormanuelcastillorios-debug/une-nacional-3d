@@ -588,10 +588,26 @@
       "color": "#31623B"
     },
     {
+      "id": "recHqkonbzHUgkGC4",
+      "name": "Linda Marisol  Enrinquez",
+      "zona": "Zona 21",
+      "barrio": "La Vásquez ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recI24C51AjmIluuA",
       "name": "Albertina  Diaz urizar ",
       "zona": "Zona 7",
       "barrio": "Amparo 2 sector 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recI722YDBGf5Jy11",
+      "name": "Maria  Terrier ",
+      "zona": "Zona 7",
+      "barrio": "Amparo 1 ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2534,8 +2550,16 @@
       "target": "recHmEL2gabDUFtej"
     },
     {
+      "source": "estB",
+      "target": "recHqkonbzHUgkGC4"
+    },
+    {
       "source": "rec7P71dj1HP5nK0V",
       "target": "recI24C51AjmIluuA"
+    },
+    {
+      "source": "estA",
+      "target": "recI722YDBGf5Jy11"
     },
     {
       "source": "recrI2rfy4kFyF07D",
