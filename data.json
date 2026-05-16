@@ -52,6 +52,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec1AYnuLxmyDzi42",
+      "name": "Carol Patricia  Orozco ",
+      "zona": "Zona 21",
+      "barrio": "Justo Rufino Barrios ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec1DNFEfnAET7Bis",
       "name": "Ana  Archila",
       "zona": "Zona 7",
@@ -2370,6 +2378,14 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "recebWVDGfLH1Y2Tu",
+      "name": "Erika  García ",
+      "zona": "Zona 21",
+      "barrio": "Los olivos ",
+      "val": 12,
+      "color": "#31623B"
     }
   ],
   "links": [
@@ -2392,6 +2408,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "rec0F2nT2mb3WpiM1"
+    },
+    {
+      "source": "estB",
+      "target": "rec1AYnuLxmyDzi42"
     },
     {
       "source": "estA",
@@ -3552,6 +3572,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "recebWVDGfLH1Y2Tu"
     }
   ]
 }
