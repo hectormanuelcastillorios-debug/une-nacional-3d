@@ -228,6 +228,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recDiOLaGpOnryw5u",
+      "name": "Edermira Ochoa",
+      "zona": "Zona 18",
+      "barrio": "Aventamiento chapa g",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recF1Rj8h8biJfInv",
       "name": "Lisset Tuna",
       "zona": "Zona 21",
@@ -472,6 +480,14 @@
       "name": "Fernando  Solórzano ",
       "zona": "Zona 7",
       "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSDWKCyxSWGcFjQ",
+      "name": "Leticia  Garcia ",
+      "zona": "Zona 17",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -724,6 +740,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recg9pPklA0C0WN13",
+      "name": "María Bernarda Chamo ",
+      "zona": "Zona 7",
+      "barrio": "5ta Samayoa",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recgHZ8Cs1urOgnqx",
       "name": "Cristian García",
       "zona": "Zona 19",
@@ -972,10 +996,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recg9pPklA0C0WN13",
-      "name": "María Bernarda Chamo ",
-      "zona": "Zona 7",
-      "barrio": "5ta Samayoa",
+      "id": "recQtl92SYGKuQKJ3",
+      "name": "Grecia Liliana  Rojas ",
+      "zona": "Zona 18",
+      "barrio": "Colonia el limón ",
       "val": 12,
       "color": "#31623B"
     }
@@ -1088,6 +1112,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recCDCvsEsZVPPIfT"
+    },
+    {
+      "source": "estA",
+      "target": "recDiOLaGpOnryw5u"
     },
     {
       "source": "estB",
@@ -1215,6 +1243,10 @@
     },
     {
       "source": "estB",
+      "target": "recSDWKCyxSWGcFjQ"
+    },
+    {
+      "source": "estB",
       "target": "recSIa1sqLuypCBgF"
     },
     {
@@ -1336,6 +1368,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recfvboxMdiXfXIwm"
+    },
+    {
+      "source": "estA",
+      "target": "recg9pPklA0C0WN13"
     },
     {
       "source": "estB",
@@ -1463,7 +1499,7 @@
     },
     {
       "source": "estA",
-      "target": "recg9pPklA0C0WN13"
+      "target": "recQtl92SYGKuQKJ3"
     }
   ]
 }
