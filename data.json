@@ -1404,6 +1404,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rectC6NbkFdPAH63y",
+      "name": "Guadalupe  Perez",
+      "zona": "Zona 7",
+      "barrio": "Asentamiento Wendy berber",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recterCaR6EetIrBY",
       "name": "Miguel Calderón",
       "zona": "Zona 5",
@@ -2268,6 +2276,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "rect2x6OmJ4PJ2ZmN"
+    },
+    {
+      "source": "estB",
+      "target": "rectC6NbkFdPAH63y"
     },
     {
       "source": "reclplFAH4ePzLQiS",
