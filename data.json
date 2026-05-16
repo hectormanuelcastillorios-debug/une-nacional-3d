@@ -60,6 +60,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec1oixhf06qdmak2",
+      "name": "Heydi Marleni Alvarado Cabrera ",
+      "zona": "Zona 18",
+      "barrio": "San Rafael 3, las colinas ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec2P8ZoGGeZzGiCM",
       "name": "Cumina  Chacon",
       "zona": "Zona 7",
@@ -1388,6 +1396,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recyxyilN8dgLkdDB",
+      "name": "Sandra minel  Valenzuela aguirre",
+      "zona": "Zona 7",
+      "barrio": "Granizo 3 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recz0yzzUq6sICZb8",
       "name": "Hellen Carrera",
       "zona": "Zona 7",
@@ -1408,6 +1424,14 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recFmK4EQrDghLhrb",
+      "name": "Nancy  Hernandez ",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
       "val": 12,
       "color": "#31623B"
     }
@@ -1436,6 +1460,10 @@
     {
       "source": "estB",
       "target": "rec1Meay1aOyg6a6q"
+    },
+    {
+      "source": "estA",
+      "target": "rec1oixhf06qdmak2"
     },
     {
       "source": "estA",
@@ -2102,6 +2130,10 @@
       "target": "recyxuQstNO9kucoc"
     },
     {
+      "source": "estB",
+      "target": "recyxyilN8dgLkdDB"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recz0yzzUq6sICZb8"
     },
@@ -2112,6 +2144,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "recFmK4EQrDghLhrb"
     }
   ]
 }
