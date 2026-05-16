@@ -1076,6 +1076,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recaZd3g9R609x0jW",
+      "name": "Josmely  Ruano ",
+      "zona": "Zona 24",
+      "barrio": "Canton ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recaaP4DiQVa9Nyoe",
       "name": "Mónica Ordoñez",
       "zona": "Zona 7",
@@ -2280,6 +2288,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recaReTDGy1GatD7z"
+    },
+    {
+      "source": "estA",
+      "target": "recaZd3g9R609x0jW"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
