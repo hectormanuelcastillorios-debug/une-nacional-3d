@@ -348,6 +348,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recI24C51AjmIluuA",
+      "name": "Albertina  Diaz urizar ",
+      "zona": "Zona 7",
+      "barrio": "Amparo 2 sector 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recJUZ4esAeDXenli",
       "name": "Ana Cristina  Barrio ",
       "zona": "Zona 7",
@@ -632,6 +640,14 @@
       "name": "Sucely García ",
       "zona": "Zona 7",
       "barrio": "Ranchería central ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSfcVq8TMzNZwHH",
+      "name": "Sandra  Quiñones ",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
       "val": 12,
       "color": "#31623B"
     },
@@ -1462,6 +1478,10 @@
       "target": "recHKl6b4IggdvMfn"
     },
     {
+      "source": "estB",
+      "target": "recI24C51AjmIluuA"
+    },
+    {
       "source": "recftqnXSIUriw1Xl",
       "target": "recJUZ4esAeDXenli"
     },
@@ -1604,6 +1624,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recSYbDAyjYKWtDDQ"
+    },
+    {
+      "source": "estB",
+      "target": "recSfcVq8TMzNZwHH"
     },
     {
       "source": "reclplFAH4ePzLQiS",
