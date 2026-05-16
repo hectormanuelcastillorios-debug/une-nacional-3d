@@ -236,6 +236,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recF9uAbyPls2O8f6",
+      "name": "Yesenia  Cante ",
+      "zona": "Zona 7",
+      "barrio": "Ranchería 1 Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGFoJts4YSuJzPr",
       "name": "Victor Enríquez",
       "zona": "Zona 5",
@@ -804,6 +812,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recyteFvLlimiVmJG",
+      "name": "Alfonso  Cruz ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ranchería 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recz0yzzUq6sICZb8",
       "name": "Hellen Carrera",
       "zona": "Zona 7",
@@ -824,6 +840,14 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recS2jnzKeD9eTIWE",
+      "name": "Deomara Diaz",
+      "zona": "Zona 7",
+      "barrio": "Bethania",
       "val": 12,
       "color": "#31623B"
     }
@@ -940,6 +964,10 @@
     {
       "source": "estB",
       "target": "recF1Rj8h8biJfInv"
+    },
+    {
+      "source": "estA",
+      "target": "recF9uAbyPls2O8f6"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -1226,6 +1254,10 @@
       "target": "recyo4ZTamHj2W135"
     },
     {
+      "source": "estA",
+      "target": "recyteFvLlimiVmJG"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recz0yzzUq6sICZb8"
     },
@@ -1236,6 +1268,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estA",
+      "target": "recS2jnzKeD9eTIWE"
     }
   ]
 }
