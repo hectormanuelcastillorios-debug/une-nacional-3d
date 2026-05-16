@@ -604,6 +604,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recQLubf4h6tpCSLV",
+      "name": "Rosa Clorinda León López de Martínez ",
+      "zona": "Zona 18",
+      "barrio": "San Jorge las colinas",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recQYL0m7CCFthQp1",
       "name": "Mirian  Sagastume ",
       "zona": "Zona 7",
@@ -1756,6 +1764,10 @@
     {
       "source": "estB",
       "target": "recQK3Vb6WDMymnGi"
+    },
+    {
+      "source": "estA",
+      "target": "recQLubf4h6tpCSLV"
     },
     {
       "source": "estA",
