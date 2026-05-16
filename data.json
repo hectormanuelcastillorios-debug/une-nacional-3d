@@ -724,6 +724,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recY1uo8MVm8c2TXt",
+      "name": "Ana Maria  Barrientos Leiva",
+      "zona": "Zona 7",
+      "barrio": "5ta Samayoa ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recY6lDYJZTTXSdz2",
       "name": "Cesar  Hernandez cute ",
       "zona": "Zona 18",
@@ -1127,6 +1135,14 @@
       "id": "recuks1iMaGNAgSqt",
       "name": "Rene Arias",
       "zona": "Zona 3",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recv0trB1bRsRX7L9",
+      "name": "Jairon Bran",
+      "zona": "Zona 18",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1586,6 +1602,10 @@
       "target": "recXtew0ZO02Jz9bN"
     },
     {
+      "source": "estA",
+      "target": "recY1uo8MVm8c2TXt"
+    },
+    {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recY6lDYJZTTXSdz2"
     },
@@ -1788,6 +1808,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recuks1iMaGNAgSqt"
+    },
+    {
+      "source": "estA",
+      "target": "recv0trB1bRsRX7L9"
     },
     {
       "source": "estA",
