@@ -1188,6 +1188,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recp8cvFiZx98aG7U",
+      "name": "Eva patricia  Montón larios ",
+      "zona": "Zona 7",
+      "barrio": "Granizo 3 sector la isla",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recpU88JehyGb6Ql9",
       "name": "Banesa  Guarez",
       "zona": "Zona 17",
@@ -1296,6 +1304,14 @@
       "name": "Maria  Chinchia",
       "zona": "Zona 18",
       "barrio": "Maraiso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recvLDo9tY8tClcXg",
+      "name": "Marta  Jolon",
+      "zona": "Zona 18",
+      "barrio": "Altos de sinai",
       "val": 12,
       "color": "#31623B"
     },
@@ -1987,6 +2003,10 @@
     },
     {
       "source": "estB",
+      "target": "recp8cvFiZx98aG7U"
+    },
+    {
+      "source": "estB",
       "target": "recpU88JehyGb6Ql9"
     },
     {
@@ -2040,6 +2060,10 @@
     {
       "source": "estA",
       "target": "recv7x27V8vdX2it4"
+    },
+    {
+      "source": "estA",
+      "target": "recvLDo9tY8tClcXg"
     },
     {
       "source": "reclplFAH4ePzLQiS",
