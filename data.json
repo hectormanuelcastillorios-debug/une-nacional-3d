@@ -244,6 +244,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recBW6tqSS1JEINuE",
+      "name": "Verónica de Jesús  Davila vaidez",
+      "zona": "Zona 7",
+      "barrio": "Asentamiento Rafael  bergel",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recBdz2TC3nDPRqFM",
       "name": "German Lopez",
       "zona": "Zona 7",
@@ -1060,6 +1068,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recgChLwTyoJqFc3Q",
+      "name": "Reyna Pérez Mendez ",
+      "zona": "Zona 18",
+      "barrio": "Kennedy ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recgHZ8Cs1urOgnqx",
       "name": "Cristian García",
       "zona": "Zona 19",
@@ -1603,6 +1619,10 @@
     },
     {
       "source": "estB",
+      "target": "recBW6tqSS1JEINuE"
+    },
+    {
+      "source": "estB",
       "target": "recBdz2TC3nDPRqFM"
     },
     {
@@ -2008,6 +2028,10 @@
     {
       "source": "rec7P71dj1HP5nK0V",
       "target": "recg9pPklA0C0WN13"
+    },
+    {
+      "source": "estA",
+      "target": "recgChLwTyoJqFc3Q"
     },
     {
       "source": "estB",
