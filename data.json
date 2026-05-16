@@ -212,6 +212,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recNpGEKJ0Vaftr7q",
+      "name": "Marlene  Quintanal García ",
+      "zona": "Zona 7",
+      "barrio": "Berbena joya 3",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recOOW3MGpkyLJimq",
       "name": "Dalia Veliz",
       "zona": "Zona 7",
@@ -664,6 +672,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recMhlLAtYaGxhnh9"
+    },
+    {
+      "source": "estA",
+      "target": "recNpGEKJ0Vaftr7q"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
