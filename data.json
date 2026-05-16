@@ -460,6 +460,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recNtnKF3dTxGszbS",
+      "name": "Norma Consuelo  Ixchop de León ",
+      "zona": "Zona 18",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recOOW3MGpkyLJimq",
       "name": "Dalia Veliz",
       "zona": "Zona 7",
@@ -1148,6 +1156,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recqzrH78krKkrSaO",
+      "name": "Claudia Lucrecia",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recrQ54LFCbcpzw8e",
       "name": "Francisco Antonio  Juárez Zaldaña",
       "zona": "Zona 18",
@@ -1306,14 +1322,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "recNtnKF3dTxGszbS",
-      "name": "Norma Consuelo  Ixchop de León ",
-      "zona": "Zona 18",
-      "barrio": "N/A",
-      "val": 20,
-      "color": "#66CC33"
     }
   ],
   "links": [
@@ -1540,6 +1548,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recNpGEKJ0Vaftr7q"
+    },
+    {
+      "source": "estA",
+      "target": "recNtnKF3dTxGszbS"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
@@ -1887,6 +1899,10 @@
     },
     {
       "source": "estA",
+      "target": "recqzrH78krKkrSaO"
+    },
+    {
+      "source": "estA",
       "target": "recrQ54LFCbcpzw8e"
     },
     {
@@ -1964,10 +1980,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estA",
-      "target": "recNtnKF3dTxGszbS"
     }
   ]
 }
