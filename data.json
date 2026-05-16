@@ -500,6 +500,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recHmEL2gabDUFtej",
+      "name": "Ada  Álvarez ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recI24C51AjmIluuA",
       "name": "Albertina  Diaz urizar ",
       "zona": "Zona 7",
@@ -608,6 +616,14 @@
       "name": "Flor Pérez",
       "zona": "Zona 7",
       "barrio": "Eucaliptos",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recLn5fYaFzZw7trs",
+      "name": "Estrella Lourdes Chamalec Perez",
+      "zona": "Zona 21",
+      "barrio": "La arenera",
       "val": 12,
       "color": "#31623B"
     },
@@ -1860,6 +1876,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recwUNXGUYtO8rgyr",
+      "name": "Elvira  Sánchez ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto sector 4",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recwZyv9uCrbuB6gL",
       "name": "Jesús Vasquez",
       "zona": "Zona 3",
@@ -1952,6 +1976,14 @@
       "name": "Holga  Flores ",
       "zona": "Zona 7",
       "barrio": "Ranchería 7 Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec8nl9lc2rxLlXLo",
+      "name": "Saraí  Maldonado ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto ",
       "val": 12,
       "color": "#31623B"
     }
@@ -2202,6 +2234,10 @@
       "target": "recHlIyIbI6mxRSh1"
     },
     {
+      "source": "estA",
+      "target": "recHmEL2gabDUFtej"
+    },
+    {
       "source": "rec7P71dj1HP5nK0V",
       "target": "recI24C51AjmIluuA"
     },
@@ -2256,6 +2292,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recLm5edTm9ciX9AR"
+    },
+    {
+      "source": "estB",
+      "target": "recLn5fYaFzZw7trs"
     },
     {
       "source": "estA",
@@ -2882,6 +2922,10 @@
       "target": "recwREyncwfMdKFk8"
     },
     {
+      "source": "estB",
+      "target": "recwUNXGUYtO8rgyr"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "recwZyv9uCrbuB6gL"
     },
@@ -2928,6 +2972,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "rec8nl9lc2rxLlXLo"
     }
   ]
 }
