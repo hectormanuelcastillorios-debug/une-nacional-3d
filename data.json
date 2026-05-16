@@ -164,6 +164,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recC9VuR0HdwnGPHy",
+      "name": "Víctor Orlando  Rivera Enríquez ",
+      "zona": "Zona 5",
+      "barrio": "Arrivillaga ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recCDCvsEsZVPPIfT",
       "name": "Esdras Malsonado",
       "zona": "Zona 21",
@@ -444,6 +452,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recftqnXSIUriw1Xl",
+      "name": "Ana Cristina  Barrios ",
+      "zona": "Zona 7",
+      "barrio": "Primavera amparo dos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recfvboxMdiXfXIwm",
       "name": "Lourdes García",
       "zona": "Zona 7",
@@ -698,6 +714,10 @@
       "target": "recBvu5EOIL5wqh9t"
     },
     {
+      "source": "estA",
+      "target": "recC9VuR0HdwnGPHy"
+    },
+    {
       "source": "recF1Rj8h8biJfInv",
       "target": "recCDCvsEsZVPPIfT"
     },
@@ -838,6 +858,10 @@
       "target": "recebvYOW4Lij9CYO"
     },
     {
+      "source": "estB",
+      "target": "recftqnXSIUriw1Xl"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recfvboxMdiXfXIwm"
     },
@@ -924,6 +948,10 @@
     {
       "source": "estB",
       "target": "recz76DFY78xLHRko"
+    },
+    {
+      "source": "rec3OCJ9nypSf6767",
+      "target": "recHKl6b4IggdvMfn"
     }
   ]
 }
