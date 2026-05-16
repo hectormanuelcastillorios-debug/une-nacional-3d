@@ -404,6 +404,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recdpJpuS746Sqoi0",
+      "name": "Telma Sandobal",
+      "zona": "Zona 7",
+      "barrio": "Amparo 2 aventamiento nueva persona ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "receGIzWYBTjnKOXX",
       "name": "Pablo Mora",
       "zona": "Zona 1",
@@ -792,6 +800,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "reccZDhW8RpJ0NCs8"
+    },
+    {
+      "source": "estA",
+      "target": "recdpJpuS746Sqoi0"
     },
     {
       "source": "estB",
