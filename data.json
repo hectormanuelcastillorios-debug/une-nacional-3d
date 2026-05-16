@@ -516,6 +516,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recJRll6rKoH20WaP",
+      "name": "Gloria  Ibáñez ",
+      "zona": "Zona 24",
+      "barrio": "Canalitos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recJUZ4esAeDXenli",
       "name": "Ana Cristina  Barrio ",
       "zona": "Zona 7",
@@ -978,6 +986,14 @@
       "barrio": "La Reformita",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "recXQ8K1B0hW9hPKU",
+      "name": "Marta Julia Panadero ",
+      "zona": "N/A",
+      "barrio": "Sábana Arriba ",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recXXshtmgd3akIbN",
@@ -2050,6 +2066,10 @@
       "target": "recJM3D6xKoCwSYrs"
     },
     {
+      "source": "estA",
+      "target": "recJRll6rKoH20WaP"
+    },
+    {
       "source": "recftqnXSIUriw1Xl",
       "target": "recJUZ4esAeDXenli"
     },
@@ -2280,6 +2300,10 @@
     {
       "source": "estB",
       "target": "recXDAYG285NyhImG"
+    },
+    {
+      "source": "estB",
+      "target": "recXQ8K1B0hW9hPKU"
     },
     {
       "source": "estB",
