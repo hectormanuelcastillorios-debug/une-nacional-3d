@@ -940,6 +940,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recOTyV5NwK6MI1wZ",
+      "name": "Paola Merida",
+      "zona": "Zona 18",
+      "barrio": "Paraiso2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recOr1EVSIbxFZTvw",
       "name": "Marta Leticia  Vargas Rodríguez ",
       "zona": "Zona 7",
@@ -2988,6 +2996,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recOOW3MGpkyLJimq"
+    },
+    {
+      "source": "estA",
+      "target": "recOTyV5NwK6MI1wZ"
     },
     {
       "source": "rec4rfdd346R2lK4V",
