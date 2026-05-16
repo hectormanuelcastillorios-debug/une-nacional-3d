@@ -372,6 +372,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec9b5vnkdpwx9XSd",
+      "name": "Grados amarilis Palacios",
+      "zona": "Zona 18",
+      "barrio": "Alameda norte",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec9ckdFrVkje0imq",
       "name": "Araseli  Ramírez ",
       "zona": "Zona 7",
@@ -2648,6 +2656,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec8yo0Pm22nPQjV4"
+    },
+    {
+      "source": "estA",
+      "target": "rec9b5vnkdpwx9XSd"
     },
     {
       "source": "estA",
