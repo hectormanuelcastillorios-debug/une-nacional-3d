@@ -436,6 +436,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGe1DIAcyV9Cz5f",
+      "name": "Aura Alicia Balcarcel Barcacel Belteton",
+      "zona": "Zona 18",
+      "barrio": "San Rafael 3 ",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recGm7UDOwgzMrx14",
       "name": "Gloria  Garcia",
       "zona": "Zona 7",
@@ -1436,6 +1444,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recpeMflPCnguwaTO",
+      "name": "Carmen Toledo",
+      "zona": "Zona 5",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recqG1HocLx6xh8DU",
       "name": "Esperaza Alvarado ",
       "zona": "Zona 7",
@@ -1904,6 +1920,10 @@
     {
       "source": "estA",
       "target": "recGVZFX5P6moTTjb"
+    },
+    {
+      "source": "estA",
+      "target": "recGe1DIAcyV9Cz5f"
     },
     {
       "source": "estB",
@@ -2404,6 +2424,10 @@
     {
       "source": "estB",
       "target": "recpU88JehyGb6Ql9"
+    },
+    {
+      "source": "estB",
+      "target": "recpeMflPCnguwaTO"
     },
     {
       "source": "estB",
