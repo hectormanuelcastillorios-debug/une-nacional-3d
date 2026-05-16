@@ -124,6 +124,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec2aTfG7vR6GMrBm",
+      "name": "Jennifer rosales ",
+      "zona": "Zona 18",
+      "barrio": "El Rinconcito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec3FKDswGpX2R58d",
       "name": "Auru Guzmán",
       "zona": "Zona 3",
@@ -2636,6 +2644,10 @@
     {
       "source": "estA",
       "target": "rec2P8ZoGGeZzGiCM"
+    },
+    {
+      "source": "estA",
+      "target": "rec2aTfG7vR6GMrBm"
     },
     {
       "source": "rec3OCJ9nypSf6767",
