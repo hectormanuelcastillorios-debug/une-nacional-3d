@@ -564,6 +564,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGBXFY5nvqzV3hv",
+      "name": "Marcua  Martines ",
+      "zona": "Zona 5",
+      "barrio": "Esfuerzo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGFoJts4YSuJzPr",
       "name": "Victor Enríquez",
       "zona": "Zona 5",
@@ -784,6 +792,14 @@
       "name": "César  AgustiO",
       "zona": "Zona 7",
       "barrio": "Aventamiento las torres ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recM1kB9clcW5Hqzr",
+      "name": "Carlos Daniel  Martinez ",
+      "zona": "Zona 5",
+      "barrio": "Colonia el esfuerzo ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2634,6 +2650,10 @@
       "target": "recG5kFdX9R5B4ci9"
     },
     {
+      "source": "estB",
+      "target": "recGBXFY5nvqzV3hv"
+    },
+    {
       "source": "reclplFAH4ePzLQiS",
       "target": "recGFoJts4YSuJzPr"
     },
@@ -2744,6 +2764,10 @@
     {
       "source": "estA",
       "target": "recLpXJIpy70H72b8"
+    },
+    {
+      "source": "estB",
+      "target": "recM1kB9clcW5Hqzr"
     },
     {
       "source": "recftqnXSIUriw1Xl",
