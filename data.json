@@ -604,6 +604,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGXAPPJJFacBUJL",
+      "name": "Marta  Citeda Rodriguez",
+      "zona": "Zona 18",
+      "barrio": "Colonia Galilea",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGbxVtNgoQbYegK",
       "name": "Elsa Amabilia  Barrientos Velis",
       "zona": "Zona 18",
@@ -2724,6 +2732,10 @@
     {
       "source": "recrI2rfy4kFyF07D",
       "target": "recGVZFX5P6moTTjb"
+    },
+    {
+      "source": "estB",
+      "target": "recGXAPPJJFacBUJL"
     },
     {
       "source": "estB",
