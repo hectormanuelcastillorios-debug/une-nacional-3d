@@ -204,6 +204,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec6pyCUZvYQOE27K",
+      "name": "Carmen Sagui",
+      "zona": "Zona 5",
+      "barrio": "Arrivillaga",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec74v2OIgrU7IRIV",
       "name": "Gloria Janeth  Vivar Domínguez ",
       "zona": "Zona 5",
@@ -552,6 +560,14 @@
       "name": "Maria Tunches",
       "zona": "Zona 17",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recKDSMccJJy9zAon",
+      "name": "Adela  Velázquez ",
+      "zona": "Zona 24",
+      "barrio": "Cananitos ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1748,6 +1764,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recvWlbqR9dBpvcqH",
+      "name": "Olga Veronica Gutiérrez Rodriguez",
+      "zona": "Zona 17",
+      "barrio": "Sábana Arriba",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recvjw5bo0W8lEh8k",
       "name": "Gloria Vivar",
       "zona": "Zona 5",
@@ -1858,6 +1882,14 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "rec2KBeIZuoVfP5WJ",
+      "name": "Ana  Rodríguez ",
+      "zona": "Zona 24",
+      "barrio": "Cananitos ",
+      "val": 12,
+      "color": "#31623B"
     }
   ],
   "links": [
@@ -1956,6 +1988,10 @@
     {
       "source": "estA",
       "target": "rec6bLY37Pdk4baC6"
+    },
+    {
+      "source": "estA",
+      "target": "rec6pyCUZvYQOE27K"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -2132,6 +2168,10 @@
     {
       "source": "estB",
       "target": "recKDAYVhoFzRlMka"
+    },
+    {
+      "source": "estA",
+      "target": "recKDSMccJJy9zAon"
     },
     {
       "source": "estA",
@@ -2730,6 +2770,10 @@
       "target": "recvLDo9tY8tClcXg"
     },
     {
+      "source": "estB",
+      "target": "recvWlbqR9dBpvcqH"
+    },
+    {
       "source": "reclplFAH4ePzLQiS",
       "target": "recvjw5bo0W8lEh8k"
     },
@@ -2784,6 +2828,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estA",
+      "target": "rec2KBeIZuoVfP5WJ"
     }
   ]
 }
