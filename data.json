@@ -76,6 +76,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec2KBeIZuoVfP5WJ",
+      "name": "Ana  Rodríguez ",
+      "zona": "Zona 24",
+      "barrio": "Cananitos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec2NQYjXtaf7ZXAt",
       "name": "Juana luisa Mendoza xolotio",
       "zona": "Zona 18",
@@ -620,6 +628,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recMPqKJqOGVxu5pn",
+      "name": "Margarita  Sacrab",
+      "zona": "Zona 5",
+      "barrio": "Colonia Arrivillaga",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recMhlLAtYaGxhnh9",
       "name": "Dora ",
       "zona": "Zona 21",
@@ -632,6 +648,14 @@
       "name": "Abigail  Duran",
       "zona": "Zona 18",
       "barrio": "El paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recMyyM8Rln3sMXOu",
+      "name": "María  Del Carmen ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1882,14 +1906,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "rec2KBeIZuoVfP5WJ",
-      "name": "Ana  Rodríguez ",
-      "zona": "Zona 24",
-      "barrio": "Cananitos ",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -1924,6 +1940,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "rec25PVz5lZVJna6F"
+    },
+    {
+      "source": "estA",
+      "target": "rec2KBeIZuoVfP5WJ"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
@@ -2198,12 +2218,20 @@
       "target": "recMBgwyPY9vhGjlH"
     },
     {
+      "source": "estA",
+      "target": "recMPqKJqOGVxu5pn"
+    },
+    {
       "source": "recF1Rj8h8biJfInv",
       "target": "recMhlLAtYaGxhnh9"
     },
     {
       "source": "estA",
       "target": "recMlcxOS0EsLxoU1"
+    },
+    {
+      "source": "estB",
+      "target": "recMyyM8Rln3sMXOu"
     },
     {
       "source": "rec4rfdd346R2lK4V",
@@ -2828,10 +2856,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estA",
-      "target": "rec2KBeIZuoVfP5WJ"
     }
   ]
 }
