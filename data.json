@@ -684,6 +684,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recQbNwOYOeFh5ekB",
+      "name": "Levis susana  Muñóz gutierrez ",
+      "zona": "Zona 18",
+      "barrio": "El limón ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recQtl92SYGKuQKJ3",
       "name": "Grecia Liliana  Rojas ",
       "zona": "Zona 18",
@@ -1932,6 +1940,10 @@
     {
       "source": "estA",
       "target": "recQYL0m7CCFthQp1"
+    },
+    {
+      "source": "estA",
+      "target": "recQbNwOYOeFh5ekB"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
