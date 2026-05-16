@@ -572,6 +572,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recOt28qn33611WJx",
+      "name": "Silla Mortila González Chun",
+      "zona": "Zona 7",
+      "barrio": "Amparo 1 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recPBphJnf5TEOpoG",
       "name": "AidéLina  Lopez",
       "zona": "Zona 7",
@@ -1844,6 +1852,10 @@
     {
       "source": "estA",
       "target": "recOshvRE8JvRdhwS"
+    },
+    {
+      "source": "estB",
+      "target": "recOt28qn33611WJx"
     },
     {
       "source": "estA",
