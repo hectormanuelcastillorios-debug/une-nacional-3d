@@ -2420,6 +2420,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recxnhDsppzetXKzm",
+      "name": "Araceli Solorzano",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recxonOXHbweZnyvO",
       "name": "Marta  Cortez ",
       "zona": "Zona 18",
@@ -3696,6 +3704,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recxme5y6S6lZAhhx"
+    },
+    {
+      "source": "estA",
+      "target": "recxnhDsppzetXKzm"
     },
     {
       "source": "estA",
