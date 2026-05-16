@@ -1052,6 +1052,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recYZdweqkWTjjKuR",
+      "name": "Elvia Muñoz",
+      "zona": "Zona 24",
+      "barrio": "Canalitos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recYaIrIDXf9jyml8",
       "name": "Alba Cruz",
       "zona": "Zona 3",
@@ -1324,6 +1332,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rech0T1SgLo6R7nVc",
+      "name": "Lissete Reyes",
+      "zona": "Zona 5",
+      "barrio": "Colonia Arivillaga",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rechzrokva0HLpZSJ",
       "name": "Consuelo  Orozco ",
       "zona": "Zona 24",
@@ -1480,6 +1496,14 @@
       "name": "Medarda González  ",
       "zona": "Zona 18",
       "barrio": "Aventamiento mera ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recnSASuUmVITIKYY",
+      "name": "Dayana  Sánchez ",
+      "zona": "Zona 24",
+      "barrio": "Cananitos ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2350,6 +2374,10 @@
       "target": "recYEJAUoqaBdyAXc"
     },
     {
+      "source": "estA",
+      "target": "recYZdweqkWTjjKuR"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "recYaIrIDXf9jyml8"
     },
@@ -2487,6 +2515,10 @@
     },
     {
       "source": "estA",
+      "target": "rech0T1SgLo6R7nVc"
+    },
+    {
+      "source": "estA",
       "target": "rechzrokva0HLpZSJ"
     },
     {
@@ -2564,6 +2596,10 @@
     {
       "source": "estA",
       "target": "recmsy7s4dNU0jzbh"
+    },
+    {
+      "source": "estA",
+      "target": "recnSASuUmVITIKYY"
     },
     {
       "source": "estB",
