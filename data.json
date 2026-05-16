@@ -524,6 +524,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recsYCsIc80fqMfmC",
+      "name": "Anita  Quicibic",
+      "zona": "Zona 3",
+      "barrio": "Colonia bella esperanza ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recterCaR6EetIrBY",
       "name": "Miguel Calderón",
       "zona": "Zona 5",
@@ -860,6 +868,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recqkKkgBo8HtAXXQ"
+    },
+    {
+      "source": "estA",
+      "target": "recsYCsIc80fqMfmC"
     },
     {
       "source": "reclplFAH4ePzLQiS",
