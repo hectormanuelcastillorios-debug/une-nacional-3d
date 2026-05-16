@@ -1332,6 +1332,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recrBBXqSBTTak6P2",
+      "name": "María Elvia Rosales Hernández ",
+      "zona": "Zona 7",
+      "barrio": "Ampro 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recrQ54LFCbcpzw8e",
       "name": "Francisco Antonio  Juárez Zaldaña",
       "zona": "Zona 18",
@@ -2184,6 +2192,10 @@
     {
       "source": "estA",
       "target": "recqzrH78krKkrSaO"
+    },
+    {
+      "source": "estB",
+      "target": "recrBBXqSBTTak6P2"
     },
     {
       "source": "estA",
