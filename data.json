@@ -188,6 +188,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "rec7ce9nRM6Luqg22",
+      "name": "Candelaria Lopez",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec86TnioIH0mBXKA",
       "name": "Clemencia  Pineda",
       "zona": "Zona 7",
@@ -1076,6 +1084,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recjWs2rCReboeXRF",
+      "name": "María del rosario  Orellana de guamuche",
+      "zona": "Zona 7",
+      "barrio": "El granizo 3 la isla ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recjuaViimdSGEvvs",
       "name": "Arely Reyes",
       "zona": "Zona 7",
@@ -1535,6 +1551,10 @@
     },
     {
       "source": "estA",
+      "target": "rec7ce9nRM6Luqg22"
+    },
+    {
+      "source": "estA",
       "target": "rec86TnioIH0mBXKA"
     },
     {
@@ -1976,6 +1996,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recilm3b55RJuUnN9"
+    },
+    {
+      "source": "estB",
+      "target": "recjWs2rCReboeXRF"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
