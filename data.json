@@ -396,6 +396,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recFTLCIkI6I8zrdQ",
+      "name": "Neidy  Garcia",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recFmK4EQrDghLhrb",
       "name": "Nancy  Hernandez ",
       "zona": "Zona 18",
@@ -1024,6 +1032,14 @@
       "name": "Carolina Díaz ",
       "zona": "Zona 18",
       "barrio": "Paraíso 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recZkuzRBvhdyWb37",
+      "name": "Susana del socorro  Gutierrez moran ",
+      "zona": "Zona 18",
+      "barrio": "Limón ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1871,6 +1887,10 @@
     },
     {
       "source": "estB",
+      "target": "recFTLCIkI6I8zrdQ"
+    },
+    {
+      "source": "estB",
       "target": "recFmK4EQrDghLhrb"
     },
     {
@@ -2184,6 +2204,10 @@
     {
       "source": "estA",
       "target": "recZjOGlj722VPi5M"
+    },
+    {
+      "source": "estA",
+      "target": "recZkuzRBvhdyWb37"
     },
     {
       "source": "estB",
