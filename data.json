@@ -348,6 +348,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec9ckdFrVkje0imq",
+      "name": "Araseli  Ramírez ",
+      "zona": "Zona 7",
+      "barrio": "Amparo ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec9cuxH2vCLVPBCB",
       "name": "Elizabeth Marroquin",
       "zona": "Zona 13",
@@ -456,6 +464,14 @@
       "name": "Izabel Gutierrez",
       "zona": "Zona 17",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recEqjsWY8m2kZyGx",
+      "name": "Blanca Yamileth Maldonado López ",
+      "zona": "Zona 21",
+      "barrio": "La Vásquez ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1000,6 +1016,14 @@
       "name": "Jairi Yesenia  Cordero Pay",
       "zona": "Zona 7",
       "barrio": "5ta Samayoa ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSA0FE9LIboHteu",
+      "name": "Olga marina Gimenez malez",
+      "zona": "Zona 5",
+      "barrio": "Colonia sarabia ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2446,6 +2470,10 @@
       "target": "rec8yo0Pm22nPQjV4"
     },
     {
+      "source": "estA",
+      "target": "rec9ckdFrVkje0imq"
+    },
+    {
       "source": "estB",
       "target": "rec9cuxH2vCLVPBCB"
     },
@@ -2500,6 +2528,10 @@
     {
       "source": "estB",
       "target": "recEhWDSUffAS7DnE"
+    },
+    {
+      "source": "estB",
+      "target": "recEqjsWY8m2kZyGx"
     },
     {
       "source": "rec7P71dj1HP5nK0V",
@@ -2772,6 +2804,10 @@
     {
       "source": "rec7P71dj1HP5nK0V",
       "target": "recS3eqJvZ9IKiJGk"
+    },
+    {
+      "source": "estB",
+      "target": "recSA0FE9LIboHteu"
     },
     {
       "source": "estA",
