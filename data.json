@@ -404,6 +404,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recS2jnzKeD9eTIWE",
+      "name": "Deomara Diaz",
+      "zona": "Zona 7",
+      "barrio": "Bethania",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recSIa1sqLuypCBgF",
       "name": "Silvia  Estrada ",
       "zona": "Zona 3",
@@ -842,14 +850,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "recS2jnzKeD9eTIWE",
-      "name": "Deomara Diaz",
-      "zona": "Zona 7",
-      "barrio": "Bethania",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -1048,6 +1048,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recRL8sW2dPez5rLF"
+    },
+    {
+      "source": "estA",
+      "target": "recS2jnzKeD9eTIWE"
     },
     {
       "source": "estB",
@@ -1268,10 +1272,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estA",
-      "target": "recS2jnzKeD9eTIWE"
     }
   ]
 }
