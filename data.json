@@ -180,6 +180,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recBdz2TC3nDPRqFM",
+      "name": "German Lopez",
+      "zona": "Zona 7",
+      "barrio": "Aparo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recBhbOFKOh0IfJWI",
       "name": "Mayra Torres",
       "zona": "Zona 5",
@@ -794,6 +802,14 @@
       "barrio": "Paraiso II / Sector Llano Largo",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "reczw3ZFUYcwyE0BH",
+      "name": "Holga  Flores ",
+      "zona": "Zona 7",
+      "barrio": "Ranchería 7 Berbena ",
+      "val": 12,
+      "color": "#31623B"
     }
   ],
   "links": [
@@ -880,6 +896,10 @@
     {
       "source": "estB",
       "target": "rec9cuxH2vCLVPBCB"
+    },
+    {
+      "source": "estB",
+      "target": "recBdz2TC3nDPRqFM"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -1134,7 +1154,7 @@
       "target": "recojpYJPJ8SSBhnm"
     },
     {
-      "source": "estA",
+      "source": "reclplFAH4ePzLQiS",
       "target": "recqTDmTl0VYCYEPa"
     },
     {
@@ -1188,6 +1208,14 @@
     {
       "source": "estB",
       "target": "recz76DFY78xLHRko"
+    },
+    {
+      "source": "estA",
+      "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "recftqnXSIUriw1Xl",
+      "target": "recMBgwyPY9vhGjlH"
     }
   ]
 }
