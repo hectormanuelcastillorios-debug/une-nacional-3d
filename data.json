@@ -852,6 +852,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recdM2VC1KhtkgxJE",
+      "name": "María  Aguilar ",
+      "zona": "Zona 7",
+      "barrio": "Granizo 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recdpJpuS746Sqoi0",
       "name": "Telma Sandobal",
       "zona": "Zona 7",
@@ -1664,6 +1672,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "reccZDhW8RpJ0NCs8"
+    },
+    {
+      "source": "estA",
+      "target": "recdM2VC1KhtkgxJE"
     },
     {
       "source": "estA",
