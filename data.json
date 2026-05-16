@@ -356,6 +356,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recTXQUZveqEttavF",
+      "name": "Olga  López ",
+      "zona": "Zona 5",
+      "barrio": "Chacarra",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recTz9GwnOKhzssFL",
       "name": "Verónica Dávila",
       "zona": "Zona 7",
@@ -546,6 +554,14 @@
       "barrio": "Santa Fe",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "recmqKYfywbVbK0kC",
+      "name": "Luz  García ",
+      "zona": "Zona 7",
+      "barrio": "Sector 1 amparo 2",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recoWmvUbTr5YSq9B",
@@ -842,6 +858,10 @@
       "target": "recTFzra0HCoV6wmN"
     },
     {
+      "source": "estB",
+      "target": "recTXQUZveqEttavF"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTz9GwnOKhzssFL"
     },
@@ -936,6 +956,10 @@
     {
       "source": "estB",
       "target": "recmmhrn6ntn2o7kX"
+    },
+    {
+      "source": "estB",
+      "target": "recmqKYfywbVbK0kC"
     },
     {
       "source": "recF1Rj8h8biJfInv",
