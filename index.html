@@ -55,27 +55,19 @@
             font-family: monospace;
         }
 
-        /* INFO PANEL */
-
         #infoPanel {
             position: absolute;
             right: 20px;
             top: 20px;
             width: 320px;
             min-height: 120px;
-
             background: rgba(0, 12, 24, 0.92);
             border: 1px solid rgba(102, 204, 51, 0.5);
-
             border-radius: 14px;
             padding: 20px;
-
             color: white;
-
             z-index: 200;
-
             backdrop-filter: blur(14px);
-
             box-shadow:
                 0 0 30px rgba(102, 204, 51, 0.15),
                 inset 0 0 25px rgba(102, 204, 51, 0.05);
@@ -115,7 +107,9 @@
     <!-- LEFT PANEL -->
     <div id="ui">
         <div class="title">ESTRUCTURA UNE</div>
-        <div id="status" class="stats">INICIALIZANDO SISTEMA...</div>
+        <div id="status" class="stats">
+            INICIALIZANDO SISTEMA...
+        </div>
     </div>
 
     <!-- RIGHT PANEL -->
@@ -143,19 +137,23 @@
 
             .backgroundColor('#00050a')
 
+            // IMPORTANT FIXES
+            .enableNodeDrag(false)
+            .cooldownTicks(200)
+
             // NODE COLOR
             .nodeColor(node => node.color || '#66CC33')
 
-            // SMALLER NODES
+            // NODE SIZE
             .nodeRelSize(5)
 
-            // CUSTOM NODE + LABEL
+            // CUSTOM NODE
             .nodeThreeObject(node => {
 
                 const group = new THREE.Group();
 
                 // =========================
-                // GLOW NODE
+                // NODE SPHERE
                 // =========================
 
                 const geometry = new THREE.SphereGeometry(3.5, 24, 24);
@@ -168,12 +166,15 @@
                     roughness: 0.35
                 });
 
-                const sphere = new THREE.Mesh(geometry, material);
+                const sphere = new THREE.Mesh(
+                    geometry,
+                    material
+                );
 
                 group.add(sphere);
 
                 // =========================
-                // NAME LABEL ONLY
+                // LABEL
                 // =========================
 
                 const canvas = document.createElement('canvas');
@@ -183,46 +184,76 @@
 
                 ctx.font = 'Bold 34px Arial';
 
-                const textWidth = ctx.measureText(name).width;
+                const textWidth =
+                    ctx.measureText(name).width;
 
                 canvas.width = textWidth + 60;
                 canvas.height = 70;
 
                 // RESET AFTER RESIZE
+
                 ctx.font = 'Bold 34px Arial';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
 
-                // Transparent futuristic background
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.45)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                // BACKGROUND
 
-                // Border glow
-                ctx.strokeStyle = node.color || '#66CC33';
+                ctx.fillStyle = 'rgba(0,0,0,0.45)';
+                ctx.fillRect(
+                    0,
+                    0,
+                    canvas.width,
+                    canvas.height
+                );
+
+                // BORDER
+
+                ctx.strokeStyle =
+                    node.color || '#66CC33';
+
                 ctx.lineWidth = 3;
-                ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-                // Name
+                ctx.strokeRect(
+                    0,
+                    0,
+                    canvas.width,
+                    canvas.height
+                );
+
+                // TEXT
+
                 ctx.fillStyle = '#ffffff';
-                ctx.fillText(name, canvas.width / 2, 36);
+
+                ctx.fillText(
+                    name,
+                    canvas.width / 2,
+                    36
+                );
 
                 // TEXTURE
-                const texture = new THREE.CanvasTexture(canvas);
 
-                texture.minFilter = THREE.LinearFilter;
+                const texture =
+                    new THREE.CanvasTexture(canvas);
 
-                const spriteMaterial = new THREE.SpriteMaterial({
-                    map: texture,
-                    transparent: true,
-                    depthWrite: false
-                });
+                texture.minFilter =
+                    THREE.LinearFilter;
 
-                const sprite = new THREE.Sprite(spriteMaterial);
+                const spriteMaterial =
+                    new THREE.SpriteMaterial({
+                        map: texture,
+                        transparent: true,
+                        depthWrite: false
+                    });
 
-                // SMALLER LABELS
-                sprite.scale.set(canvas.width / 26, canvas.height / 26, 1);
+                const sprite =
+                    new THREE.Sprite(spriteMaterial);
 
-                // FLOAT ABOVE NODE
+                sprite.scale.set(
+                    canvas.width / 26,
+                    canvas.height / 26,
+                    1
+                );
+
                 sprite.position.set(0, 10, 0);
 
                 group.add(sprite);
@@ -243,29 +274,42 @@
             // CLEAN UI
             .showNavInfo(false)
 
-            // CLICK EVENT
+            // NODE CLICK
             .onNodeClick(node => {
 
                 infoPanel.classList.add('active');
 
                 infoPanel.innerHTML = `
-                    <div class="info-title">${node.name || 'SIN NOMBRE'}</div>
+                    <div class="info-title">
+                        ${node.name || 'SIN NOMBRE'}
+                    </div>
 
                     <div class="info-line">
-                        <span class="info-label">ZONA:</span>
+                        <span class="info-label">
+                            ZONA:
+                        </span>
                         ${node.zona || 'NO DEFINIDA'}
                     </div>
 
                     <div class="info-line">
-                        <span class="info-label">BARRIO:</span>
+                        <span class="info-label">
+                            BARRIO:
+                        </span>
                         ${node.barrio || 'NO DEFINIDO'}
                     </div>
                 `;
 
-                // CAMERA FOCUS EFFECT
+                // CAMERA EFFECT
+
                 const distance = 70;
 
-                const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+                const distRatio =
+                    1 + distance /
+                    Math.hypot(
+                        node.x,
+                        node.y,
+                        node.z
+                    );
 
                 Graph.cameraPosition(
                     {
@@ -284,15 +328,30 @@
 
         const scene = Graph.scene();
 
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1.1);
+        const ambientLight =
+            new THREE.AmbientLight(
+                0xffffff,
+                1.1
+            );
+
         scene.add(ambientLight);
 
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
-        directionalLight.position.set(100, 100, 100);
+        const directionalLight =
+            new THREE.DirectionalLight(
+                0xffffff,
+                1.2
+            );
+
+        directionalLight.position.set(
+            100,
+            100,
+            100
+        );
+
         scene.add(directionalLight);
 
         // =========================
-        // MUCH MORE COMPACT GRAPH
+        // FORCE SETTINGS
         // =========================
 
         Graph.d3Force('charge')
@@ -302,7 +361,7 @@
             .distance(45);
 
         // =========================
-        // ROTATION
+        // AUTO ROTATION
         // =========================
 
         Graph.controls().autoRotate = true;
@@ -316,32 +375,77 @@
         // LOAD DATA
         // =========================
 
-        fetch('./data.json')
+        fetch(`./data.json?t=${Date.now()}`)
+
             .then(res => {
+
                 if (!res.ok) {
-                    throw new Error('No se encontró data.json');
+                    throw new Error(
+                        'No se encontró data.json'
+                    );
                 }
+
                 return res.json();
             })
 
             .then(data => {
 
-                statusElem.innerText =
-                    `LÍDERES: ${data.nodes.length} | CONEXIONES: ${data.links.length}`;
+                // =========================
+                // CLEAN OLD GRAPH
+                // =========================
 
-                Graph.graphData(data);
+                Graph.graphData({
+                    nodes: [],
+                    links: []
+                });
+
+                // RESET ENGINE
+
+                Graph.d3ReheatSimulation();
 
                 setTimeout(() => {
-                    Graph.zoomToFit(1200, 50);
-                }, 1000);
+
+                    // CLEAN DATA COPY
+
+                    const cleanData = {
+                        nodes: data.nodes.map(n => ({ ...n })),
+                        links: data.links.map(l => ({ ...l }))
+                    };
+
+                    statusElem.innerText =
+                        `LÍDERES: ${cleanData.nodes.length} | CONEXIONES: ${cleanData.links.length}`;
+
+                    // LOAD GRAPH
+
+                    Graph.graphData(cleanData);
+
+                    // RESTART SIMULATION
+
+                    Graph.d3ReheatSimulation();
+
+                    // FIT CAMERA
+
+                    setTimeout(() => {
+
+                        Graph.zoomToFit(
+                            1200,
+                            50
+                        );
+
+                    }, 1000);
+
+                }, 100);
             })
 
             .catch(err => {
 
                 console.error(err);
 
-                statusElem.innerText = 'ERROR CARGANDO DATA.JSON';
-                statusElem.style.color = '#ff4444';
+                statusElem.innerText =
+                    'ERROR CARGANDO DATA.JSON';
+
+                statusElem.style.color =
+                    '#ff4444';
             });
 
     </script>
