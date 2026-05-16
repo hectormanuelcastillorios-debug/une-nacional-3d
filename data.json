@@ -68,6 +68,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec25PVz5lZVJna6F",
+      "name": "Rein Beatriz  Ovalle Arriola",
+      "zona": "Zona 7",
+      "barrio": "E lamparó ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec2P8ZoGGeZzGiCM",
       "name": "Cumina  Chacon",
       "zona": "Zona 7",
@@ -1528,6 +1536,10 @@
     {
       "source": "estA",
       "target": "rec1oixhf06qdmak2"
+    },
+    {
+      "source": "estB",
+      "target": "rec25PVz5lZVJna6F"
     },
     {
       "source": "estA",
