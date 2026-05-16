@@ -60,6 +60,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec4lQQYbzOjKpVof",
+      "name": "Nuri Castro",
+      "zona": "Zona 7",
+      "barrio": "Colonia shella ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec4rfdd346R2lK4V",
       "name": "Alicia CORDÓN",
       "zona": "Zona 7",
@@ -708,6 +716,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec3TLwjfCYKdZQrE"
+    },
+    {
+      "source": "estA",
+      "target": "rec4lQQYbzOjKpVof"
     },
     {
       "source": "estA",
