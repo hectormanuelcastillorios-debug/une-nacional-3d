@@ -1372,6 +1372,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reccv5zOFXXnM5lUF",
+      "name": "Sonia  Abeldaño ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recdM2VC1KhtkgxJE",
       "name": "María  Aguilar ",
       "zona": "Zona 7",
@@ -2820,6 +2828,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "reccZDhW8RpJ0NCs8"
+    },
+    {
+      "source": "estA",
+      "target": "reccv5zOFXXnM5lUF"
     },
     {
       "source": "estA",
