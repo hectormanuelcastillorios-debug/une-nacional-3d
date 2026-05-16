@@ -380,6 +380,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recLTBUIlwnf87zTg",
+      "name": "Evelin Cara antes ",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recLm5edTm9ciX9AR",
       "name": "Flor Pérez",
       "zona": "Zona 7",
@@ -676,6 +684,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recXXshtmgd3akIbN",
+      "name": "Ricardo Sarabia ",
+      "zona": "Zona 17",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recXoF9shUZWxajk3",
       "name": "Elvira Chamale",
       "zona": "Zona 17",
@@ -712,6 +728,14 @@
       "name": "Alba Cruz",
       "zona": "Zona 3",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recYk1Uhrs8dVbLG3",
+      "name": "Rosita clemencia  Perez gomez ",
+      "zona": "Zona 18",
+      "barrio": "El limón 2",
       "val": 12,
       "color": "#31623B"
     },
@@ -1154,14 +1178,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "recXXshtmgd3akIbN",
-      "name": "Ricardo Sarabia ",
-      "zona": "Zona 17",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -1350,6 +1366,10 @@
       "target": "recKxnBOZybGVKVep"
     },
     {
+      "source": "estA",
+      "target": "recLTBUIlwnf87zTg"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recLm5edTm9ciX9AR"
     },
@@ -1499,6 +1519,10 @@
     },
     {
       "source": "estB",
+      "target": "recXXshtmgd3akIbN"
+    },
+    {
+      "source": "estB",
       "target": "recXoF9shUZWxajk3"
     },
     {
@@ -1516,6 +1540,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recYaIrIDXf9jyml8"
+    },
+    {
+      "source": "estA",
+      "target": "recYk1Uhrs8dVbLG3"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -1736,10 +1764,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estB",
-      "target": "recXXshtmgd3akIbN"
     }
   ]
 }
