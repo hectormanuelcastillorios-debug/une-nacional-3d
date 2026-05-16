@@ -1772,6 +1772,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recv3jc0HrCDrrxZN",
+      "name": "Maida Francisca ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recv7x27V8vdX2it4",
       "name": "Maria  Chinchia",
       "zona": "Zona 18",
@@ -1848,6 +1856,14 @@
       "name": "Madeline  Higueros ",
       "zona": "Zona 7",
       "barrio": "Berbena ranchería central ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recy6aNPlv3npyNlt",
+      "name": "Suane  Coche ",
+      "zona": "Zona 24",
+      "barrio": "Cananitos ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2790,6 +2806,10 @@
       "target": "recv0trB1bRsRX7L9"
     },
     {
+      "source": "estB",
+      "target": "recv3jc0HrCDrrxZN"
+    },
+    {
       "source": "estA",
       "target": "recv7x27V8vdX2it4"
     },
@@ -2828,6 +2848,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recxme5y6S6lZAhhx"
+    },
+    {
+      "source": "estA",
+      "target": "recy6aNPlv3npyNlt"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
