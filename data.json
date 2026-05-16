@@ -292,14 +292,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recYvoCwH0LF1FMv1",
-      "name": "Paola Rodriguez",
-      "zona": "Zona 5",
-      "barrio": "N/A",
-      "val": 20,
-      "color": "#66CC33"
-    },
-    {
       "id": "recZWA5TJk7xQEFcI",
       "name": "Juana Matías",
       "zona": "Zona 7",
@@ -418,6 +410,14 @@
       "barrio": "La Palmita / La Limonada",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "recmH8783l8gceZPq",
+      "name": " ",
+      "zona": "N/A",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recmmhrn6ntn2o7kX",
@@ -674,10 +674,6 @@
       "target": "recYaIrIDXf9jyml8"
     },
     {
-      "source": "estB",
-      "target": "recYvoCwH0LF1FMv1"
-    },
-    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recZWA5TJk7xQEFcI"
     },
@@ -736,6 +732,10 @@
     {
       "source": "estB",
       "target": "reclplFAH4ePzLQiS"
+    },
+    {
+      "source": "estA",
+      "target": "recmH8783l8gceZPq"
     },
     {
       "source": "estB",
