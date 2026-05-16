@@ -732,6 +732,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "receYawRXBDMl6EUN",
+      "name": "Colina Palacio",
+      "zona": "Zona 18",
+      "barrio": "Aventamiento las champas",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "receaRInoNWsZxMxV",
       "name": "Brenda Juarez",
       "zona": "Zona 3",
@@ -880,6 +888,14 @@
       "name": "Ilda Gonzáles",
       "zona": "Zona 21",
       "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recpU88JehyGb6Ql9",
+      "name": "Banesa  Guarez",
+      "zona": "Zona 17",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1382,6 +1398,10 @@
       "target": "receGIzWYBTjnKOXX"
     },
     {
+      "source": "estA",
+      "target": "receYawRXBDMl6EUN"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "receaRInoNWsZxMxV"
     },
@@ -1456,6 +1476,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recojpYJPJ8SSBhnm"
+    },
+    {
+      "source": "estB",
+      "target": "recpU88JehyGb6Ql9"
     },
     {
       "source": "reclplFAH4ePzLQiS",
