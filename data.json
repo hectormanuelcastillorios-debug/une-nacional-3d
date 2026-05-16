@@ -28,6 +28,14 @@
       "barrio": "N/A"
     },
     {
+      "id": "rec003nTGp0CcBGJs",
+      "name": "Maria Perez",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec0BbSrzE1BUSr4U",
       "name": "Dina  Araseli",
       "zona": "Zona 18",
@@ -376,6 +384,14 @@
       "name": "Marta Ramírez",
       "zona": "Zona 7",
       "barrio": "La Chatarra",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recBreovEXFxgpUCW",
+      "name": "Marina  Cruz ",
+      "zona": "Zona 7",
+      "barrio": "Amparo ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2270,6 +2286,10 @@
       "target": "estB"
     },
     {
+      "source": "estB",
+      "target": "rec003nTGp0CcBGJs"
+    },
+    {
       "source": "estA",
       "target": "rec0BbSrzE1BUSr4U"
     },
@@ -2444,6 +2464,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recBoz3Q3bIm7KGC8"
+    },
+    {
+      "source": "estA",
+      "target": "recBreovEXFxgpUCW"
     },
     {
       "source": "reclplFAH4ePzLQiS",
