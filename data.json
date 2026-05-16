@@ -260,6 +260,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recLpXJIpy70H72b8",
+      "name": "César  AgustiO",
+      "zona": "Zona 7",
+      "barrio": "Aventamiento las torres ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recMBgwyPY9vhGjlH",
       "name": "Ana  Chava le ",
       "zona": "Zona 7",
@@ -548,6 +556,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reclSTP5c3yZRtsUU",
+      "name": "Irma  Guitierez ",
+      "zona": "Zona 5",
+      "barrio": "La fuente ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reclplFAH4ePzLQiS",
       "name": "Rodolfo Higueros",
       "zona": "Zona 5",
@@ -826,6 +842,10 @@
       "target": "recLm5edTm9ciX9AR"
     },
     {
+      "source": "estA",
+      "target": "recLpXJIpy70H72b8"
+    },
+    {
       "source": "estB",
       "target": "recMBgwyPY9vhGjlH"
     },
@@ -968,6 +988,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reckZwjXNyb1XyEhP"
+    },
+    {
+      "source": "estB",
+      "target": "reclSTP5c3yZRtsUU"
     },
     {
       "source": "estB",
