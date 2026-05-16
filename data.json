@@ -108,6 +108,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec3UDVAKbH210BaF",
+      "name": "Gady Simey",
+      "zona": "Zona 5",
+      "barrio": "15 de Agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec4XhRttJWlFMjEW",
       "name": "Jesica anavela Alonzo acte",
       "zona": "Zona 7",
@@ -1396,6 +1404,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recr0KooEq4nHb1aU",
+      "name": "Esperanza  Cruz López ",
+      "zona": "Zona 5",
+      "barrio": "15 de Agosto ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recrBBXqSBTTak6P2",
       "name": "María Elvia Rosales Hernández ",
       "zona": "Zona 7",
@@ -1652,6 +1668,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec3TLwjfCYKdZQrE"
+    },
+    {
+      "source": "estA",
+      "target": "rec3UDVAKbH210BaF"
     },
     {
       "source": "estB",
@@ -2296,6 +2316,10 @@
     {
       "source": "estA",
       "target": "recqzrH78krKkrSaO"
+    },
+    {
+      "source": "estB",
+      "target": "recr0KooEq4nHb1aU"
     },
     {
       "source": "estB",
