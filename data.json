@@ -412,6 +412,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recDJ6GMtYMV6AkIN",
+      "name": "Angelina Juarez",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recDQrzdzJq7xsDwM",
       "name": "Dora Martines",
       "zona": "Zona 18",
@@ -1172,6 +1180,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recXkF1O5Y9edZhMM",
+      "name": "Olga  Barrientos ",
+      "zona": "Zona 7",
+      "barrio": "Bethania ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recXoF9shUZWxajk3",
       "name": "Elvira Chamale",
       "zona": "Zona 17",
@@ -1672,6 +1688,14 @@
       "name": "Lorena Perez",
       "zona": "Zona 7",
       "barrio": "6de octubre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reckfjw3ScMfWHu9Q",
+      "name": "Alicia  Pacay poou",
+      "zona": "Zona 5",
+      "barrio": "El limoncito ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2423,6 +2447,10 @@
     },
     {
       "source": "estB",
+      "target": "recDJ6GMtYMV6AkIN"
+    },
+    {
+      "source": "estB",
       "target": "recDQrzdzJq7xsDwM"
     },
     {
@@ -2802,6 +2830,10 @@
       "target": "recXXshtmgd3akIbN"
     },
     {
+      "source": "estA",
+      "target": "recXkF1O5Y9edZhMM"
+    },
+    {
       "source": "estB",
       "target": "recXoF9shUZWxajk3"
     },
@@ -3052,6 +3084,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reckZwjXNyb1XyEhP"
+    },
+    {
+      "source": "estB",
+      "target": "reckfjw3ScMfWHu9Q"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
