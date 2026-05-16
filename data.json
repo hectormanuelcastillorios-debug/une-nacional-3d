@@ -268,6 +268,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recCbohJZXRWOtNr6",
+      "name": "Yoselin Maritza  Ávila Reyes ",
+      "zona": "Zona 18",
+      "barrio": "Kennedy ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recDQrzdzJq7xsDwM",
       "name": "Dora Martines",
       "zona": "Zona 18",
@@ -520,6 +528,14 @@
       "name": "María Paula  Chamo de Escobar ",
       "zona": "Zona 5",
       "barrio": "5ta Samayoa ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recPPioAGAs4iIzIn",
+      "name": "Daniela  Mendoza",
+      "zona": "Zona 18",
+      "barrio": "Altos de Sinai",
       "val": 12,
       "color": "#31623B"
     },
@@ -1502,6 +1518,10 @@
       "target": "recCDCvsEsZVPPIfT"
     },
     {
+      "source": "estA",
+      "target": "recCbohJZXRWOtNr6"
+    },
+    {
       "source": "estB",
       "target": "recDQrzdzJq7xsDwM"
     },
@@ -1628,6 +1648,10 @@
     {
       "source": "estA",
       "target": "recPG78GrLmUrUQSl"
+    },
+    {
+      "source": "estA",
+      "target": "recPPioAGAs4iIzIn"
     },
     {
       "source": "rec4rfdd346R2lK4V",
