@@ -76,6 +76,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec2NQYjXtaf7ZXAt",
+      "name": "Juana luisa Mendoza xolotio",
+      "zona": "Zona 18",
+      "barrio": "Asentamiento señor de esquirlas ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec2P8ZoGGeZzGiCM",
       "name": "Cumina  Chacon",
       "zona": "Zona 7",
@@ -1700,6 +1708,10 @@
     {
       "source": "estB",
       "target": "rec25PVz5lZVJna6F"
+    },
+    {
+      "source": "estA",
+      "target": "rec2NQYjXtaf7ZXAt"
     },
     {
       "source": "estA",
