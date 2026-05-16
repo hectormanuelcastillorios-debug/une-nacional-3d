@@ -620,6 +620,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recXoF9shUZWxajk3",
+      "name": "Elvira Chamale",
+      "zona": "Zona 17",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recXtew0ZO02Jz9bN",
       "name": "Rosario Recinos",
       "zona": "Zona 7",
@@ -808,6 +816,14 @@
       "name": "Ingrid  Godoy",
       "zona": "Zona 18",
       "barrio": "Paraíso 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recifHnKp7nWfyUFt",
+      "name": "Débora  Hernández ",
+      "zona": "Zona 7",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1375,6 +1391,10 @@
     },
     {
       "source": "estB",
+      "target": "recXoF9shUZWxajk3"
+    },
+    {
+      "source": "estB",
       "target": "recXtew0ZO02Jz9bN"
     },
     {
@@ -1468,6 +1488,10 @@
     {
       "source": "estA",
       "target": "reciD4qtqwG1sp5C8"
+    },
+    {
+      "source": "estB",
+      "target": "recifHnKp7nWfyUFt"
     },
     {
       "source": "rec3OCJ9nypSf6767",
@@ -1574,7 +1598,7 @@
       "target": "recxRfVZtEXecOuih"
     },
     {
-      "source": "estA",
+      "source": "rec4rfdd346R2lK4V",
       "target": "recxme5y6S6lZAhhx"
     },
     {
@@ -1582,7 +1606,7 @@
       "target": "recyo4ZTamHj2W135"
     },
     {
-      "source": "estA",
+      "source": "rec4rfdd346R2lK4V",
       "target": "recyteFvLlimiVmJG"
     },
     {
