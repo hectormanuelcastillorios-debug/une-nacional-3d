@@ -500,6 +500,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recc56TZDRSLQTRjY",
+      "name": "Cecilia  Esperanza ",
+      "zona": "Zona 7",
+      "barrio": "Ranchería central ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reccWxFStLTTq72kU",
       "name": "Olga Barrientos",
       "zona": "Zona 7",
@@ -1016,6 +1024,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recbs9UOb5ne2a0mZ"
+    },
+    {
+      "source": "estB",
+      "target": "recc56TZDRSLQTRjY"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
