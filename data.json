@@ -1612,6 +1612,14 @@
       "color": "#31623B"
     },
     {
+      "id": "receTJcyLNumS41sr",
+      "name": "Lucia Paiz",
+      "zona": "Zona 18",
+      "barrio": "Galilea 1",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "receYawRXBDMl6EUN",
       "name": "Colina Palacio",
       "zona": "Zona 18",
@@ -3220,6 +3228,10 @@
     {
       "source": "estA",
       "target": "receREmXOJ4IKwWuz"
+    },
+    {
+      "source": "estB",
+      "target": "receTJcyLNumS41sr"
     },
     {
       "source": "estA",
