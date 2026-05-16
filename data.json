@@ -684,6 +684,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recTHJOkTErJiq2UR",
+      "name": "Ana victoria Caceres monterroso",
+      "zona": "Zona 7",
+      "barrio": "Sakerti 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recTXQUZveqEttavF",
       "name": "Olga  López ",
       "zona": "Zona 5",
@@ -1676,6 +1684,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTFzra0HCoV6wmN"
+    },
+    {
+      "source": "estB",
+      "target": "recTHJOkTErJiq2UR"
     },
     {
       "source": "reclplFAH4ePzLQiS",
