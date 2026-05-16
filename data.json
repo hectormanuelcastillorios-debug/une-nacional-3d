@@ -428,6 +428,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recJM3D6xKoCwSYrs",
+      "name": "Ashley Lopez",
+      "zona": "Zona 17",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recJUZ4esAeDXenli",
       "name": "Ana Cristina  Barrio ",
       "zona": "Zona 7",
@@ -1220,6 +1228,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recmVf9vSuPB1EhzU",
+      "name": "Rosaura  Lopez castellanos ",
+      "zona": "Zona 7",
+      "barrio": "Zona 7 ",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recmmhrn6ntn2o7kX",
       "name": "Dolores Gonzáles",
       "zona": "Zona 6",
@@ -1742,6 +1758,10 @@
       "target": "recI24C51AjmIluuA"
     },
     {
+      "source": "estB",
+      "target": "recJM3D6xKoCwSYrs"
+    },
+    {
       "source": "recftqnXSIUriw1Xl",
       "target": "recJUZ4esAeDXenli"
     },
@@ -2136,6 +2156,10 @@
     {
       "source": "estB",
       "target": "reclplFAH4ePzLQiS"
+    },
+    {
+      "source": "estB",
+      "target": "recmVf9vSuPB1EhzU"
     },
     {
       "source": "estB",
