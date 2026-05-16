@@ -956,6 +956,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recUpYrTQFqHxgms5",
+      "name": "Angelica  Morales ",
+      "zona": "Zona 24",
+      "barrio": "Canalitos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recVuc8kOQm83lBIY",
       "name": "Ruth Noemí  Morales ",
       "zona": "Zona 7",
@@ -1528,6 +1536,14 @@
       "name": "Banesa  Guarez",
       "zona": "Zona 17",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recpdSZTTEPUZ1gUJ",
+      "name": "Isabel  Cruz ",
+      "zona": "Zona 24",
+      "barrio": "Canalizo ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2286,6 +2302,10 @@
       "target": "recUhTTUq5v4aBCBW"
     },
     {
+      "source": "estA",
+      "target": "recUpYrTQFqHxgms5"
+    },
+    {
       "source": "rec4rfdd346R2lK4V",
       "target": "recVuc8kOQm83lBIY"
     },
@@ -2572,6 +2592,10 @@
     {
       "source": "estB",
       "target": "recpU88JehyGb6Ql9"
+    },
+    {
+      "source": "estA",
+      "target": "recpdSZTTEPUZ1gUJ"
     },
     {
       "source": "estB",
