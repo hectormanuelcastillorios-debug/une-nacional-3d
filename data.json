@@ -892,6 +892,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recPChC4HxedZm6cj",
+      "name": "María Teresa López ",
+      "zona": "Zona 21",
+      "barrio": "Nuevo Amanecer",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recPCi9QOTGnR9LTi",
       "name": "Elisabeth  Hernández  ",
       "zona": "Zona 18",
@@ -2306,6 +2314,14 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "recvtwoze1P7JaxEy",
+      "name": "Martha margarita  Giro natareno",
+      "zona": "Zona 5",
+      "barrio": "Colonia sarabia",
+      "val": 12,
+      "color": "#31623B"
     }
   ],
   "links": [
@@ -2748,6 +2764,10 @@
     {
       "source": "estA",
       "target": "recPBphJnf5TEOpoG"
+    },
+    {
+      "source": "estA",
+      "target": "recPChC4HxedZm6cj"
     },
     {
       "source": "estB",
@@ -3456,6 +3476,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "recvtwoze1P7JaxEy"
     }
   ]
 }
