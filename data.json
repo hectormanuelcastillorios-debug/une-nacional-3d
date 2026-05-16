@@ -236,6 +236,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recMBgwyPY9vhGjlH",
+      "name": "Ana  Chava le ",
+      "zona": "Zona 7",
+      "barrio": "Jesús resucitado aparo 1 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recMhlLAtYaGxhnh9",
       "name": "Dora ",
       "zona": "Zona 21",
@@ -756,6 +764,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recLm5edTm9ciX9AR"
+    },
+    {
+      "source": "estB",
+      "target": "recMBgwyPY9vhGjlH"
     },
     {
       "source": "recF1Rj8h8biJfInv",
