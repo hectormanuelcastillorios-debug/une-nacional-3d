@@ -812,6 +812,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recZO9cbfVdOH2x49",
+      "name": "Ana Gabriela  Cifuentes Espinal",
+      "zona": "Zona 18",
+      "barrio": "Kennedy ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recZWA5TJk7xQEFcI",
       "name": "Juana Matías",
       "zona": "Zona 7",
@@ -1732,6 +1740,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recYtL12tqz5KTyQg"
+    },
+    {
+      "source": "estA",
+      "target": "recZO9cbfVdOH2x49"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
