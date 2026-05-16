@@ -844,6 +844,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recSaY9MahhMPUtsB",
+      "name": "Erick Garcia ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recSfcVq8TMzNZwHH",
       "name": "Sandra  Quiñones ",
       "zona": "Zona 18",
@@ -2148,6 +2156,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recSYbDAyjYKWtDDQ"
+    },
+    {
+      "source": "estB",
+      "target": "recSaY9MahhMPUtsB"
     },
     {
       "source": "estB",
