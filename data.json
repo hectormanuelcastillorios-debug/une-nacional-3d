@@ -84,6 +84,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec6V4S36OlSvU7fl",
+      "name": "Gloria  Gonzales ",
+      "zona": "Zona 7",
+      "barrio": "Landivar",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec7P71dj1HP5nK0V",
       "name": "Rosaura ",
       "zona": "Zona 7",
@@ -208,6 +216,14 @@
       "name": "Dalia Veliz",
       "zona": "Zona 7",
       "barrio": "Anexo Joya",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recOr1EVSIbxFZTvw",
+      "name": "Marta Leticia  Vargas Rodríguez ",
+      "zona": "Zona 7",
+      "barrio": "Berbena",
       "val": 12,
       "color": "#31623B"
     },
@@ -579,6 +595,10 @@
     },
     {
       "source": "estA",
+      "target": "rec6V4S36OlSvU7fl"
+    },
+    {
+      "source": "estA",
       "target": "rec7P71dj1HP5nK0V"
     },
     {
@@ -640,6 +660,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recOOW3MGpkyLJimq"
+    },
+    {
+      "source": "estA",
+      "target": "recOr1EVSIbxFZTvw"
     },
     {
       "source": "recF1Rj8h8biJfInv",
