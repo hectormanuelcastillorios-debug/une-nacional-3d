@@ -572,6 +572,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recY6lDYJZTTXSdz2",
+      "name": "Cesar  Hernandez cute ",
+      "zona": "Zona 18",
+      "barrio": "Colonia limon",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recYEJAUoqaBdyAXc",
       "name": "Angela  Hernández ",
       "zona": "Zona 7",
@@ -964,10 +972,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recY6lDYJZTTXSdz2",
-      "name": "Cesar  Hernandez cute ",
-      "zona": "Zona 18",
-      "barrio": "Colonia limon",
+      "id": "recg9pPklA0C0WN13",
+      "name": "María Bernarda Chamo ",
+      "zona": "Zona 7",
+      "barrio": "5ta Samayoa",
       "val": 12,
       "color": "#31623B"
     }
@@ -1254,6 +1262,10 @@
       "target": "recXtew0ZO02Jz9bN"
     },
     {
+      "source": "estB",
+      "target": "recY6lDYJZTTXSdz2"
+    },
+    {
       "source": "estA",
       "target": "recYEJAUoqaBdyAXc"
     },
@@ -1450,8 +1462,8 @@
       "target": "reczw3ZFUYcwyE0BH"
     },
     {
-      "source": "estB",
-      "target": "recY6lDYJZTTXSdz2"
+      "source": "estA",
+      "target": "recg9pPklA0C0WN13"
     }
   ]
 }
