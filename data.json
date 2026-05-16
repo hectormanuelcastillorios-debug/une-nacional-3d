@@ -44,6 +44,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec2P8ZoGGeZzGiCM",
+      "name": "Cumina  Chacon",
+      "zona": "Zona 7",
+      "barrio": "Amparo 40",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec3FKDswGpX2R58d",
       "name": "Auru Guzmán",
       "zona": "Zona 3",
@@ -384,6 +392,14 @@
       "name": "Magda Plato",
       "zona": "Zona 7",
       "barrio": "Berbena",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSYbDAyjYKWtDDQ",
+      "name": "Sucely García ",
+      "zona": "Zona 7",
+      "barrio": "Ranchería central ",
       "val": 12,
       "color": "#31623B"
     },
@@ -798,6 +814,10 @@
       "target": "rec1Meay1aOyg6a6q"
     },
     {
+      "source": "estA",
+      "target": "rec2P8ZoGGeZzGiCM"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "rec3FKDswGpX2R58d"
     },
@@ -968,6 +988,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recSS4vfinHTDWrXD"
+    },
+    {
+      "source": "estA",
+      "target": "recSYbDAyjYKWtDDQ"
     },
     {
       "source": "reclplFAH4ePzLQiS",
