@@ -1140,6 +1140,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recqG1HocLx6xh8DU",
+      "name": "Esperaza Alvarado ",
+      "zona": "Zona 7",
+      "barrio": "El amparo 1",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recqTDmTl0VYCYEPa",
       "name": "Yarely  Torres ",
       "zona": "Zona 5",
@@ -1888,6 +1896,10 @@
     {
       "source": "estB",
       "target": "recpU88JehyGb6Ql9"
+    },
+    {
+      "source": "estB",
+      "target": "recqG1HocLx6xh8DU"
     },
     {
       "source": "reclplFAH4ePzLQiS",
