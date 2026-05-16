@@ -84,6 +84,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec4gjfEKOqbQvS2J",
+      "name": "Marta julia Osoy oscal",
+      "zona": "Zona 18",
+      "barrio": "Los caracoles ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec4lQQYbzOjKpVof",
       "name": "Nuri Castro",
       "zona": "Zona 7",
@@ -1130,14 +1138,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "rec4gjfEKOqbQvS2J",
-      "name": "Marta julia Osoy oscal",
-      "zona": "Zona 18",
-      "barrio": "Los caracoles ",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -1150,7 +1150,7 @@
       "target": "estB"
     },
     {
-      "source": "estB",
+      "source": "recXtew0ZO02Jz9bN",
       "target": "rec0F2nT2mb3WpiM1"
     },
     {
@@ -1176,6 +1176,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec3TLwjfCYKdZQrE"
+    },
+    {
+      "source": "estA",
+      "target": "rec4gjfEKOqbQvS2J"
     },
     {
       "source": "estA",
@@ -1394,7 +1398,7 @@
       "target": "recQYL0m7CCFthQp1"
     },
     {
-      "source": "estA",
+      "source": "recb52Zs0XGJ6InjJ",
       "target": "recQtl92SYGKuQKJ3"
     },
     {
@@ -1454,7 +1458,7 @@
       "target": "recTz9GwnOKhzssFL"
     },
     {
-      "source": "estA",
+      "source": "recb52Zs0XGJ6InjJ",
       "target": "recUhTTUq5v4aBCBW"
     },
     {
@@ -1478,7 +1482,7 @@
       "target": "recXtew0ZO02Jz9bN"
     },
     {
-      "source": "estB",
+      "source": "recb52Zs0XGJ6InjJ",
       "target": "recY6lDYJZTTXSdz2"
     },
     {
@@ -1558,7 +1562,7 @@
       "target": "recfvboxMdiXfXIwm"
     },
     {
-      "source": "estA",
+      "source": "rec7P71dj1HP5nK0V",
       "target": "recg9pPklA0C0WN13"
     },
     {
@@ -1590,7 +1594,7 @@
       "target": "reckZwjXNyb1XyEhP"
     },
     {
-      "source": "estB",
+      "source": "recXtew0ZO02Jz9bN",
       "target": "reckn6EAMNELP4JO8"
     },
     {
@@ -1702,8 +1706,8 @@
       "target": "reczw3ZFUYcwyE0BH"
     },
     {
-      "source": "estA",
-      "target": "rec4gjfEKOqbQvS2J"
+      "source": "recXtew0ZO02Jz9bN",
+      "target": "recifHnKp7nWfyUFt"
     }
   ]
 }
