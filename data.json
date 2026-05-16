@@ -340,6 +340,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec8ArFVWqTj4O8Tj",
+      "name": "Mildred Davila",
+      "zona": "Zona 18",
+      "barrio": "Rinconcito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec8BckUod6ztL7Im",
       "name": "Maria elene  Guerra ",
       "zona": "Zona 7",
@@ -1488,6 +1496,14 @@
       "name": "Clemencia  Rodríguez ",
       "zona": "Zona 5",
       "barrio": "Buenavista ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recZ9ZyD45fiiD7WW",
+      "name": "Claudia Toc",
+      "zona": "Zona 18",
+      "barrio": "Rinconcito",
       "val": 12,
       "color": "#31623B"
     },
@@ -2754,6 +2770,10 @@
       "target": "rec86TnioIH0mBXKA"
     },
     {
+      "source": "estB",
+      "target": "rec8ArFVWqTj4O8Tj"
+    },
+    {
       "source": "rec4rfdd346R2lK4V",
       "target": "rec8BckUod6ztL7Im"
     },
@@ -3328,6 +3348,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recYtL12tqz5KTyQg"
+    },
+    {
+      "source": "estA",
+      "target": "recZ9ZyD45fiiD7WW"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
