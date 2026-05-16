@@ -1236,6 +1236,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recUOMgGqKPluB9pP",
+      "name": "Rosalba  Culajay rivas",
+      "zona": "Zona 5",
+      "barrio": "Colonia el limoncito zona 5 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recUhTTUq5v4aBCBW",
       "name": "Mario Alberto  Fernández gudiel ",
       "zona": "Zona 18",
@@ -3024,6 +3032,10 @@
     {
       "source": "estA",
       "target": "recU7MvQj2Qeb8w0g"
+    },
+    {
+      "source": "estB",
+      "target": "recUOMgGqKPluB9pP"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
