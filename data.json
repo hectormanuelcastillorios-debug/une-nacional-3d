@@ -676,6 +676,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recU7MvQj2Qeb8w0g",
+      "name": "Alma  Catalán  ",
+      "zona": "Zona 7",
+      "barrio": "26 de julio",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recUhTTUq5v4aBCBW",
       "name": "Mario Alberto  Fernández gudiel ",
       "zona": "Zona 18",
@@ -1600,6 +1608,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTz9GwnOKhzssFL"
+    },
+    {
+      "source": "estA",
+      "target": "recU7MvQj2Qeb8w0g"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
