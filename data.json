@@ -100,6 +100,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec4XhRttJWlFMjEW",
+      "name": "Jesica anavela Alonzo acte",
+      "zona": "Zona 7",
+      "barrio": "Colonia josue 1:9",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec4gjfEKOqbQvS2J",
       "name": "Marta julia Osoy oscal",
       "zona": "Zona 18",
@@ -1512,6 +1520,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec3TLwjfCYKdZQrE"
+    },
+    {
+      "source": "estB",
+      "target": "rec4XhRttJWlFMjEW"
     },
     {
       "source": "recb52Zs0XGJ6InjJ",
