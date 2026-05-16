@@ -588,6 +588,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recPesok9S9MXBytC",
+      "name": "Jessica Faviola  Santos Pérez ",
+      "zona": "Zona 18",
+      "barrio": "Kennedy ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recPxnP04nHH4NANE",
       "name": "Angelina  Solórzano ",
       "zona": "Zona 7",
@@ -1764,6 +1772,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recPZxW9NXPzLXDfc"
+    },
+    {
+      "source": "estA",
+      "target": "recPesok9S9MXBytC"
     },
     {
       "source": "rec4rfdd346R2lK4V",
