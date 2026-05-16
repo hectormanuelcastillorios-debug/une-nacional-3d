@@ -1684,6 +1684,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "reclv3Nqbuig3q5cK",
+      "name": "Rhut amilsa Ortiz cortes",
+      "zona": "Zona 5",
+      "barrio": "Chacara",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recmVf9vSuPB1EhzU",
       "name": "Rosaura  Lopez castellanos ",
       "zona": "Zona 7",
@@ -1852,6 +1860,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recr2CAe0PnzvUEqV",
+      "name": "Julio  Pablico",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recrBBXqSBTTak6P2",
       "name": "María Elvia Rosales Hernández ",
       "zona": "Zona 7",
@@ -1880,6 +1896,14 @@
       "name": "Francisco Antonio  Juárez Zaldaña",
       "zona": "Zona 18",
       "barrio": "Son Rafael 3",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recs6J63ZDUZ2Kxfz",
+      "name": "Ana Ucum",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
       "val": 12,
       "color": "#31623B"
     },
@@ -2056,6 +2080,14 @@
       "name": "Ada Linda Hernández",
       "zona": "Zona 21",
       "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recx3wuPascIYrRb8",
+      "name": "Erika  Raymundo ",
+      "zona": "Zona 17",
+      "barrio": "Sábana Arriba ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2987,6 +3019,10 @@
     },
     {
       "source": "estB",
+      "target": "reclv3Nqbuig3q5cK"
+    },
+    {
+      "source": "estB",
       "target": "recmVf9vSuPB1EhzU"
     },
     {
@@ -3070,6 +3106,10 @@
       "target": "recr0KooEq4nHb1aU"
     },
     {
+      "source": "estA",
+      "target": "recr2CAe0PnzvUEqV"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recrBBXqSBTTak6P2"
     },
@@ -3084,6 +3124,10 @@
     {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recrQ54LFCbcpzw8e"
+    },
+    {
+      "source": "estB",
+      "target": "recs6J63ZDUZ2Kxfz"
     },
     {
       "source": "rec3OCJ9nypSf6767",
@@ -3172,6 +3216,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recwlH76zPTxlczpz"
+    },
+    {
+      "source": "estB",
+      "target": "recx3wuPascIYrRb8"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
