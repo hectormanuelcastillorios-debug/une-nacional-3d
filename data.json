@@ -716,6 +716,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recIV6J8eEG6lbwtQ",
+      "name": "Lidia Flores",
+      "zona": "Zona 18",
+      "barrio": "Rinconcito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recJ5zQ00hKIqAGGK",
       "name": "Erika roxana Mendoza xilotio",
       "zona": "Zona 18",
@@ -1948,6 +1956,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reclpfyGrim5tfNjD",
+      "name": "María José Gramajo",
+      "zona": "Zona 18",
+      "barrio": "Paraiso2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reclplFAH4ePzLQiS",
       "name": "Rodolfo Higueros",
       "zona": "Zona 5",
@@ -2854,6 +2870,10 @@
       "target": "recIIzGCYUQaTeZq6"
     },
     {
+      "source": "estB",
+      "target": "recIV6J8eEG6lbwtQ"
+    },
+    {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recJ5zQ00hKIqAGGK"
     },
@@ -3468,6 +3488,10 @@
     {
       "source": "estA",
       "target": "reclgjqC84bbjxIvP"
+    },
+    {
+      "source": "estA",
+      "target": "reclpfyGrim5tfNjD"
     },
     {
       "source": "estB",
