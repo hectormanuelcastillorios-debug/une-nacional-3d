@@ -412,6 +412,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recHlIyIbI6mxRSh1",
+      "name": "Londres virginia  Garcia ",
+      "zona": "Zona 7",
+      "barrio": "Asentamiento mina",
+      "val": 20,
+      "color": "#66CC33"
+    },
+    {
       "id": "recI24C51AjmIluuA",
       "name": "Albertina  Diaz urizar ",
       "zona": "Zona 7",
@@ -1196,6 +1204,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reclgjqC84bbjxIvP",
+      "name": "Veronica Juarez",
+      "zona": "Zona 17",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reclplFAH4ePzLQiS",
       "name": "Rodolfo Higueros",
       "zona": "Zona 5",
@@ -1711,6 +1727,10 @@
     },
     {
       "source": "estB",
+      "target": "recHlIyIbI6mxRSh1"
+    },
+    {
+      "source": "estB",
       "target": "recI24C51AjmIluuA"
     },
     {
@@ -2100,6 +2120,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "reclSTP5c3yZRtsUU"
+    },
+    {
+      "source": "estA",
+      "target": "reclgjqC84bbjxIvP"
     },
     {
       "source": "estB",
