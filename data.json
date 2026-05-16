@@ -28,6 +28,14 @@
       "barrio": "N/A"
     },
     {
+      "id": "rec1DNFEfnAET7Bis",
+      "name": "Ana  Archila",
+      "zona": "Zona 7",
+      "barrio": "Las torres ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec1Meay1aOyg6a6q",
       "name": "Mónica  zamora ",
       "zona": "Zona 3",
@@ -420,6 +428,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recYtL12tqz5KTyQg",
+      "name": "Clemencia  Rodríguez ",
+      "zona": "Zona 5",
+      "barrio": "Buenavista ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recZWA5TJk7xQEFcI",
       "name": "Juana Matías",
       "zona": "Zona 7",
@@ -726,6 +742,10 @@
       "target": "estB"
     },
     {
+      "source": "estA",
+      "target": "rec1DNFEfnAET7Bis"
+    },
+    {
       "source": "estB",
       "target": "rec1Meay1aOyg6a6q"
     },
@@ -920,6 +940,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recYaIrIDXf9jyml8"
+    },
+    {
+      "source": "estB",
+      "target": "recYtL12tqz5KTyQg"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
