@@ -1076,6 +1076,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reckG8HMuTN8PvEyp",
+      "name": "Zulma violeta Perez melendez",
+      "zona": "Zona 18",
+      "barrio": "Asentamiento nuestro señor de esquirlas ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reckZwjXNyb1XyEhP",
       "name": "Lorena Perez",
       "zona": "Zona 7",
@@ -1920,6 +1928,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "reck9fqekGLhYBTwg"
+    },
+    {
+      "source": "estA",
+      "target": "reckG8HMuTN8PvEyp"
     },
     {
       "source": "rec4rfdd346R2lK4V",
