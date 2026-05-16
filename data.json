@@ -564,6 +564,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recS3eqJvZ9IKiJGk",
+      "name": "Jairi Yesenia  Cordero Pay",
+      "zona": "Zona 7",
+      "barrio": "5ta Samayoa ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recSB5RmD4m8Bs1eR",
       "name": "Blanca Durango",
       "zona": "Zona 18",
@@ -752,6 +760,14 @@
       "name": "Juana Matías",
       "zona": "Zona 7",
       "barrio": "21 de Noviembre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recZjOGlj722VPi5M",
+      "name": "Carolina Díaz ",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
       "val": 12,
       "color": "#31623B"
     },
@@ -992,6 +1008,14 @@
       "name": "Medarda González  ",
       "zona": "Zona 18",
       "barrio": "Aventamiento mera ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reco2yzcBKSuF4yJN",
+      "name": "Miguel Chamale",
+      "zona": "Zona 17",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1459,6 +1483,10 @@
     },
     {
       "source": "estA",
+      "target": "recS3eqJvZ9IKiJGk"
+    },
+    {
+      "source": "estA",
       "target": "recSB5RmD4m8Bs1eR"
     },
     {
@@ -1552,6 +1580,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recZWA5TJk7xQEFcI"
+    },
+    {
+      "source": "estA",
+      "target": "recZjOGlj722VPi5M"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
@@ -1672,6 +1704,10 @@
     {
       "source": "estA",
       "target": "recmsy7s4dNU0jzbh"
+    },
+    {
+      "source": "estB",
+      "target": "reco2yzcBKSuF4yJN"
     },
     {
       "source": "estA",
