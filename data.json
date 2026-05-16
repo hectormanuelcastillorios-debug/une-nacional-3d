@@ -236,6 +236,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec65BPGTqDCxcAut",
+      "name": "Enmma  Boche",
+      "zona": "Zona 18",
+      "barrio": "Rinconcito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec6BWnGOLesmhTBL",
       "name": "Valentina  Bentacur ",
       "zona": "Zona 5",
@@ -1200,6 +1208,14 @@
       "name": "Magda Plato",
       "zona": "Zona 7",
       "barrio": "Berbena",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recSUwczYJ4leQ96f",
+      "name": "Delia  Flores sanchez ",
+      "zona": "Zona 18",
+      "barrio": "El rinconcito ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2655,6 +2671,10 @@
     },
     {
       "source": "estB",
+      "target": "rec65BPGTqDCxcAut"
+    },
+    {
+      "source": "estB",
       "target": "rec6BWnGOLesmhTBL"
     },
     {
@@ -3136,6 +3156,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recSS4vfinHTDWrXD"
+    },
+    {
+      "source": "estA",
+      "target": "recSUwczYJ4leQ96f"
     },
     {
       "source": "rec4rfdd346R2lK4V",
