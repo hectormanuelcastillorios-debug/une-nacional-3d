@@ -612,6 +612,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rect2x6OmJ4PJ2ZmN",
+      "name": "Mayra  Torres ",
+      "zona": "Zona 5",
+      "barrio": "Edén ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recterCaR6EetIrBY",
       "name": "Miguel Calderón",
       "zona": "Zona 5",
@@ -992,6 +1000,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recsYCsIc80fqMfmC"
+    },
+    {
+      "source": "estB",
+      "target": "rect2x6OmJ4PJ2ZmN"
     },
     {
       "source": "reclplFAH4ePzLQiS",
