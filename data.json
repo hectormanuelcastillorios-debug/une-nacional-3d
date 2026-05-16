@@ -780,6 +780,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recJlPSCAW816HzDw",
+      "name": "Gustavo Antonio  Perez candido",
+      "zona": "Zona 18",
+      "barrio": "El rinconcito ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recK0sqVa2IG2SFrF",
       "name": "Berta Oliva",
       "zona": "Zona 17",
@@ -2028,6 +2036,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recmFc1I46i4xS8DJ",
+      "name": "Jacqueline Alvarado",
+      "zona": "Zona 18",
+      "barrio": "El rinconcito",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recmVf9vSuPB1EhzU",
       "name": "Rosaura  Lopez castellanos ",
       "zona": "Zona 7",
@@ -2950,6 +2966,10 @@
       "target": "recJgyGJyA0eh4E92"
     },
     {
+      "source": "estA",
+      "target": "recJlPSCAW816HzDw"
+    },
+    {
       "source": "estB",
       "target": "recK0sqVa2IG2SFrF"
     },
@@ -3572,6 +3592,10 @@
     {
       "source": "estB",
       "target": "reclv3Nqbuig3q5cK"
+    },
+    {
+      "source": "estA",
+      "target": "recmFc1I46i4xS8DJ"
     },
     {
       "source": "estB",
