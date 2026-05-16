@@ -1716,6 +1716,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recfFYaJ2aSEhRGOd",
+      "name": "Stefani  Merida",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recftqnXSIUriw1Xl",
       "name": "Ana Cristina  Barrios ",
       "zona": "Zona 7",
@@ -3368,6 +3376,10 @@
     {
       "source": "estA",
       "target": "receqvtHrdNjfvXJh"
+    },
+    {
+      "source": "estA",
+      "target": "recfFYaJ2aSEhRGOd"
     },
     {
       "source": "estB",
