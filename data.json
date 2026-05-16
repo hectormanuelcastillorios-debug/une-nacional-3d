@@ -1316,6 +1316,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reckSfaHEuXmk55I0",
+      "name": "Biron Toledo",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reckZwjXNyb1XyEhP",
       "name": "Lorena Perez",
       "zona": "Zona 7",
@@ -2368,6 +2376,10 @@
     {
       "source": "estA",
       "target": "reckG8HMuTN8PvEyp"
+    },
+    {
+      "source": "estB",
+      "target": "reckSfaHEuXmk55I0"
     },
     {
       "source": "rec4rfdd346R2lK4V",
