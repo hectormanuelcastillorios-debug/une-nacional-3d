@@ -2324,6 +2324,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recwfwoAeBgMpYK32",
+      "name": "Zoila Romero",
+      "zona": "Zona 18",
+      "barrio": "Residenciales Galilea",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recwlH76zPTxlczpz",
       "name": "Ada Linda Hernández",
       "zona": "Zona 21",
@@ -3592,6 +3600,10 @@
     {
       "source": "estB",
       "target": "recwdQfqiphQFSR2n"
+    },
+    {
+      "source": "estB",
+      "target": "recwfwoAeBgMpYK32"
     },
     {
       "source": "recF1Rj8h8biJfInv",
