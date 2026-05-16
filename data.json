@@ -188,6 +188,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGm7UDOwgzMrx14",
+      "name": "Gloria  Garcia",
+      "zona": "Zona 7",
+      "barrio": "4 de agosto aparo 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recHKl6b4IggdvMfn",
       "name": "Norma  López ",
       "zona": "Zona 3",
@@ -700,6 +708,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recGFoJts4YSuJzPr"
+    },
+    {
+      "source": "estB",
+      "target": "recGm7UDOwgzMrx14"
     },
     {
       "source": "estA",
