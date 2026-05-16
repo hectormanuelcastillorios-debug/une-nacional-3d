@@ -1588,6 +1588,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recjHyaobx5ciLlCf",
+      "name": "Marlene  Escobar ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recjWs2rCReboeXRF",
       "name": "María del rosario  Orellana de guamuche",
       "zona": "Zona 7",
@@ -2080,6 +2088,14 @@
       "name": "Ada Linda Hernández",
       "zona": "Zona 21",
       "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recws2FzvrArj4mAb",
+      "name": "Irma Judith  Castalleda",
+      "zona": "Zona 17",
+      "barrio": "Sábana arriba ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2970,6 +2986,10 @@
       "target": "recj1VsmQjVLql2YQ"
     },
     {
+      "source": "estA",
+      "target": "recjHyaobx5ciLlCf"
+    },
+    {
       "source": "rec7P71dj1HP5nK0V",
       "target": "recjWs2rCReboeXRF"
     },
@@ -3216,6 +3236,10 @@
     {
       "source": "recF1Rj8h8biJfInv",
       "target": "recwlH76zPTxlczpz"
+    },
+    {
+      "source": "estB",
+      "target": "recws2FzvrArj4mAb"
     },
     {
       "source": "estB",
