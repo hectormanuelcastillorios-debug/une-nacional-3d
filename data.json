@@ -1964,6 +1964,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recn1hodeyb29PIOl",
+      "name": "Juana Soliz",
+      "zona": "Zona 17",
+      "barrio": "Sabana Arriba",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recnSASuUmVITIKYY",
       "name": "Dayana  Sánchez ",
       "zona": "Zona 24",
@@ -3420,6 +3428,10 @@
     {
       "source": "estA",
       "target": "recmsy7s4dNU0jzbh"
+    },
+    {
+      "source": "estB",
+      "target": "recn1hodeyb29PIOl"
     },
     {
       "source": "estA",
