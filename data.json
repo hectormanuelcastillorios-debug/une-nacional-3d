@@ -28,6 +28,14 @@
       "barrio": "N/A"
     },
     {
+      "id": "rec0F2nT2mb3WpiM1",
+      "name": "Evelyn  De Galindo ",
+      "zona": "Zona 7",
+      "barrio": "Berbena joya 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec1DNFEfnAET7Bis",
       "name": "Ana  Archila",
       "zona": "Zona 7",
@@ -120,6 +128,14 @@
       "name": "Gloria  Gonzales ",
       "zona": "Zona 7",
       "barrio": "Landivar",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec6bLY37Pdk4baC6",
+      "name": "Ericka  Máquin",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
       "val": 12,
       "color": "#31623B"
     },
@@ -440,6 +456,14 @@
       "name": "Mirian  Sagastume ",
       "zona": "Zona 7",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recQtl92SYGKuQKJ3",
+      "name": "Grecia Liliana  Rojas ",
+      "zona": "Zona 18",
+      "barrio": "Colonia el limón ",
       "val": 12,
       "color": "#31623B"
     },
@@ -994,14 +1018,6 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
-    },
-    {
-      "id": "recQtl92SYGKuQKJ3",
-      "name": "Grecia Liliana  Rojas ",
-      "zona": "Zona 18",
-      "barrio": "Colonia el limón ",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -1012,6 +1028,10 @@
     {
       "source": "root",
       "target": "estB"
+    },
+    {
+      "source": "estB",
+      "target": "rec0F2nT2mb3WpiM1"
     },
     {
       "source": "estA",
@@ -1060,6 +1080,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "rec6V4S36OlSvU7fl"
+    },
+    {
+      "source": "estA",
+      "target": "rec6bLY37Pdk4baC6"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -1220,6 +1244,10 @@
     {
       "source": "estA",
       "target": "recQYL0m7CCFthQp1"
+    },
+    {
+      "source": "estA",
+      "target": "recQtl92SYGKuQKJ3"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
@@ -1496,10 +1524,6 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "estA",
-      "target": "recQtl92SYGKuQKJ3"
     }
   ]
 }
