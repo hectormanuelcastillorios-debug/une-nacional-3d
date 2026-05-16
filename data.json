@@ -628,6 +628,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recNvFeRljn3aDWak",
+      "name": "Luis  Pérez ",
+      "zona": "Zona 7",
+      "barrio": "Amparo ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recOOW3MGpkyLJimq",
       "name": "Dalia Veliz",
       "zona": "Zona 7",
@@ -1564,6 +1572,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recrD0ffP5lEB02jk",
+      "name": "Xiomara Elizabeth López Panadero",
+      "zona": "Zona 17",
+      "barrio": "Sabana Arriba",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recrI2rfy4kFyF07D",
       "name": "Dulce Yac",
       "zona": "Zona 5",
@@ -2090,6 +2106,10 @@
       "target": "recNtnKF3dTxGszbS"
     },
     {
+      "source": "estA",
+      "target": "recNvFeRljn3aDWak"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recOOW3MGpkyLJimq"
     },
@@ -2556,6 +2576,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recrBBXqSBTTak6P2"
+    },
+    {
+      "source": "estB",
+      "target": "recrD0ffP5lEB02jk"
     },
     {
       "source": "estA",
