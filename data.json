@@ -332,10 +332,26 @@
       "color": "#31623B"
     },
     {
+      "id": "recPZxW9NXPzLXDfc",
+      "name": "Velvet Castellanos ",
+      "zona": "Zona 7",
+      "barrio": "Berbena",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recQF837DJmzhDjt8",
       "name": "Heydy ",
       "zona": "Zona 21",
       "barrio": "Los Olivos\nColonia Lo de Velásquez",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recQYL0m7CCFthQp1",
+      "name": "Mirian  Sagastume ",
+      "zona": "Zona 7",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -584,6 +600,14 @@
       "name": "Lorena Perez",
       "zona": "Zona 7",
       "barrio": "6de octubre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "reckxP2kleg4UuaiP",
+      "name": "Ingrid  Garcia",
+      "zona": "Zona 7",
+      "barrio": "Mario julio Salazar ",
       "val": 12,
       "color": "#31623B"
     },
@@ -910,8 +934,16 @@
       "target": "recOr1EVSIbxFZTvw"
     },
     {
+      "source": "estA",
+      "target": "recPZxW9NXPzLXDfc"
+    },
+    {
       "source": "recF1Rj8h8biJfInv",
       "target": "recQF837DJmzhDjt8"
+    },
+    {
+      "source": "estA",
+      "target": "recQYL0m7CCFthQp1"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
@@ -1036,6 +1068,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reckZwjXNyb1XyEhP"
+    },
+    {
+      "source": "estA",
+      "target": "reckxP2kleg4UuaiP"
     },
     {
       "source": "estB",
