@@ -252,6 +252,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGGGjHhVyjIrb3V",
+      "name": "Angelica Velazquez",
+      "zona": "Zona 7",
+      "barrio": "Granizo 3",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGm7UDOwgzMrx14",
       "name": "Gloria  Garcia",
       "zona": "Zona 7",
@@ -700,6 +708,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recoMZMq3zFqjbbOn",
+      "name": "Norma  Rodríguez ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recoWmvUbTr5YSq9B",
       "name": "Carolina Maldonado",
       "zona": "Zona 21",
@@ -975,6 +991,10 @@
     },
     {
       "source": "estB",
+      "target": "recGGGjHhVyjIrb3V"
+    },
+    {
+      "source": "estB",
       "target": "recGm7UDOwgzMrx14"
     },
     {
@@ -1196,6 +1216,10 @@
     {
       "source": "estB",
       "target": "recmqKYfywbVbK0kC"
+    },
+    {
+      "source": "estA",
+      "target": "recoMZMq3zFqjbbOn"
     },
     {
       "source": "recF1Rj8h8biJfInv",
