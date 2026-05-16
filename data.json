@@ -460,6 +460,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recSB5RmD4m8Bs1eR",
+      "name": "Blanca Durango",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recSBtL7TKvRXGzxu",
       "name": "Fernando  Solórzano ",
       "zona": "Zona 7",
@@ -564,6 +572,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recYEJAUoqaBdyAXc",
+      "name": "Angela  Hernández ",
+      "zona": "Zona 7",
+      "barrio": "Berbena ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recYaIrIDXf9jyml8",
       "name": "Alba Cruz",
       "zona": "Zona 3",
@@ -592,6 +608,14 @@
       "name": "Mónica Ordoñez",
       "zona": "Zona 7",
       "barrio": "Granizo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recasuxlXFnriqqZe",
+      "name": "Edgar daniel De leon",
+      "zona": "Zona 1",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1159,6 +1183,10 @@
     },
     {
       "source": "estA",
+      "target": "recSB5RmD4m8Bs1eR"
+    },
+    {
+      "source": "estA",
       "target": "recSBtL7TKvRXGzxu"
     },
     {
@@ -1210,6 +1238,10 @@
       "target": "recXtew0ZO02Jz9bN"
     },
     {
+      "source": "estA",
+      "target": "recYEJAUoqaBdyAXc"
+    },
+    {
       "source": "rec3OCJ9nypSf6767",
       "target": "recYaIrIDXf9jyml8"
     },
@@ -1224,6 +1256,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recaaP4DiQVa9Nyoe"
+    },
+    {
+      "source": "estA",
+      "target": "recasuxlXFnriqqZe"
     },
     {
       "source": "estA",
