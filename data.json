@@ -604,6 +604,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recGbxVtNgoQbYegK",
+      "name": "Elsa Amabilia  Barrientos Velis",
+      "zona": "Zona 18",
+      "barrio": "Colonia Renacimientomunicipal",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGe1DIAcyV9Cz5f",
       "name": "Aura Alicia Balcarcel Barcacel Belteton",
       "zona": "Zona 18",
@@ -1400,6 +1408,14 @@
       "name": "Juana Matías",
       "zona": "Zona 7",
       "barrio": "21 de Noviembre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recZcsH5egg8KRzyS",
+      "name": "Clara Antonia Reyes vasquez ",
+      "zona": "Zona 5",
+      "barrio": "Limoncito ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2694,6 +2710,10 @@
       "target": "recGVZFX5P6moTTjb"
     },
     {
+      "source": "estB",
+      "target": "recGbxVtNgoQbYegK"
+    },
+    {
       "source": "estA",
       "target": "recGe1DIAcyV9Cz5f"
     },
@@ -3092,6 +3112,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recZWA5TJk7xQEFcI"
+    },
+    {
+      "source": "estB",
+      "target": "recZcsH5egg8KRzyS"
     },
     {
       "source": "estA",
