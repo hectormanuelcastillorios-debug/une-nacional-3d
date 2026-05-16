@@ -420,6 +420,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recG1dxlMAg5xw4lN",
+      "name": "Dora  Herrera ",
+      "zona": "Zona 24",
+      "barrio": "Canalitos",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recGFoJts4YSuJzPr",
       "name": "Victor Enríquez",
       "zona": "Zona 5",
@@ -1968,6 +1976,10 @@
     {
       "source": "recSfcVq8TMzNZwHH",
       "target": "recFmK4EQrDghLhrb"
+    },
+    {
+      "source": "estA",
+      "target": "recG1dxlMAg5xw4lN"
     },
     {
       "source": "reclplFAH4ePzLQiS",
