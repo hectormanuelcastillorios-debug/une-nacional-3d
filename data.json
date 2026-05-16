@@ -124,6 +124,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "rec3SF4EaS6IWRdIi",
+      "name": "Eva  Rodas ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec3TLwjfCYKdZQrE",
       "name": "Reyna Tuna",
       "zona": "Zona 21",
@@ -280,6 +288,14 @@
       "name": "Maria elene  Guerra ",
       "zona": "Zona 7",
       "barrio": "Berbena joya 5",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rec8I8bQKkoLcLltu",
+      "name": "Ruth maria  Lopez guellen",
+      "zona": "Zona 5",
+      "barrio": "La chacara",
       "val": 12,
       "color": "#31623B"
     },
@@ -608,6 +624,14 @@
       "name": "Ana Cristina  Barrio ",
       "zona": "Zona 7",
       "barrio": "Primavera anexo amparo dos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recJgyGJyA0eh4E92",
+      "name": "Ruben Cacao",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
       "val": 12,
       "color": "#31623B"
     },
@@ -2254,6 +2278,10 @@
       "target": "rec3OCJ9nypSf6767"
     },
     {
+      "source": "estA",
+      "target": "rec3SF4EaS6IWRdIi"
+    },
+    {
       "source": "recF1Rj8h8biJfInv",
       "target": "rec3TLwjfCYKdZQrE"
     },
@@ -2332,6 +2360,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "rec8BckUod6ztL7Im"
+    },
+    {
+      "source": "estB",
+      "target": "rec8I8bQKkoLcLltu"
     },
     {
       "source": "recrI2rfy4kFyF07D",
@@ -2496,6 +2528,10 @@
     {
       "source": "recftqnXSIUriw1Xl",
       "target": "recJUZ4esAeDXenli"
+    },
+    {
+      "source": "estB",
+      "target": "recJgyGJyA0eh4E92"
     },
     {
       "source": "estB",
