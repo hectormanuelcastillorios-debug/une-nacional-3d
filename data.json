@@ -28,6 +28,14 @@
       "barrio": "N/A"
     },
     {
+      "id": "rec0BbSrzE1BUSr4U",
+      "name": "Dina  Araseli",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec0F2nT2mb3WpiM1",
       "name": "Evelyn  De Galindo ",
       "zona": "Zona 7",
@@ -908,6 +916,14 @@
       "color": "#66CC33"
     },
     {
+      "id": "recgdd5quuYlJuQIA",
+      "name": "Claudia Castellanos ",
+      "zona": "Zona 7",
+      "barrio": "Granizo 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reciD4qtqwG1sp5C8",
       "name": "Ingrid  Godoy",
       "zona": "Zona 18",
@@ -1180,6 +1196,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recyxuQstNO9kucoc",
+      "name": "Catalina  Lopez hernandez ",
+      "zona": "Zona 18",
+      "barrio": "El limón 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recz0yzzUq6sICZb8",
       "name": "Hellen Carrera",
       "zona": "Zona 7",
@@ -1212,6 +1236,10 @@
     {
       "source": "root",
       "target": "estB"
+    },
+    {
+      "source": "estA",
+      "target": "rec0BbSrzE1BUSr4U"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
@@ -1655,6 +1683,10 @@
     },
     {
       "source": "estA",
+      "target": "recgdd5quuYlJuQIA"
+    },
+    {
+      "source": "estA",
       "target": "reciD4qtqwG1sp5C8"
     },
     {
@@ -1788,6 +1820,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "recyteFvLlimiVmJG"
+    },
+    {
+      "source": "estA",
+      "target": "recyxuQstNO9kucoc"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
