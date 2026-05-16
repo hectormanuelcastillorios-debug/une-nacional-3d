@@ -436,6 +436,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reckZwjXNyb1XyEhP",
+      "name": "Lorena Perez",
+      "zona": "Zona 7",
+      "barrio": "6de octubre",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reclplFAH4ePzLQiS",
       "name": "Rodolfo Higueros",
       "zona": "Zona 5",
@@ -768,6 +776,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "reck9fqekGLhYBTwg"
+    },
+    {
+      "source": "estA",
+      "target": "reckZwjXNyb1XyEhP"
     },
     {
       "source": "estB",
