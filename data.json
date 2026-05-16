@@ -1306,6 +1306,14 @@
       "barrio": "Ranchería 7 Berbena ",
       "val": 12,
       "color": "#31623B"
+    },
+    {
+      "id": "recNtnKF3dTxGszbS",
+      "name": "Norma Consuelo  Ixchop de León ",
+      "zona": "Zona 18",
+      "barrio": "N/A",
+      "val": 20,
+      "color": "#66CC33"
     }
   ],
   "links": [
@@ -1956,6 +1964,10 @@
     {
       "source": "rec4rfdd346R2lK4V",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estA",
+      "target": "recNtnKF3dTxGszbS"
     }
   ]
 }
