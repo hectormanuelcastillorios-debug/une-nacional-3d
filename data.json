@@ -236,6 +236,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec7B1HFRnKubYR4O",
+      "name": "Clara Luz  Zapeta ",
+      "zona": "Zona 5",
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec7P71dj1HP5nK0V",
       "name": "Rosaura ",
       "zona": "Zona 7",
@@ -456,6 +464,14 @@
       "name": "Dora  Herrera ",
       "zona": "Zona 24",
       "barrio": "Canalitos",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recG5kFdX9R5B4ci9",
+      "name": "Estefany Mayarli  Mateo Chamalec",
+      "zona": "Zona 21",
+      "barrio": "Arenera parte alta ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1208,6 +1224,14 @@
       "name": "Susana del socorro  Gutierrez moran ",
       "zona": "Zona 18",
       "barrio": "Limón ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recaN6EMBV47sWou8",
+      "name": "Elisa  Rodas ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2182,6 +2206,10 @@
       "target": "rec74v2OIgrU7IRIV"
     },
     {
+      "source": "estB",
+      "target": "rec7B1HFRnKubYR4O"
+    },
+    {
       "source": "estA",
       "target": "rec7P71dj1HP5nK0V"
     },
@@ -2292,6 +2320,10 @@
     {
       "source": "estA",
       "target": "recG1dxlMAg5xw4lN"
+    },
+    {
+      "source": "estB",
+      "target": "recG5kFdX9R5B4ci9"
     },
     {
       "source": "reclplFAH4ePzLQiS",
@@ -2668,6 +2700,10 @@
     {
       "source": "recb52Zs0XGJ6InjJ",
       "target": "recZkuzRBvhdyWb37"
+    },
+    {
+      "source": "estA",
+      "target": "recaN6EMBV47sWou8"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
