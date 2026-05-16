@@ -372,6 +372,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recOshvRE8JvRdhwS",
+      "name": "Shini Manson",
+      "zona": "Zona 18",
+      "barrio": "Paraíso 2",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recPBphJnf5TEOpoG",
       "name": "AidéLina  Lopez",
       "zona": "Zona 7",
@@ -594,6 +602,14 @@
       "barrio": "N/A",
       "val": 20,
       "color": "#66CC33"
+    },
+    {
+      "id": "recb6HyQbPXGgqzKH",
+      "name": "Rosa  Gómez ",
+      "zona": "Zona 7",
+      "barrio": "Berbena",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recbs9UOb5ne2a0mZ",
@@ -1099,6 +1115,10 @@
     },
     {
       "source": "estA",
+      "target": "recOshvRE8JvRdhwS"
+    },
+    {
+      "source": "estA",
       "target": "recPBphJnf5TEOpoG"
     },
     {
@@ -1208,6 +1228,10 @@
     {
       "source": "estA",
       "target": "recb52Zs0XGJ6InjJ"
+    },
+    {
+      "source": "estA",
+      "target": "recb6HyQbPXGgqzKH"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
