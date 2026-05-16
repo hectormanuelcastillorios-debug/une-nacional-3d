@@ -332,6 +332,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recKxnBOZybGVKVep",
+      "name": "Nataly Dayana  Barrera Martinez ",
+      "zona": "Zona 7",
+      "barrio": "Landívar ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recLm5edTm9ciX9AR",
       "name": "Flor Pérez",
       "zona": "Zona 7",
@@ -576,6 +584,14 @@
       "name": "Verónica Dávila",
       "zona": "Zona 7",
       "barrio": "Sakertí",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recUhTTUq5v4aBCBW",
+      "name": "Mario Alberto  Fernández gudiel ",
+      "zona": "Zona 18",
+      "barrio": "Colonia el limón ",
       "val": 12,
       "color": "#31623B"
     },
@@ -828,6 +844,14 @@
       "color": "#31623B"
     },
     {
+      "id": "reckn6EAMNELP4JO8",
+      "name": "Amanda Águila ",
+      "zona": "Zona 7",
+      "barrio": "Berbena joya 2 ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reckxP2kleg4UuaiP",
       "name": "Ingrid  Garcia",
       "zona": "Zona 7",
@@ -952,6 +976,14 @@
       "name": "Rene Arias",
       "zona": "Zona 3",
       "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recv7x27V8vdX2it4",
+      "name": "Maria  Chinchia",
+      "zona": "Zona 18",
+      "barrio": "Maraiso 2",
       "val": 12,
       "color": "#31623B"
     },
@@ -1198,6 +1230,10 @@
       "target": "recKvn07elgfqh6oj"
     },
     {
+      "source": "estA",
+      "target": "recKxnBOZybGVKVep"
+    },
+    {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recLm5edTm9ciX9AR"
     },
@@ -1320,6 +1356,10 @@
     {
       "source": "recXtew0ZO02Jz9bN",
       "target": "recTz9GwnOKhzssFL"
+    },
+    {
+      "source": "estA",
+      "target": "recUhTTUq5v4aBCBW"
     },
     {
       "source": "estA",
@@ -1446,6 +1486,10 @@
       "target": "reckZwjXNyb1XyEhP"
     },
     {
+      "source": "estB",
+      "target": "reckn6EAMNELP4JO8"
+    },
+    {
       "source": "estA",
       "target": "reckxP2kleg4UuaiP"
     },
@@ -1508,6 +1552,10 @@
     {
       "source": "rec3OCJ9nypSf6767",
       "target": "recuks1iMaGNAgSqt"
+    },
+    {
+      "source": "estA",
+      "target": "recv7x27V8vdX2it4"
     },
     {
       "source": "reclplFAH4ePzLQiS",
