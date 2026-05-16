@@ -1124,6 +1124,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recbEr0SB1alFgB1L",
+      "name": "Zoila Esperanza Panadero de López ",
+      "zona": "Zona 17",
+      "barrio": "Sábana Arriba ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recbs9UOb5ne2a0mZ",
       "name": "Evelyn Galindo",
       "zona": "Zona 7",
@@ -2328,6 +2336,10 @@
     {
       "source": "recbs9UOb5ne2a0mZ",
       "target": "recb6HyQbPXGgqzKH"
+    },
+    {
+      "source": "estB",
+      "target": "recbEr0SB1alFgB1L"
     },
     {
       "source": "recXtew0ZO02Jz9bN",
