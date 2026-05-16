@@ -188,6 +188,14 @@
       "color": "#31623B"
     },
     {
+      "id": "rec6BWnGOLesmhTBL",
+      "name": "Valentina  Bentacur ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "rec6Dyei3LrqIYLVk",
       "name": "Maylie Quiñonez",
       "zona": "Zona 18",
@@ -1044,6 +1052,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recVgn6YfMsUrYnfp",
+      "name": "celeste  De paz ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recVuc8kOQm83lBIY",
       "name": "Ruth Noemí  Morales ",
       "zona": "Zona 7",
@@ -1236,6 +1252,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recb4WY1ecvMNOa0p",
+      "name": "Anabela  Escobar ",
+      "zona": "Zona 18",
+      "barrio": "Los pinos ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "recb52Zs0XGJ6InjJ",
       "name": "Francis ",
       "zona": "Zona 18",
@@ -1348,6 +1372,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recepK6CEL3cppzxA",
+      "name": "María Ausencio  Oron",
+      "zona": "Zona 21",
+      "barrio": "La Arenera planta alta",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "receqvtHrdNjfvXJh",
       "name": "Roxana  Ruiz ",
       "zona": "Zona 7",
@@ -1432,6 +1464,14 @@
       "name": "Lissete Reyes",
       "zona": "Zona 5",
       "barrio": "Colonia Arivillaga",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "rechu19YdyFr90uuG",
+      "name": "Lyz Vázquez ",
+      "zona": "Zona 5",
+      "barrio": "15 de agosto ",
       "val": 12,
       "color": "#31623B"
     },
@@ -2094,6 +2134,10 @@
       "target": "rec5mDuH3TccxRENz"
     },
     {
+      "source": "estB",
+      "target": "rec6BWnGOLesmhTBL"
+    },
+    {
       "source": "recSfcVq8TMzNZwHH",
       "target": "rec6Dyei3LrqIYLVk"
     },
@@ -2522,6 +2566,10 @@
       "target": "recVBIiKrs7apZQtz"
     },
     {
+      "source": "estB",
+      "target": "recVgn6YfMsUrYnfp"
+    },
+    {
       "source": "rec4rfdd346R2lK4V",
       "target": "recVuc8kOQm83lBIY"
     },
@@ -2619,6 +2667,10 @@
     },
     {
       "source": "estA",
+      "target": "recb4WY1ecvMNOa0p"
+    },
+    {
+      "source": "estA",
       "target": "recb52Zs0XGJ6InjJ"
     },
     {
@@ -2674,6 +2726,10 @@
       "target": "recebvYOW4Lij9CYO"
     },
     {
+      "source": "estB",
+      "target": "recepK6CEL3cppzxA"
+    },
+    {
       "source": "estA",
       "target": "receqvtHrdNjfvXJh"
     },
@@ -2716,6 +2772,10 @@
     {
       "source": "estA",
       "target": "rech0T1SgLo6R7nVc"
+    },
+    {
+      "source": "estB",
+      "target": "rechu19YdyFr90uuG"
     },
     {
       "source": "estA",
