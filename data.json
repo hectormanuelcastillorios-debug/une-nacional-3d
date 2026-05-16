@@ -1012,6 +1012,14 @@
       "color": "#31623B"
     },
     {
+      "id": "recgo28qwHyJ3yKsD",
+      "name": "Gloria Argentina  Esquites Avila",
+      "zona": "Zona 18",
+      "barrio": "Kennedy ",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
       "id": "reciD4qtqwG1sp5C8",
       "name": "Ingrid  Godoy",
       "zona": "Zona 18",
@@ -1224,6 +1232,14 @@
       "name": "Miguel Calderón",
       "zona": "Zona 5",
       "barrio": "San José el Esfuerzo",
+      "val": 12,
+      "color": "#31623B"
+    },
+    {
+      "id": "recuTHHKgJSTrKZMP",
+      "name": "Josefa Ortiz ordoñes",
+      "zona": "Zona 7",
+      "barrio": "Sector 1 las torres ",
       "val": 12,
       "color": "#31623B"
     },
@@ -1859,6 +1875,10 @@
     },
     {
       "source": "estA",
+      "target": "recgo28qwHyJ3yKsD"
+    },
+    {
+      "source": "estA",
       "target": "reciD4qtqwG1sp5C8"
     },
     {
@@ -1964,6 +1984,10 @@
     {
       "source": "reclplFAH4ePzLQiS",
       "target": "recterCaR6EetIrBY"
+    },
+    {
+      "source": "estB",
+      "target": "recuTHHKgJSTrKZMP"
     },
     {
       "source": "rec3OCJ9nypSf6767",
