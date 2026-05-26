@@ -1197,11 +1197,11 @@
     },
     {
       "id": "recSB5RmD4m8Bs1eR",
-      "name": "Ro ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
+      "name": "Rosa Argueta",
+      "zona": "Zona 3",
+      "barrio": "Asentamiento Bella Esperanza",
+      "val": 20,
+      "color": "#66CC33"
     },
     {
       "id": "recSBtL7TKvRXGzxu",
@@ -1885,8 +1885,8 @@
     },
     {
       "id": "reciD4qtqwG1sp5C8",
-      "name": " ",
-      "zona": "N/A",
+      "name": "gloria  Aguilar",
+      "zona": "Zona 3",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -3198,7 +3198,7 @@
       "target": "recSA0FE9LIboHteu"
     },
     {
-      "source": "estA",
+      "source": "estB",
       "target": "recSB5RmD4m8Bs1eR"
     },
     {
