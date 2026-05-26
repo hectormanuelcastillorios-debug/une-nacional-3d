@@ -989,9 +989,9 @@
     },
     {
       "id": "recOr1EVSIbxFZTvw",
-      "name": "Olga  Onacaj",
-      "zona": "Zona 7",
-      "barrio": "La Rancheria",
+      "name": " ",
+      "zona": "N/A",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1981,9 +1981,9 @@
     },
     {
       "id": "reckZwjXNyb1XyEhP",
-      "name": "Mindy Interiano",
-      "zona": "Zona 7",
-      "barrio": "La Rancheria",
+      "name": " ",
+      "zona": "N/A",
+      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -3094,7 +3094,7 @@
       "target": "recOTyV5NwK6MI1wZ"
     },
     {
-      "source": "recSS4vfinHTDWrXD",
+      "source": "estA",
       "target": "recOr1EVSIbxFZTvw"
     },
     {
@@ -3900,6 +3900,14 @@
     {
       "source": "estA",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "recSS4vfinHTDWrXD",
+      "target": "recOr1EVSIbxFZTvw"
+    },
+    {
+      "source": "recSS4vfinHTDWrXD",
+      "target": "reckZwjXNyb1XyEhP"
     }
   ]
 }
