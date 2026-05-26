@@ -28,36 +28,12 @@
       "barrio": "N/A"
     },
     {
-      "id": "rec003nTGp0CcBGJs",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "rec0BbSrzE1BUSr4U",
       "name": "Blanca Paz",
       "zona": "Zona 12",
       "barrio": "La Reformita",
       "val": 20,
       "color": "#66CC33"
-    },
-    {
-      "id": "rec0F2nT2mb3WpiM1",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec1AYnuLxmyDzi42",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
     },
     {
       "id": "rec1DNFEfnAET7Bis",
@@ -76,41 +52,9 @@
       "color": "#31623B"
     },
     {
-      "id": "rec1oixhf06qdmak2",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec25PVz5lZVJna6F",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec28yZJvEelcM1hA",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "rec2KBeIZuoVfP5WJ",
       "name": "Mayra Gonzalez",
       "zona": "Zona 12",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec2NQYjXtaf7ZXAt",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -120,22 +64,6 @@
       "name": "Alicia ",
       "zona": "Zona 21",
       "barrio": "Los Olivos y Lo de Vasquez",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec2aTfG7vR6GMrBm",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec3FKDswGpX2R58d",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -156,38 +84,6 @@
       "color": "#31623B"
     },
     {
-      "id": "rec3TLwjfCYKdZQrE",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec3UDVAKbH210BaF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec4XhRttJWlFMjEW",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec4gjfEKOqbQvS2J",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "rec4lQQYbzOjKpVof",
       "name": "Jesica Ovalle",
       "zona": "Zona 7",
@@ -196,137 +92,9 @@
       "color": "#31623B"
     },
     {
-      "id": "rec4rfdd346R2lK4V",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec4rhtJdxkLpxsER",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec5hSgfGRknw7Mly",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec5mDuH3TccxRENz",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec5vHG9rEtbpOTdq",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec5xeKW6a6M6UMPz",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec65BPGTqDCxcAut",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec6BWnGOLesmhTBL",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec6Dyei3LrqIYLVk",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec6V4S36OlSvU7fl",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "rec6bLY37Pdk4baC6",
       "name": "Dora  Marinez",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec6pyCUZvYQOE27K",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec74v2OIgrU7IRIV",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec7B1HFRnKubYR4O",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec7P71dj1HP5nK0V",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec7ce9nRM6Luqg22",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec85dlzZCgu9TBwu",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -340,98 +108,10 @@
       "color": "#66CC33"
     },
     {
-      "id": "rec8ArFVWqTj4O8Tj",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8BckUod6ztL7Im",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8I8bQKkoLcLltu",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8ICHNCB6fJD7vN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8Q4E3lH5Juad9n",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8nl9lc2rxLlXLo",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8plnOPmALo9Kdt",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec8yo0Pm22nPQjV4",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec9b5vnkdpwx9XSd",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rec9ckdFrVkje0imq",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "rec9cuxH2vCLVPBCB",
       "name": "Olga Lopez",
       "zona": "Zona 5",
       "barrio": "La Chacara",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recBW6tqSS1JEINuE",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -444,22 +124,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recBhbOFKOh0IfJWI",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recBoz3Q3bIm7KGC8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recBreovEXFxgpUCW",
       "name": "Victor  Cruz",
       "zona": "Zona 5",
@@ -468,42 +132,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recBvu5EOIL5wqh9t",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recC9VuR0HdwnGPHy",
       "name": "Veronica  Davila",
       "zona": "Zona 7",
       "barrio": "Sakerti",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recCDCvsEsZVPPIfT",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recCbohJZXRWOtNr6",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recDJ6GMtYMV6AkIN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -524,161 +156,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recEhWDSUffAS7DnE",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recEq3VK0mZUEmpR5",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recEqjsWY8m2kZyGx",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recExHyzCdCvmXt7E",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recF1Rj8h8biJfInv",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recF2bThctypFxBDq",
       "name": "Antonia Tecu",
       "zona": "Zona 13",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recF4SGjzjbTZMTNR",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recF8nKPdVfKT6bs4",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recF9uAbyPls2O8f6",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recFTLCIkI6I8zrdQ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recFmK4EQrDghLhrb",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recG1dxlMAg5xw4lN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recG5kFdX9R5B4ci9",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGBXFY5nvqzV3hv",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGFoJts4YSuJzPr",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGGGjHhVyjIrb3V",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGVZFX5P6moTTjb",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGXAPPJJFacBUJL",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGbxVtNgoQbYegK",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recGe1DIAcyV9Cz5f",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -700,34 +180,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recHlIyIbI6mxRSh1",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recHmEL2gabDUFtej",
       "name": "Sandra  Osorio",
       "zona": "Zona 13",
       "barrio": "Eucaliptos",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recHqkonbzHUgkGC4",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recI24C51AjmIluuA",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -740,46 +196,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recIIzGCYUQaTeZq6",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recIV6J8eEG6lbwtQ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recJ5zQ00hKIqAGGK",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recJM3D6xKoCwSYrs",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recJRll6rKoH20WaP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recJUZ4esAeDXenli",
       "name": "Monica Ordoñez",
       "zona": "Zona 7",
@@ -788,57 +204,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recJgyGJyA0eh4E92",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recJlPSCAW816HzDw",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recK0sqVa2IG2SFrF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recK5xQ8HDTF5SRiy",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recKDAYVhoFzRlMka",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recKDSMccJJy9zAon",
       "name": "Btitany  Marroquin",
       "zona": "Zona 12",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recKTr5xEgwIbXo7n",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -852,33 +220,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recKxnBOZybGVKVep",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recLTBUIlwnf87zTg",
       "name": "Jesús Vasquez",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recLm5edTm9ciX9AR",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recLn5fYaFzZw7trs",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -892,34 +236,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recM1kB9clcW5Hqzr",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recMBgwyPY9vhGjlH",
       "name": "Flor  Perez",
       "zona": "Zona 7",
       "barrio": "Eucaliptos",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recMPqKJqOGVxu5pn",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recMhlLAtYaGxhnh9",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -932,22 +252,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recMxhtHjNHmS3Gil",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recMyyM8Rln3sMXOu",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recNpGEKJ0Vaftr7q",
       "name": "Juana Ramirez",
       "zona": "Zona 7",
@@ -956,33 +260,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recNtnKF3dTxGszbS",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recNvFeRljn3aDWak",
       "name": "Krisandra Jimenez",
       "zona": "Zona 12",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recOOW3MGpkyLJimq",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recOTyV5NwK6MI1wZ",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1004,30 +284,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recOt28qn33611WJx",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recP10zAtEQiLZ3dl",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recP9iFymqV1vRhyp",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recPBphJnf5TEOpoG",
       "name": "Claudia  Hernandez",
       "zona": "Zona 21",
@@ -1036,97 +292,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recPChC4HxedZm6cj",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recPCi9QOTGnR9LTi",
       "name": "Alba  Cruz",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPG78GrLmUrUQSl",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPPioAGAs4iIzIn",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPSIxrKcoqJBM99",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPZxW9NXPzLXDfc",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPesok9S9MXBytC",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPmYfc8Nlqfc2Ws",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recPxnP04nHH4NANE",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recQF837DJmzhDjt8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recQK3Vb6WDMymnGi",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recQLubf4h6tpCSLV",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1140,58 +308,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recQbNwOYOeFh5ekB",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recQtl92SYGKuQKJ3",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recQuyZ7gTYQS23Hm",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recRL8sW2dPez5rLF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recS2jnzKeD9eTIWE",
       "name": "Ilda Gonzalez",
       "zona": "Zona 21",
       "barrio": "Los Olivos y Lo de Vasquez",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recS3eqJvZ9IKiJGk",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSA0FE9LIboHteu",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1202,22 +322,6 @@
       "barrio": "Asentamiento Bella Esperanza",
       "val": 20,
       "color": "#66CC33"
-    },
-    {
-      "id": "recSBtL7TKvRXGzxu",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSDWKCyxSWGcFjQ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
     },
     {
       "id": "recSIa1sqLuypCBgF",
@@ -1236,202 +340,10 @@
       "color": "#66CC33"
     },
     {
-      "id": "recSUwczYJ4leQ96f",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSYbDAyjYKWtDDQ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSaY9MahhMPUtsB",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSfcVq8TMzNZwHH",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSgHpq8KJGMxOkw",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSjGvvkVG6Habho",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recSu4uR8ieGU9420",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recTFzra0HCoV6wmN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recTHJOkTErJiq2UR",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recTXQUZveqEttavF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recTz9GwnOKhzssFL",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recU7MvQj2Qeb8w0g",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recUOMgGqKPluB9pP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recUhTTUq5v4aBCBW",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recUpYrTQFqHxgms5",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recVBIiKrs7apZQtz",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recVgn6YfMsUrYnfp",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recVuc8kOQm83lBIY",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recW1xIJjq9bLD98W",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recX2g4jlZr1itMTC",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recXDAYG285NyhImG",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recXQ8K1B0hW9hPKU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recXXshtmgd3akIbN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recXkF1O5Y9edZhMM",
       "name": "Clemencia  Lopez",
       "zona": "Zona 5",
       "barrio": "Anexo San Jose el Esfuerzo",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recXoF9shUZWxajk3",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1444,105 +356,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recY1uo8MVm8c2TXt",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recY6lDYJZTTXSdz2",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recYEJAUoqaBdyAXc",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recYZdweqkWTjjKuR",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recYaIrIDXf9jyml8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recYk1Uhrs8dVbLG3",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recYtL12tqz5KTyQg",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recZ9ZyD45fiiD7WW",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recZO9cbfVdOH2x49",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recZWA5TJk7xQEFcI",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recZcsH5egg8KRzyS",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recZjOGlj722VPi5M",
       "name": "Clotilde Santos",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recZkuzRBvhdyWb37",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1552,38 +368,6 @@
       "name": "Monica ",
       "zona": "Zona 13",
       "barrio": "Santa Fe",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recaReTDGy1GatD7z",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recaZd3g9R609x0jW",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recaaP4DiQVa9Nyoe",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recasuxlXFnriqqZe",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1600,78 +384,6 @@
       "name": "Lidia Vasquez",
       "zona": "Zona 13",
       "barrio": "La Isla",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recb52Zs0XGJ6InjJ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recb6HyQbPXGgqzKH",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recbEr0SB1alFgB1L",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recbZ0rBCE2VXaVEY",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recbs9UOb5ne2a0mZ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recc56TZDRSLQTRjY",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reccWxFStLTTq72kU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reccZDhW8RpJ0NCs8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recctHNik8VdmuCoV",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1708,65 +420,9 @@
       "color": "#31623B"
     },
     {
-      "id": "receOJSlELNfd0f48",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "receREmXOJ4IKwWuz",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "receTJcyLNumS41sr",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "receYawRXBDMl6EUN",
       "name": "Eugenia Santizo",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "receaRInoNWsZxMxV",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recebWVDGfLH1Y2Tu",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recebvYOW4Lij9CYO",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recepK6CEL3cppzxA",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1780,50 +436,10 @@
       "color": "#31623B"
     },
     {
-      "id": "recfFYaJ2aSEhRGOd",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recftqnXSIUriw1Xl",
       "name": "Olga  Barrientos",
       "zona": "Zona 7",
       "barrio": "Emanuel",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recfvboxMdiXfXIwm",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recg959BYsjPiT9fn",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recg9pPklA0C0WN13",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recgChLwTyoJqFc3Q",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1844,73 +460,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recglMsNXiAhg6ADs",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recgo28qwHyJ3yKsD",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rech0T1SgLo6R7nVc",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rechu19YdyFr90uuG",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rechzrokva0HLpZSJ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "reciD4qtqwG1sp5C8",
       "name": "gloria  Aguilar",
       "zona": "Zona 3",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recifHnKp7nWfyUFt",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recilm3b55RJuUnN9",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recj1VsmQjVLql2YQ",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -1924,58 +476,10 @@
       "color": "#66CC33"
     },
     {
-      "id": "recjWs2rCReboeXRF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recjuaViimdSGEvvs",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reck9fqekGLhYBTwg",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reckAt4QlNTjzR8Cx",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reckG8HMuTN8PvEyp",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "reckLhzdzdHTmZkLt",
       "name": "Benthy Delgado",
       "zona": "Zona 13",
       "barrio": "Santa Fe",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reckSfaHEuXmk55I0",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -1988,90 +492,10 @@
       "color": "#31623B"
     },
     {
-      "id": "reckdPJnloZ8kanZr",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reckfjw3ScMfWHu9Q",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reckn6EAMNELP4JO8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "reckxP2kleg4UuaiP",
       "name": "Reyna Tuna",
       "zona": "Zona 21",
       "barrio": "Los Olivos y Lo de Vasquez",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reclSTP5c3yZRtsUU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reclgjqC84bbjxIvP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reclpfyGrim5tfNjD",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reclplFAH4ePzLQiS",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reclv3Nqbuig3q5cK",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recmFc1I46i4xS8DJ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recmVf9vSuPB1EhzU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
     },
@@ -2100,81 +524,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recn1hodeyb29PIOl",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recnSASuUmVITIKYY",
       "name": "Valery Jimenez",
       "zona": "Zona 12",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reco2yzcBKSuF4yJN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reco8YclvuTqoPWZf",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recoJEA2swoMbjhxP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recoMZMq3zFqjbbOn",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recoWmvUbTr5YSq9B",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recojpYJPJ8SSBhnm",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recp8cvFiZx98aG7U",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recpU88JehyGb6Ql9",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -2188,30 +540,6 @@
       "color": "#31623B"
     },
     {
-      "id": "recpeMflPCnguwaTO",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recpx9M49MMvenme3",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recqG1HocLx6xh8DU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recqTDmTl0VYCYEPa",
       "name": "Lourdes  Garcia",
       "zona": "Zona 7",
@@ -2220,73 +548,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recqkKkgBo8HtAXXQ",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recqzrH78krKkrSaO",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recr0KooEq4nHb1aU",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recr2CAe0PnzvUEqV",
       "name": "Jovanny Vasquez",
       "zona": "Zona 13",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recrBBXqSBTTak6P2",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recrD0ffP5lEB02jk",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recrI2rfy4kFyF07D",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recrQ54LFCbcpzw8e",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recs6J63ZDUZ2Kxfz",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -2300,78 +564,6 @@
       "color": "#31623B"
     },
     {
-      "id": "rect2x6OmJ4PJ2ZmN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rectC6NbkFdPAH63y",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recterCaR6EetIrBY",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "rectmjlNP5bx0skRx",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recuTHHKgJSTrKZMP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recugCAbJwhFQq4D1",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recuks1iMaGNAgSqt",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recv0trB1bRsRX7L9",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recv3jc0HrCDrrxZN",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recv7x27V8vdX2it4",
       "name": "Rene Arias",
       "zona": "Zona 3",
@@ -2380,153 +572,9 @@
       "color": "#31623B"
     },
     {
-      "id": "recvLDo9tY8tClcXg",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recvWlbqR9dBpvcqH",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recvjw5bo0W8lEh8k",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recvtwoze1P7JaxEy",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recw68Z80MKxtR5HP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwOuFEj0D90KmLP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwQwe0bNAIAZDF7",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
       "id": "recwREyncwfMdKFk8",
       "name": "Besly Cifuentes",
       "zona": "Zona 12",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwUNXGUYtO8rgyr",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwZyv9uCrbuB6gL",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwdQfqiphQFSR2n",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwfwoAeBgMpYK32",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recwlH76zPTxlczpz",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recws2FzvrArj4mAb",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recx3wuPascIYrRb8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recx52J2kwT10YMEg",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recxRfVZtEXecOuih",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recxme5y6S6lZAhhx",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recxnhDsppzetXKzm",
-      "name": " ",
-      "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
       "color": "#31623B"
@@ -2546,62 +594,6 @@
       "barrio": "N/A",
       "val": 20,
       "color": "#66CC33"
-    },
-    {
-      "id": "recyo4ZTamHj2W135",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recyteFvLlimiVmJG",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recyxuQstNO9kucoc",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recyxyilN8dgLkdDB",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recz0yzzUq6sICZb8",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "recz76DFY78xLHRko",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
-    },
-    {
-      "id": "reczw3ZFUYcwyE0BH",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
     }
   ],
   "links": [
@@ -2614,20 +606,8 @@
       "target": "estB"
     },
     {
-      "source": "estA",
-      "target": "rec003nTGp0CcBGJs"
-    },
-    {
       "source": "estB",
       "target": "rec0BbSrzE1BUSr4U"
-    },
-    {
-      "source": "estA",
-      "target": "rec0F2nT2mb3WpiM1"
-    },
-    {
-      "source": "estA",
-      "target": "rec1AYnuLxmyDzi42"
     },
     {
       "source": "recSS4vfinHTDWrXD",
@@ -2638,36 +618,12 @@
       "target": "rec1Meay1aOyg6a6q"
     },
     {
-      "source": "estA",
-      "target": "rec1oixhf06qdmak2"
-    },
-    {
-      "source": "estA",
-      "target": "rec25PVz5lZVJna6F"
-    },
-    {
-      "source": "estA",
-      "target": "rec28yZJvEelcM1hA"
-    },
-    {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "rec2KBeIZuoVfP5WJ"
     },
     {
-      "source": "estA",
-      "target": "rec2NQYjXtaf7ZXAt"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "rec2P8ZoGGeZzGiCM"
-    },
-    {
-      "source": "estA",
-      "target": "rec2aTfG7vR6GMrBm"
-    },
-    {
-      "source": "estA",
-      "target": "rec3FKDswGpX2R58d"
     },
     {
       "source": "recjHyaobx5ciLlCf",
@@ -2678,180 +634,32 @@
       "target": "rec3SF4EaS6IWRdIi"
     },
     {
-      "source": "estA",
-      "target": "rec3TLwjfCYKdZQrE"
-    },
-    {
-      "source": "estA",
-      "target": "rec3UDVAKbH210BaF"
-    },
-    {
-      "source": "estA",
-      "target": "rec4XhRttJWlFMjEW"
-    },
-    {
-      "source": "estA",
-      "target": "rec4gjfEKOqbQvS2J"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "rec4lQQYbzOjKpVof"
-    },
-    {
-      "source": "estA",
-      "target": "rec4rfdd346R2lK4V"
-    },
-    {
-      "source": "estA",
-      "target": "rec4rhtJdxkLpxsER"
-    },
-    {
-      "source": "estA",
-      "target": "rec5hSgfGRknw7Mly"
-    },
-    {
-      "source": "estA",
-      "target": "rec5mDuH3TccxRENz"
-    },
-    {
-      "source": "estA",
-      "target": "rec5vHG9rEtbpOTdq"
-    },
-    {
-      "source": "estA",
-      "target": "rec5xeKW6a6M6UMPz"
-    },
-    {
-      "source": "estA",
-      "target": "rec65BPGTqDCxcAut"
-    },
-    {
-      "source": "estA",
-      "target": "rec6BWnGOLesmhTBL"
-    },
-    {
-      "source": "estA",
-      "target": "rec6Dyei3LrqIYLVk"
-    },
-    {
-      "source": "estA",
-      "target": "rec6V4S36OlSvU7fl"
     },
     {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "rec6bLY37Pdk4baC6"
     },
     {
-      "source": "estA",
-      "target": "rec6pyCUZvYQOE27K"
-    },
-    {
-      "source": "estA",
-      "target": "rec74v2OIgrU7IRIV"
-    },
-    {
-      "source": "estA",
-      "target": "rec7B1HFRnKubYR4O"
-    },
-    {
-      "source": "estA",
-      "target": "rec7P71dj1HP5nK0V"
-    },
-    {
-      "source": "estA",
-      "target": "rec7ce9nRM6Luqg22"
-    },
-    {
-      "source": "estA",
-      "target": "rec85dlzZCgu9TBwu"
-    },
-    {
       "source": "estB",
       "target": "rec86TnioIH0mBXKA"
-    },
-    {
-      "source": "estA",
-      "target": "rec8ArFVWqTj4O8Tj"
-    },
-    {
-      "source": "estA",
-      "target": "rec8BckUod6ztL7Im"
-    },
-    {
-      "source": "estA",
-      "target": "rec8I8bQKkoLcLltu"
-    },
-    {
-      "source": "estA",
-      "target": "rec8ICHNCB6fJD7vN"
-    },
-    {
-      "source": "estA",
-      "target": "rec8Q4E3lH5Juad9n"
-    },
-    {
-      "source": "estA",
-      "target": "rec8nl9lc2rxLlXLo"
-    },
-    {
-      "source": "estA",
-      "target": "rec8plnOPmALo9Kdt"
-    },
-    {
-      "source": "estA",
-      "target": "rec8yo0Pm22nPQjV4"
-    },
-    {
-      "source": "estA",
-      "target": "rec9b5vnkdpwx9XSd"
-    },
-    {
-      "source": "estA",
-      "target": "rec9ckdFrVkje0imq"
     },
     {
       "source": "recjHyaobx5ciLlCf",
       "target": "rec9cuxH2vCLVPBCB"
     },
     {
-      "source": "estA",
-      "target": "recBW6tqSS1JEINuE"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "recBdz2TC3nDPRqFM"
-    },
-    {
-      "source": "estA",
-      "target": "recBhbOFKOh0IfJWI"
-    },
-    {
-      "source": "estA",
-      "target": "recBoz3Q3bIm7KGC8"
     },
     {
       "source": "recjHyaobx5ciLlCf",
       "target": "recBreovEXFxgpUCW"
     },
     {
-      "source": "estA",
-      "target": "recBvu5EOIL5wqh9t"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recC9VuR0HdwnGPHy"
-    },
-    {
-      "source": "estA",
-      "target": "recCDCvsEsZVPPIfT"
-    },
-    {
-      "source": "estA",
-      "target": "recCbohJZXRWOtNr6"
-    },
-    {
-      "source": "estA",
-      "target": "recDJ6GMtYMV6AkIN"
     },
     {
       "source": "recSB5RmD4m8Bs1eR",
@@ -2862,84 +670,8 @@
       "target": "recDiOLaGpOnryw5u"
     },
     {
-      "source": "estA",
-      "target": "recEhWDSUffAS7DnE"
-    },
-    {
-      "source": "estA",
-      "target": "recEq3VK0mZUEmpR5"
-    },
-    {
-      "source": "estA",
-      "target": "recEqjsWY8m2kZyGx"
-    },
-    {
-      "source": "estA",
-      "target": "recExHyzCdCvmXt7E"
-    },
-    {
-      "source": "estA",
-      "target": "recF1Rj8h8biJfInv"
-    },
-    {
       "source": "recy6aNPlv3npyNlt",
       "target": "recF2bThctypFxBDq"
-    },
-    {
-      "source": "estA",
-      "target": "recF4SGjzjbTZMTNR"
-    },
-    {
-      "source": "estA",
-      "target": "recF8nKPdVfKT6bs4"
-    },
-    {
-      "source": "estA",
-      "target": "recF9uAbyPls2O8f6"
-    },
-    {
-      "source": "estA",
-      "target": "recFTLCIkI6I8zrdQ"
-    },
-    {
-      "source": "estA",
-      "target": "recFmK4EQrDghLhrb"
-    },
-    {
-      "source": "estA",
-      "target": "recG1dxlMAg5xw4lN"
-    },
-    {
-      "source": "estA",
-      "target": "recG5kFdX9R5B4ci9"
-    },
-    {
-      "source": "estA",
-      "target": "recGBXFY5nvqzV3hv"
-    },
-    {
-      "source": "estA",
-      "target": "recGFoJts4YSuJzPr"
-    },
-    {
-      "source": "estA",
-      "target": "recGGGjHhVyjIrb3V"
-    },
-    {
-      "source": "estA",
-      "target": "recGVZFX5P6moTTjb"
-    },
-    {
-      "source": "estA",
-      "target": "recGXAPPJJFacBUJL"
-    },
-    {
-      "source": "estA",
-      "target": "recGbxVtNgoQbYegK"
-    },
-    {
-      "source": "estA",
-      "target": "recGe1DIAcyV9Cz5f"
     },
     {
       "source": "recSS4vfinHTDWrXD",
@@ -2950,148 +682,48 @@
       "target": "recHKl6b4IggdvMfn"
     },
     {
-      "source": "estA",
-      "target": "recHlIyIbI6mxRSh1"
-    },
-    {
       "source": "recy6aNPlv3npyNlt",
       "target": "recHmEL2gabDUFtej"
-    },
-    {
-      "source": "estA",
-      "target": "recHqkonbzHUgkGC4"
-    },
-    {
-      "source": "estA",
-      "target": "recI24C51AjmIluuA"
     },
     {
       "source": "recjHyaobx5ciLlCf",
       "target": "recI722YDBGf5Jy11"
     },
     {
-      "source": "estA",
-      "target": "recIIzGCYUQaTeZq6"
-    },
-    {
-      "source": "estA",
-      "target": "recIV6J8eEG6lbwtQ"
-    },
-    {
-      "source": "estA",
-      "target": "recJ5zQ00hKIqAGGK"
-    },
-    {
-      "source": "estA",
-      "target": "recJM3D6xKoCwSYrs"
-    },
-    {
-      "source": "estA",
-      "target": "recJRll6rKoH20WaP"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recJUZ4esAeDXenli"
-    },
-    {
-      "source": "estA",
-      "target": "recJgyGJyA0eh4E92"
-    },
-    {
-      "source": "estA",
-      "target": "recJlPSCAW816HzDw"
-    },
-    {
-      "source": "estA",
-      "target": "recK0sqVa2IG2SFrF"
-    },
-    {
-      "source": "estA",
-      "target": "recK5xQ8HDTF5SRiy"
-    },
-    {
-      "source": "estA",
-      "target": "recKDAYVhoFzRlMka"
     },
     {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "recKDSMccJJy9zAon"
     },
     {
-      "source": "estA",
-      "target": "recKTr5xEgwIbXo7n"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "recKvn07elgfqh6oj"
-    },
-    {
-      "source": "estA",
-      "target": "recKxnBOZybGVKVep"
     },
     {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "recLTBUIlwnf87zTg"
     },
     {
-      "source": "estA",
-      "target": "recLm5edTm9ciX9AR"
-    },
-    {
-      "source": "estA",
-      "target": "recLn5fYaFzZw7trs"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recLpXJIpy70H72b8"
-    },
-    {
-      "source": "estA",
-      "target": "recM1kB9clcW5Hqzr"
     },
     {
       "source": "recSS4vfinHTDWrXD",
       "target": "recMBgwyPY9vhGjlH"
     },
     {
-      "source": "estA",
-      "target": "recMPqKJqOGVxu5pn"
-    },
-    {
-      "source": "estA",
-      "target": "recMhlLAtYaGxhnh9"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "recMlcxOS0EsLxoU1"
-    },
-    {
-      "source": "estA",
-      "target": "recMxhtHjNHmS3Gil"
-    },
-    {
-      "source": "estA",
-      "target": "recMyyM8Rln3sMXOu"
     },
     {
       "source": "recSS4vfinHTDWrXD",
       "target": "recNpGEKJ0Vaftr7q"
     },
     {
-      "source": "estA",
-      "target": "recNtnKF3dTxGszbS"
-    },
-    {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "recNvFeRljn3aDWak"
-    },
-    {
-      "source": "estA",
-      "target": "recOOW3MGpkyLJimq"
-    },
-    {
-      "source": "estA",
-      "target": "recOTyV5NwK6MI1wZ"
     },
     {
       "source": "recSS4vfinHTDWrXD",
@@ -3102,112 +734,24 @@
       "target": "recOshvRE8JvRdhwS"
     },
     {
-      "source": "estA",
-      "target": "recOt28qn33611WJx"
-    },
-    {
-      "source": "estA",
-      "target": "recP10zAtEQiLZ3dl"
-    },
-    {
-      "source": "estA",
-      "target": "recP9iFymqV1vRhyp"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "recPBphJnf5TEOpoG"
-    },
-    {
-      "source": "estA",
-      "target": "recPChC4HxedZm6cj"
     },
     {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "recPCi9QOTGnR9LTi"
     },
     {
-      "source": "estA",
-      "target": "recPG78GrLmUrUQSl"
-    },
-    {
-      "source": "estA",
-      "target": "recPPioAGAs4iIzIn"
-    },
-    {
-      "source": "estA",
-      "target": "recPSIxrKcoqJBM99"
-    },
-    {
-      "source": "estA",
-      "target": "recPZxW9NXPzLXDfc"
-    },
-    {
-      "source": "estA",
-      "target": "recPesok9S9MXBytC"
-    },
-    {
-      "source": "estA",
-      "target": "recPmYfc8Nlqfc2Ws"
-    },
-    {
-      "source": "estA",
-      "target": "recPxnP04nHH4NANE"
-    },
-    {
-      "source": "estA",
-      "target": "recQF837DJmzhDjt8"
-    },
-    {
-      "source": "estA",
-      "target": "recQK3Vb6WDMymnGi"
-    },
-    {
-      "source": "estA",
-      "target": "recQLubf4h6tpCSLV"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "recQYL0m7CCFthQp1"
-    },
-    {
-      "source": "estA",
-      "target": "recQbNwOYOeFh5ekB"
-    },
-    {
-      "source": "estA",
-      "target": "recQtl92SYGKuQKJ3"
-    },
-    {
-      "source": "estA",
-      "target": "recQuyZ7gTYQS23Hm"
-    },
-    {
-      "source": "estA",
-      "target": "recRL8sW2dPez5rLF"
     },
     {
       "source": "rec86TnioIH0mBXKA",
       "target": "recS2jnzKeD9eTIWE"
     },
     {
-      "source": "estA",
-      "target": "recS3eqJvZ9IKiJGk"
-    },
-    {
-      "source": "estA",
-      "target": "recSA0FE9LIboHteu"
-    },
-    {
       "source": "estB",
       "target": "recSB5RmD4m8Bs1eR"
-    },
-    {
-      "source": "estA",
-      "target": "recSBtL7TKvRXGzxu"
-    },
-    {
-      "source": "estA",
-      "target": "recSDWKCyxSWGcFjQ"
     },
     {
       "source": "recSS4vfinHTDWrXD",
@@ -3218,180 +762,20 @@
       "target": "recSS4vfinHTDWrXD"
     },
     {
-      "source": "estA",
-      "target": "recSUwczYJ4leQ96f"
-    },
-    {
-      "source": "estA",
-      "target": "recSYbDAyjYKWtDDQ"
-    },
-    {
-      "source": "estA",
-      "target": "recSaY9MahhMPUtsB"
-    },
-    {
-      "source": "estA",
-      "target": "recSfcVq8TMzNZwHH"
-    },
-    {
-      "source": "estA",
-      "target": "recSgHpq8KJGMxOkw"
-    },
-    {
-      "source": "estA",
-      "target": "recSjGvvkVG6Habho"
-    },
-    {
-      "source": "estA",
-      "target": "recSu4uR8ieGU9420"
-    },
-    {
-      "source": "estA",
-      "target": "recTFzra0HCoV6wmN"
-    },
-    {
-      "source": "estA",
-      "target": "recTHJOkTErJiq2UR"
-    },
-    {
-      "source": "estA",
-      "target": "recTXQUZveqEttavF"
-    },
-    {
-      "source": "estA",
-      "target": "recTz9GwnOKhzssFL"
-    },
-    {
-      "source": "estA",
-      "target": "recU7MvQj2Qeb8w0g"
-    },
-    {
-      "source": "estA",
-      "target": "recUOMgGqKPluB9pP"
-    },
-    {
-      "source": "estA",
-      "target": "recUhTTUq5v4aBCBW"
-    },
-    {
-      "source": "estA",
-      "target": "recUpYrTQFqHxgms5"
-    },
-    {
-      "source": "estA",
-      "target": "recVBIiKrs7apZQtz"
-    },
-    {
-      "source": "estA",
-      "target": "recVgn6YfMsUrYnfp"
-    },
-    {
-      "source": "estA",
-      "target": "recVuc8kOQm83lBIY"
-    },
-    {
-      "source": "estA",
-      "target": "recW1xIJjq9bLD98W"
-    },
-    {
-      "source": "estA",
-      "target": "recX2g4jlZr1itMTC"
-    },
-    {
-      "source": "estA",
-      "target": "recXDAYG285NyhImG"
-    },
-    {
-      "source": "estA",
-      "target": "recXQ8K1B0hW9hPKU"
-    },
-    {
-      "source": "estA",
-      "target": "recXXshtmgd3akIbN"
-    },
-    {
       "source": "recjHyaobx5ciLlCf",
       "target": "recXkF1O5Y9edZhMM"
-    },
-    {
-      "source": "estA",
-      "target": "recXoF9shUZWxajk3"
     },
     {
       "source": "recjHyaobx5ciLlCf",
       "target": "recXtew0ZO02Jz9bN"
     },
     {
-      "source": "estA",
-      "target": "recY1uo8MVm8c2TXt"
-    },
-    {
-      "source": "estA",
-      "target": "recY6lDYJZTTXSdz2"
-    },
-    {
-      "source": "estA",
-      "target": "recYEJAUoqaBdyAXc"
-    },
-    {
-      "source": "estA",
-      "target": "recYZdweqkWTjjKuR"
-    },
-    {
-      "source": "estA",
-      "target": "recYaIrIDXf9jyml8"
-    },
-    {
-      "source": "estA",
-      "target": "recYk1Uhrs8dVbLG3"
-    },
-    {
-      "source": "estA",
-      "target": "recYtL12tqz5KTyQg"
-    },
-    {
-      "source": "estA",
-      "target": "recZ9ZyD45fiiD7WW"
-    },
-    {
-      "source": "estA",
-      "target": "recZO9cbfVdOH2x49"
-    },
-    {
-      "source": "estA",
-      "target": "recZWA5TJk7xQEFcI"
-    },
-    {
-      "source": "estA",
-      "target": "recZcsH5egg8KRzyS"
-    },
-    {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "recZjOGlj722VPi5M"
     },
     {
-      "source": "estA",
-      "target": "recZkuzRBvhdyWb37"
-    },
-    {
       "source": "recy6aNPlv3npyNlt",
       "target": "recaN6EMBV47sWou8"
-    },
-    {
-      "source": "estA",
-      "target": "recaReTDGy1GatD7z"
-    },
-    {
-      "source": "estA",
-      "target": "recaZd3g9R609x0jW"
-    },
-    {
-      "source": "estA",
-      "target": "recaaP4DiQVa9Nyoe"
-    },
-    {
-      "source": "estA",
-      "target": "recasuxlXFnriqqZe"
     },
     {
       "source": "recy6aNPlv3npyNlt",
@@ -3400,42 +784,6 @@
     {
       "source": "recy6aNPlv3npyNlt",
       "target": "recb4WY1ecvMNOa0p"
-    },
-    {
-      "source": "estA",
-      "target": "recb52Zs0XGJ6InjJ"
-    },
-    {
-      "source": "estA",
-      "target": "recb6HyQbPXGgqzKH"
-    },
-    {
-      "source": "estA",
-      "target": "recbEr0SB1alFgB1L"
-    },
-    {
-      "source": "estA",
-      "target": "recbZ0rBCE2VXaVEY"
-    },
-    {
-      "source": "estA",
-      "target": "recbs9UOb5ne2a0mZ"
-    },
-    {
-      "source": "estA",
-      "target": "recc56TZDRSLQTRjY"
-    },
-    {
-      "source": "estA",
-      "target": "reccWxFStLTTq72kU"
-    },
-    {
-      "source": "estA",
-      "target": "reccZDhW8RpJ0NCs8"
-    },
-    {
-      "source": "estA",
-      "target": "recctHNik8VdmuCoV"
     },
     {
       "source": "recy6aNPlv3npyNlt",
@@ -3454,64 +802,16 @@
       "target": "receGIzWYBTjnKOXX"
     },
     {
-      "source": "estA",
-      "target": "receOJSlELNfd0f48"
-    },
-    {
-      "source": "estA",
-      "target": "receREmXOJ4IKwWuz"
-    },
-    {
-      "source": "estA",
-      "target": "receTJcyLNumS41sr"
-    },
-    {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "receYawRXBDMl6EUN"
-    },
-    {
-      "source": "estA",
-      "target": "receaRInoNWsZxMxV"
-    },
-    {
-      "source": "estA",
-      "target": "recebWVDGfLH1Y2Tu"
-    },
-    {
-      "source": "estA",
-      "target": "recebvYOW4Lij9CYO"
-    },
-    {
-      "source": "estA",
-      "target": "recepK6CEL3cppzxA"
     },
     {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "receqvtHrdNjfvXJh"
     },
     {
-      "source": "estA",
-      "target": "recfFYaJ2aSEhRGOd"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recftqnXSIUriw1Xl"
-    },
-    {
-      "source": "estA",
-      "target": "recfvboxMdiXfXIwm"
-    },
-    {
-      "source": "estA",
-      "target": "recg959BYsjPiT9fn"
-    },
-    {
-      "source": "estA",
-      "target": "recg9pPklA0C0WN13"
-    },
-    {
-      "source": "estA",
-      "target": "recgChLwTyoJqFc3Q"
     },
     {
       "source": "recjHyaobx5ciLlCf",
@@ -3522,120 +822,24 @@
       "target": "recgdd5quuYlJuQIA"
     },
     {
-      "source": "estA",
-      "target": "recglMsNXiAhg6ADs"
-    },
-    {
-      "source": "estA",
-      "target": "recgo28qwHyJ3yKsD"
-    },
-    {
-      "source": "estA",
-      "target": "rech0T1SgLo6R7nVc"
-    },
-    {
-      "source": "estA",
-      "target": "rechu19YdyFr90uuG"
-    },
-    {
-      "source": "estA",
-      "target": "rechzrokva0HLpZSJ"
-    },
-    {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "reciD4qtqwG1sp5C8"
-    },
-    {
-      "source": "estA",
-      "target": "recifHnKp7nWfyUFt"
-    },
-    {
-      "source": "estA",
-      "target": "recilm3b55RJuUnN9"
-    },
-    {
-      "source": "estA",
-      "target": "recj1VsmQjVLql2YQ"
     },
     {
       "source": "estB",
       "target": "recjHyaobx5ciLlCf"
     },
     {
-      "source": "estA",
-      "target": "recjWs2rCReboeXRF"
-    },
-    {
-      "source": "estA",
-      "target": "recjuaViimdSGEvvs"
-    },
-    {
-      "source": "estA",
-      "target": "reck9fqekGLhYBTwg"
-    },
-    {
-      "source": "estA",
-      "target": "reckAt4QlNTjzR8Cx"
-    },
-    {
-      "source": "estA",
-      "target": "reckG8HMuTN8PvEyp"
-    },
-    {
       "source": "recy6aNPlv3npyNlt",
       "target": "reckLhzdzdHTmZkLt"
-    },
-    {
-      "source": "estA",
-      "target": "reckSfaHEuXmk55I0"
     },
     {
       "source": "recSS4vfinHTDWrXD",
       "target": "reckZwjXNyb1XyEhP"
     },
     {
-      "source": "estA",
-      "target": "reckdPJnloZ8kanZr"
-    },
-    {
-      "source": "estA",
-      "target": "reckfjw3ScMfWHu9Q"
-    },
-    {
-      "source": "estA",
-      "target": "reckn6EAMNELP4JO8"
-    },
-    {
       "source": "rec86TnioIH0mBXKA",
       "target": "reckxP2kleg4UuaiP"
-    },
-    {
-      "source": "estA",
-      "target": "reclSTP5c3yZRtsUU"
-    },
-    {
-      "source": "estA",
-      "target": "reclgjqC84bbjxIvP"
-    },
-    {
-      "source": "estA",
-      "target": "reclpfyGrim5tfNjD"
-    },
-    {
-      "source": "estA",
-      "target": "reclplFAH4ePzLQiS"
-    },
-    {
-      "source": "estA",
-      "target": "reclv3Nqbuig3q5cK"
-    },
-    {
-      "source": "estA",
-      "target": "recmFc1I46i4xS8DJ"
-    },
-    {
-      "source": "estA",
-      "target": "recmVf9vSuPB1EhzU"
     },
     {
       "source": "recjHyaobx5ciLlCf",
@@ -3650,220 +854,32 @@
       "target": "recmsy7s4dNU0jzbh"
     },
     {
-      "source": "estA",
-      "target": "recn1hodeyb29PIOl"
-    },
-    {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "recnSASuUmVITIKYY"
-    },
-    {
-      "source": "estA",
-      "target": "reco2yzcBKSuF4yJN"
-    },
-    {
-      "source": "estA",
-      "target": "reco8YclvuTqoPWZf"
-    },
-    {
-      "source": "estA",
-      "target": "recoJEA2swoMbjhxP"
-    },
-    {
-      "source": "estA",
-      "target": "recoMZMq3zFqjbbOn"
-    },
-    {
-      "source": "estA",
-      "target": "recoWmvUbTr5YSq9B"
-    },
-    {
-      "source": "estA",
-      "target": "recojpYJPJ8SSBhnm"
-    },
-    {
-      "source": "estA",
-      "target": "recp8cvFiZx98aG7U"
-    },
-    {
-      "source": "estA",
-      "target": "recpU88JehyGb6Ql9"
     },
     {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "recpdSZTTEPUZ1gUJ"
     },
     {
-      "source": "estA",
-      "target": "recpeMflPCnguwaTO"
-    },
-    {
-      "source": "estA",
-      "target": "recpx9M49MMvenme3"
-    },
-    {
-      "source": "estA",
-      "target": "recqG1HocLx6xh8DU"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recqTDmTl0VYCYEPa"
-    },
-    {
-      "source": "estA",
-      "target": "recqkKkgBo8HtAXXQ"
-    },
-    {
-      "source": "estA",
-      "target": "recqzrH78krKkrSaO"
-    },
-    {
-      "source": "estA",
-      "target": "recr0KooEq4nHb1aU"
     },
     {
       "source": "recy6aNPlv3npyNlt",
       "target": "recr2CAe0PnzvUEqV"
     },
     {
-      "source": "estA",
-      "target": "recrBBXqSBTTak6P2"
-    },
-    {
-      "source": "estA",
-      "target": "recrD0ffP5lEB02jk"
-    },
-    {
-      "source": "estA",
-      "target": "recrI2rfy4kFyF07D"
-    },
-    {
-      "source": "estA",
-      "target": "recrQ54LFCbcpzw8e"
-    },
-    {
-      "source": "estA",
-      "target": "recs6J63ZDUZ2Kxfz"
-    },
-    {
       "source": "recSS4vfinHTDWrXD",
       "target": "recsYCsIc80fqMfmC"
-    },
-    {
-      "source": "estA",
-      "target": "rect2x6OmJ4PJ2ZmN"
-    },
-    {
-      "source": "estA",
-      "target": "rectC6NbkFdPAH63y"
-    },
-    {
-      "source": "estA",
-      "target": "recterCaR6EetIrBY"
-    },
-    {
-      "source": "estA",
-      "target": "rectmjlNP5bx0skRx"
-    },
-    {
-      "source": "estA",
-      "target": "recuTHHKgJSTrKZMP"
-    },
-    {
-      "source": "estA",
-      "target": "recugCAbJwhFQq4D1"
-    },
-    {
-      "source": "estA",
-      "target": "recuks1iMaGNAgSqt"
-    },
-    {
-      "source": "estA",
-      "target": "recv0trB1bRsRX7L9"
-    },
-    {
-      "source": "estA",
-      "target": "recv3jc0HrCDrrxZN"
     },
     {
       "source": "recSB5RmD4m8Bs1eR",
       "target": "recv7x27V8vdX2it4"
     },
     {
-      "source": "estA",
-      "target": "recvLDo9tY8tClcXg"
-    },
-    {
-      "source": "estA",
-      "target": "recvWlbqR9dBpvcqH"
-    },
-    {
-      "source": "estA",
-      "target": "recvjw5bo0W8lEh8k"
-    },
-    {
-      "source": "estA",
-      "target": "recvtwoze1P7JaxEy"
-    },
-    {
-      "source": "estA",
-      "target": "recw68Z80MKxtR5HP"
-    },
-    {
-      "source": "estA",
-      "target": "recwOuFEj0D90KmLP"
-    },
-    {
-      "source": "estA",
-      "target": "recwQwe0bNAIAZDF7"
-    },
-    {
       "source": "rec0BbSrzE1BUSr4U",
       "target": "recwREyncwfMdKFk8"
-    },
-    {
-      "source": "estA",
-      "target": "recwUNXGUYtO8rgyr"
-    },
-    {
-      "source": "estA",
-      "target": "recwZyv9uCrbuB6gL"
-    },
-    {
-      "source": "estA",
-      "target": "recwdQfqiphQFSR2n"
-    },
-    {
-      "source": "estA",
-      "target": "recwfwoAeBgMpYK32"
-    },
-    {
-      "source": "estA",
-      "target": "recwlH76zPTxlczpz"
-    },
-    {
-      "source": "estA",
-      "target": "recws2FzvrArj4mAb"
-    },
-    {
-      "source": "estA",
-      "target": "recx3wuPascIYrRb8"
-    },
-    {
-      "source": "estA",
-      "target": "recx52J2kwT10YMEg"
-    },
-    {
-      "source": "estA",
-      "target": "recxRfVZtEXecOuih"
-    },
-    {
-      "source": "estA",
-      "target": "recxme5y6S6lZAhhx"
-    },
-    {
-      "source": "estA",
-      "target": "recxnhDsppzetXKzm"
     },
     {
       "source": "recy6aNPlv3npyNlt",
@@ -3872,34 +888,6 @@
     {
       "source": "estB",
       "target": "recy6aNPlv3npyNlt"
-    },
-    {
-      "source": "estA",
-      "target": "recyo4ZTamHj2W135"
-    },
-    {
-      "source": "estA",
-      "target": "recyteFvLlimiVmJG"
-    },
-    {
-      "source": "estA",
-      "target": "recyxuQstNO9kucoc"
-    },
-    {
-      "source": "estA",
-      "target": "recyxyilN8dgLkdDB"
-    },
-    {
-      "source": "estA",
-      "target": "recz0yzzUq6sICZb8"
-    },
-    {
-      "source": "estA",
-      "target": "recz76DFY78xLHRko"
-    },
-    {
-      "source": "estA",
-      "target": "reczw3ZFUYcwyE0BH"
     }
   ]
 }
