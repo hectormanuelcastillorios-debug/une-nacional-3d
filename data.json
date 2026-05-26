@@ -949,9 +949,9 @@
     },
     {
       "id": "recNpGEKJ0Vaftr7q",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Juana Ramirez",
+      "zona": "Zona 7",
+      "barrio": "Joya I",
       "val": 12,
       "color": "#31623B"
     },
@@ -989,9 +989,9 @@
     },
     {
       "id": "recOr1EVSIbxFZTvw",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Olga  Onacaj",
+      "zona": "Zona 7",
+      "barrio": "La Rancheria",
       "val": 12,
       "color": "#31623B"
     },
@@ -1981,9 +1981,9 @@
     },
     {
       "id": "reckZwjXNyb1XyEhP",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Mindy Interiano",
+      "zona": "Zona 7",
+      "barrio": "La Rancheria",
       "val": 12,
       "color": "#31623B"
     },
@@ -3074,7 +3074,7 @@
       "target": "recMyyM8Rln3sMXOu"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recNpGEKJ0Vaftr7q"
     },
     {
@@ -3094,7 +3094,7 @@
       "target": "recOTyV5NwK6MI1wZ"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recOr1EVSIbxFZTvw"
     },
     {
@@ -3590,7 +3590,7 @@
       "target": "reckSfaHEuXmk55I0"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "reckZwjXNyb1XyEhP"
     },
     {
@@ -3900,14 +3900,6 @@
     {
       "source": "estA",
       "target": "reczw3ZFUYcwyE0BH"
-    },
-    {
-      "source": "recSS4vfinHTDWrXD",
-      "target": "recOr1EVSIbxFZTvw"
-    },
-    {
-      "source": "recSS4vfinHTDWrXD",
-      "target": "reckZwjXNyb1XyEhP"
     }
   ]
 }
