@@ -1231,9 +1231,9 @@
       "id": "recSS4vfinHTDWrXD",
       "name": "Rosario Recinos",
       "zona": "Zona 7",
-      "barrio": "Amparo I y II",
-      "val": 20,
-      "color": "#66CC33"
+      "barrio": "N/A",
+      "val": 12,
+      "color": "#31623B"
     },
     {
       "id": "recSUwczYJ4leQ96f",
@@ -3214,7 +3214,7 @@
       "target": "recSIa1sqLuypCBgF"
     },
     {
-      "source": "estB",
+      "source": "estA",
       "target": "recSS4vfinHTDWrXD"
     },
     {
@@ -3900,6 +3900,10 @@
     {
       "source": "estA",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "estB",
+      "target": "recSS4vfinHTDWrXD"
     }
   ]
 }
