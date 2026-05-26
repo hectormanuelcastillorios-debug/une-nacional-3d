@@ -333,11 +333,11 @@
     },
     {
       "id": "rec86TnioIH0mBXKA",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
-      "val": 12,
-      "color": "#31623B"
+      "name": "Ericka Garcia",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
+      "val": 20,
+      "color": "#66CC33"
     },
     {
       "id": "rec8ArFVWqTj4O8Tj",
@@ -845,7 +845,7 @@
     },
     {
       "id": "recKvn07elgfqh6oj",
-      "name": " ",
+      "name": "Carolina  Maldonado",
       "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
@@ -2766,7 +2766,7 @@
       "target": "rec85dlzZCgu9TBwu"
     },
     {
-      "source": "estA",
+      "source": "estB",
       "target": "rec86TnioIH0mBXKA"
     },
     {
