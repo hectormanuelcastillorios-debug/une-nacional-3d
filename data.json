@@ -1693,9 +1693,9 @@
     },
     {
       "id": "recdpJpuS746Sqoi0",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Marta  Ramirez",
+      "zona": "Zona 7",
+      "barrio": "La Chatarra",
       "val": 12,
       "color": "#31623B"
     },
@@ -2293,7 +2293,7 @@
     },
     {
       "id": "recsYCsIc80fqMfmC",
-      "name": " ",
+      "name": "Isabel  Natar",
       "zona": "N/A",
       "barrio": "N/A",
       "val": 12,
@@ -3446,7 +3446,7 @@
       "target": "recdM2VC1KhtkgxJE"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recdpJpuS746Sqoi0"
     },
     {
