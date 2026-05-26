@@ -118,8 +118,8 @@
     {
       "id": "rec2P8ZoGGeZzGiCM",
       "name": "Alicia ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -438,8 +438,8 @@
     {
       "id": "recBdz2TC3nDPRqFM",
       "name": "Heydy ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -846,8 +846,8 @@
     {
       "id": "recKvn07elgfqh6oj",
       "name": "Carolina  Maldonado",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -925,9 +925,9 @@
     },
     {
       "id": "recMlcxOS0EsLxoU1",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Esdras Maldonado",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -997,9 +997,9 @@
     },
     {
       "id": "recOshvRE8JvRdhwS",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Ada Linda Hernandez",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -1030,8 +1030,8 @@
     {
       "id": "recPBphJnf5TEOpoG",
       "name": "Claudia  Hernandez",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -1134,8 +1134,8 @@
     {
       "id": "recQYL0m7CCFthQp1",
       "name": "Dora ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -1174,8 +1174,8 @@
     {
       "id": "recS2jnzKeD9eTIWE",
       "name": "Ilda Gonzalez",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -2014,8 +2014,8 @@
     {
       "id": "reckxP2kleg4UuaiP",
       "name": "Reyna Tuna",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "zona": "Zona 21",
+      "barrio": "Los Olivos y Lo de Vasquez",
       "val": 12,
       "color": "#31623B"
     },
@@ -3900,6 +3900,42 @@
     {
       "source": "estA",
       "target": "reczw3ZFUYcwyE0BH"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recKvn07elgfqh6oj"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "rec2P8ZoGGeZzGiCM"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recBdz2TC3nDPRqFM"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recMlcxOS0EsLxoU1"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recOshvRE8JvRdhwS"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recPBphJnf5TEOpoG"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recQYL0m7CCFthQp1"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "recS2jnzKeD9eTIWE"
+    },
+    {
+      "source": "rec86TnioIH0mBXKA",
+      "target": "reckxP2kleg4UuaiP"
     }
   ]
 }
