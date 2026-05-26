@@ -685,9 +685,9 @@
     },
     {
       "id": "recGm7UDOwgzMrx14",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Miriam  Franco",
+      "zona": "Zona 7",
+      "barrio": "Quinta Samayoa",
       "val": 12,
       "color": "#31623B"
     },
@@ -2293,9 +2293,9 @@
     },
     {
       "id": "recsYCsIc80fqMfmC",
-      "name": "Isabel  Natar",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Isabel  Natareno",
+      "zona": "Zona 7",
+      "barrio": "Sector 3 Berbena",
       "val": 12,
       "color": "#31623B"
     },
@@ -2942,7 +2942,7 @@
       "target": "recGe1DIAcyV9Cz5f"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recGm7UDOwgzMrx14"
     },
     {
@@ -3746,7 +3746,7 @@
       "target": "recs6J63ZDUZ2Kxfz"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recsYCsIc80fqMfmC"
     },
     {
