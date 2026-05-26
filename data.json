@@ -69,9 +69,9 @@
     },
     {
       "id": "rec1Meay1aOyg6a6q",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Dalia Veliz",
+      "zona": "Zona 7",
+      "barrio": "An",
       "val": 12,
       "color": "#31623B"
     },
@@ -1221,9 +1221,9 @@
     },
     {
       "id": "recSIa1sqLuypCBgF",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Hilda Ramirez",
+      "zona": "Zona 7",
+      "barrio": "24 de Diciembre",
       "val": 12,
       "color": "#31623B"
     },
@@ -3210,7 +3210,7 @@
       "target": "recSDWKCyxSWGcFjQ"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recSIa1sqLuypCBgF"
     },
     {
