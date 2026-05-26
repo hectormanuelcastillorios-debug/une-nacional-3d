@@ -71,7 +71,7 @@
       "id": "rec1Meay1aOyg6a6q",
       "name": "Dalia Veliz",
       "zona": "Zona 7",
-      "barrio": "An",
+      "barrio": "Anexo Joya",
       "val": 12,
       "color": "#31623B"
     },
@@ -693,9 +693,9 @@
     },
     {
       "id": "recHKl6b4IggdvMfn",
-      "name": " ",
-      "zona": "N/A",
-      "barrio": "N/A",
+      "name": "Evelyn  Galindo",
+      "zona": "Zona 7",
+      "barrio": "La Joya II",
       "val": 12,
       "color": "#31623B"
     },
@@ -2634,7 +2634,7 @@
       "target": "rec1DNFEfnAET7Bis"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "rec1Meay1aOyg6a6q"
     },
     {
@@ -2946,7 +2946,7 @@
       "target": "recGm7UDOwgzMrx14"
     },
     {
-      "source": "estA",
+      "source": "recSS4vfinHTDWrXD",
       "target": "recHKl6b4IggdvMfn"
     },
     {
